@@ -1,0 +1,11 @@
+{
+    "tag": "e7cd7d35708a3o298409328409328624",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "type": "GrabFrame"
+    }
+}

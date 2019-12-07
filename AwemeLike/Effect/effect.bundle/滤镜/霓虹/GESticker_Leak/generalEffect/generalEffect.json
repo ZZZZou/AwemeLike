@@ -1,0 +1,25 @@
+{
+    "effect": [
+               {
+               "name": "leak",
+               "vertexShader": "resource1/leak.vsh",
+               "vUniforms": [],
+               "fragmentShader": "resource1/leak.fsh",
+               "fUniforms": [
+                             {
+                             "name": "inputImageTexture",
+                             "type": 100
+                             },
+                             {
+                              "name": "decorationTexture",
+                              "type" : 1,
+                              "data" : ["leak/leak_000.png","leak/leak_001.png","leak/leak_002.png","leak/leak_003.png","leak/leak_004.png","leak/leak_005.png","leak/leak_006.png","leak/leak_007.png","leak/leak_008.png","leak/leak_009.png","leak/leak_010.png","leak/leak_011.png","leak/leak_012.png","leak/leak_013.png","leak/leak_014.png","leak/leak_015.png","leak/leak_016.png","leak/leak_017.png","leak/leak_018.png","leak/leak_019.png","leak/leak_020.png","leak/leak_021.png","leak/leak_022.png","leak/leak_023.png","leak/leak_024.png","leak/leak_025.png","leak/leak_026.png","leak/leak_027.png","leak/leak_028.png","leak/leak_029.png","leak/leak_030.png","leak/leak_031.png","leak/leak_032.png","leak/leak_033.png","leak/leak_034.png","leak/leak_035.png","leak/leak_036.png","leak/leak_037.png","leak/leak_038.png","leak/leak_039.png","leak/leak_040.png","leak/leak_041.png","leak/leak_042.png","leak/leak_043.png","leak/leak_044.png","leak/leak_045.png","leak/leak_046.png","leak/leak_047.png","leak/leak_048.png","leak/leak_049.png","leak/leak_050.png","leak/leak_051.png","leak/leak_052.png","leak/leak_053.png","leak/leak_054.png","leak/leak_055.png","leak/leak_056.png","leak/leak_057.png","leak/leak_058.png","leak/leak_059.png"],
+                              "refreshInterval" : 2
+                              }
+                             ]
+               }
+               ],
+    "version" : 1.0
+}
+
+

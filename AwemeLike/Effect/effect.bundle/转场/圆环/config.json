@@ -1,0 +1,15 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "path": "2D_GE_Circle/",
+                "type": "GeneralEffect",
+                "zorder": 5110,
+                "defaultEnable": true
+            }
+
+        ]
+    },
+    "name": "1E40sagngfbtrbjD0",
+    "version": "4.0.0"
+}

@@ -1,0 +1,26 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable": true,
+                "path": "GEA/",
+                "type": "GeneralEffect",
+                "zorder": 10000
+            },
+            {
+                "defaultEnable": true,
+                "path": "GEB/",
+                "type": "GeneralEffect",
+                "zorder": 10001
+            },
+            {
+                "defaultEnable": true,
+                "path": "2DStickerV3_5100/",
+                "type": "2DStickerV3",
+                "zorder": 10100
+            },
+        ]
+    },
+    "name": "0bdb4e401e276b8d4c4e8fd9920e16ab",
+    "version": "4.0.0"
+}

@@ -1,0 +1,26 @@
+{
+  "effect": {
+    "Link": [
+      {
+        "defaultEnable": true,
+        "path": "GEHead/",
+        "type": "GeneralEffect",
+        "zorder": 5201
+      },
+      {
+        "defaultEnable": true,
+        "path": "Filter_2998/",
+        "type": "Filter",
+        "zorder": 2998
+      },
+      {
+        "defaultEnable": true,
+        "path": "Filter_2997/",
+        "type": "Filter",
+        "zorder": 2997
+      }
+    ]
+  },
+  "name": "d2b08b3965c7927ffasf09safas30899f",
+  "version": "4.4.0"
+}

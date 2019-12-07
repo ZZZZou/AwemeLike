@@ -1,0 +1,23 @@
+{
+    "effect": [
+        {
+            "name": "screen1",
+            "vertexShader": "resource/vshader.vsh",
+            "vUniforms": [
+                {
+                    "name": "scale",
+                    "type": 3,
+                    "data": [1.0]
+                }
+            ],
+            "fragmentShader": "resource/fshader.fsh",
+            "fUniforms": [   
+                {
+                    "name": "inputImageTexture",
+                    "type": 100
+                }
+            ]
+        }
+    ],
+    "version": 1.1
+}

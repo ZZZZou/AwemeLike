@@ -1,0 +1,37 @@
+{
+    "effect": [
+        {
+            "name": "baseDraw",
+            "autoChangeViewport": true,
+            "vertexShader": "resource1/base2d.vsh",
+            "vUniforms": [
+                {
+                    "name": "scaling",
+                    "type": 3,
+                    "data": [0.0]
+                },
+                {
+                    "name": "angle",
+                    "type": 3,
+                    "data": [0.0]
+                },
+                {
+                    "name": "display_width",
+                    "type": 200
+                },
+                {
+                    "name": "display_height",
+                    "type": 201
+                }
+            ],
+            "fragmentShader": "resource1/base2d.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 100
+                }
+            ]
+        }
+    ],
+    "version": 1.1
+}

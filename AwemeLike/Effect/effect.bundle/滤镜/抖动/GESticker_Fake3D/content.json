@@ -1,0 +1,12 @@
+{
+    "tag": "GESticker_Fake3D",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "path" : "generalEffect/",
+        "config": "generalEffect.json"
+    }
+}

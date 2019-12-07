@@ -1,0 +1,173 @@
+{
+  "texturefiles": [
+    "leak/leak_000.png",
+    "leak/leak_001.png",
+    "leak/leak_002.png",
+    "leak/leak_003.png",
+    "leak/leak_004.png",
+    "leak/leak_005.png",
+    "leak/leak_006.png",
+    "leak/leak_007.png",
+    "leak/leak_008.png",
+    "leak/leak_009.png",
+    "leak/leak_010.png",
+    "leak/leak_011.png",
+    "leak/leak_012.png",
+    "leak/leak_013.png",
+    "leak/leak_014.png",
+    "leak/leak_015.png",
+    "leak/leak_016.png",
+    "leak/leak_017.png",
+    "leak/leak_018.png",
+    "leak/leak_019.png",
+    "leak/leak_020.png",
+    "leak/leak_021.png",
+    "leak/leak_022.png",
+    "leak/leak_023.png",
+    "leak/leak_024.png",
+    "leak/leak_025.png",
+    "leak/leak_026.png",
+    "leak/leak_027.png",
+    "leak/leak_028.png",
+    "leak/leak_029.png",
+    "leak/leak_030.png"
+  ],
+  "parts": {
+    "entity": {
+      "leak": {
+        "textureIdx": {
+          "idx": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8,
+            8,
+            9,
+            9,
+            10,
+            10,
+            11,
+            11,
+            12,
+            12,
+            13,
+            13,
+            14,
+            14,
+            15,
+            15,
+            16,
+            16,
+            17,
+            17,
+            18,
+            18,
+            19,
+            19,
+            20,
+            20,
+            21,
+            21,
+            22,
+            22,
+            23,
+            23,
+            24,
+            24,
+            25,
+            25,
+            26,
+            26,
+            27,
+            27,
+            28,
+            28,
+            29,
+            29,
+            30,
+            30
+          ],
+          "type": "image"
+        },
+        "width": 540,
+        "height": 960,
+        "blendmode": 0,
+        "alphaFactor": 1,
+        "transformType": "FOLLOW",
+        "transformParams": {
+          "relation": {
+            "foreground": 1,
+            "face106": 0,
+            "hand": 0,
+            "cat": 0,
+            "body": 0
+          },
+          "relationIndex": [
+            0
+          ],
+          "position": {
+            "point0": {
+              "point": [
+                {
+                  "relationType": "foreground",
+                  "relationRef": 0,
+                  "idx": "topleft",
+                  "weight": 1
+                }
+              ],
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            "point1": {
+              "point": [
+                {
+                  "relationType": "foreground",
+                  "relationRef": 0,
+                  "idx": "topright",
+                  "weight": 1
+                }
+              ],
+              "anchor": [
+                1,
+                0
+              ]
+            }
+          },
+          "scale": {
+            "scaleY": {
+              "start_idx": {
+                "relationType": "foreground",
+                "relationRef": 0,
+                "idx": "topleft"
+              },
+              "end_idx": {
+                "relationType": "foreground",
+                "relationRef": 0,
+                "idx": "bottomleft"
+              },
+              "factor": 1.0
+            }
+          },
+          "rotationtype": 0
+        },
+        "zorder": 10000
+      }
+    }
+  },
+  "version": "1.1.0"
+}

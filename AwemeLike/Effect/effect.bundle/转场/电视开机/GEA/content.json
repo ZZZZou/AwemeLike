@@ -1,0 +1,12 @@
+{
+    "tag": "1378d04a91ce8fa0ccdedc79d06022ea",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "path": "generalEffect/",
+        "config": "generalEffect.json"
+    }
+}

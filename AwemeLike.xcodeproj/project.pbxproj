@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2D7C694ABC0DEED2B63715 /* libPods-AwemeLike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0744133842F8FF688DF28911 /* libPods-AwemeLike.a */; };
+		21775345239298070081310B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21775344239298070081310B /* AppDelegate.m */; };
+		21775348239298070081310B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21775347239298070081310B /* ViewController.m */; };
+		2177534B239298070081310B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21775349239298070081310B /* Main.storyboard */; };
+		2177534D239298090081310B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2177534C239298090081310B /* Assets.xcassets */; };
+		21775350239298090081310B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2177534E239298090081310B /* LaunchScreen.storyboard */; };
+		21775353239298090081310B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21775352239298090081310B /* main.m */; };
+		217754012392995D0081310B /* HPModelEffect_Countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177535D2392995C0081310B /* HPModelEffect_Countdown.m */; };
+		217754022392995D0081310B /* HPModelEffect_Open.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753622392995C0081310B /* HPModelEffect_Open.m */; };
+		217754032392995D0081310B /* HPModelEffect_FaculaBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753632392995C0081310B /* HPModelEffect_FaculaBlur.m */; };
+		217754042392995D0081310B /* HPModelEffect_Shutdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753642392995C0081310B /* HPModelEffect_Shutdown.m */; };
+		217754052392995D0081310B /* HPModelEffect_Startup.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753652392995C0081310B /* HPModelEffect_Startup.m */; };
+		217754062392995D0081310B /* HPModelEffect_Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753672392995C0081310B /* HPModelEffect_Blur.m */; };
+		217754072392995D0081310B /* HPModelEffect_Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753682392995C0081310B /* HPModelEffect_Scale.m */; };
+		217754082392995D0081310B /* HPRangeEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753692392995C0081310B /* HPRangeEffectManager.m */; };
+		217754092392995D0081310B /* HPEffectLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177536B2392995C0081310B /* HPEffectLoader.m */; };
+		2177540A2392995D0081310B /* HPModelEffect_Mermaid.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177536D2392995C0081310B /* HPModelEffect_Mermaid.m */; };
+		2177540B2392995D0081310B /* HPModelEffect_Vision.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177536E2392995C0081310B /* HPModelEffect_Vision.m */; };
+		2177540C2392995D0081310B /* HPModelEffect_Mili.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177536F2392995C0081310B /* HPModelEffect_Mili.m */; };
+		2177540D2392995D0081310B /* HPModelEffect_Tremble.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753712392995C0081310B /* HPModelEffect_Tremble.m */; };
+		2177540E2392995D0081310B /* HPModelEffect_Pane.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753722392995C0081310B /* HPModelEffect_Pane.m */; };
+		2177540F2392995D0081310B /* HPModelEffect_FlashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753762392995C0081310B /* HPModelEffect_FlashScreen.m */; };
+		217754102392995D0081310B /* HPRangeEffectFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753792392995C0081310B /* HPRangeEffectFilter.m */; };
+		217754112392995D0081310B /* HPModelEffectFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177537B2392995C0081310B /* HPModelEffectFeature.m */; };
+		217754122392995D0081310B /* GPUImageLUTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177537F2392995C0081310B /* GPUImageLUTFilter.m */; };
+		217754132392995D0081310B /* GPUImageFaceMarkupFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753812392995C0081310B /* GPUImageFaceMarkupFilter.m */; };
+		217754142392995D0081310B /* GPUImageBlendFilterPinLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753862392995C0081310B /* GPUImageBlendFilterPinLight.m */; };
+		217754152392995D0081310B /* GPUImageBlendFilterAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177538B2392995C0081310B /* GPUImageBlendFilterAdd.m */; };
+		217754162392995D0081310B /* GPUImageBlendFilterColorDodge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177538E2392995C0081310B /* GPUImageBlendFilterColorDodge.m */; };
+		217754172392995D0081310B /* GPUImageBlendFilterSoftLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177538F2392995C0081310B /* GPUImageBlendFilterSoftLight.m */; };
+		217754182392995D0081310B /* GPUImageBlendFilterOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753902392995C0081310B /* GPUImageBlendFilterOverlay.m */; };
+		217754192392995D0081310B /* GPUImageBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753912392995C0081310B /* GPUImageBlendFilter.m */; };
+		2177541A2392995D0081310B /* GPUImageBlendFilterNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753922392995C0081310B /* GPUImageBlendFilterNormal.m */; };
+		2177541B2392995D0081310B /* GPUImageBlendFilterMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753932392995C0081310B /* GPUImageBlendFilterMultiply.m */; };
+		2177541C2392995D0081310B /* GPUImageBlendFilterHardLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753952392995C0081310B /* GPUImageBlendFilterHardLight.m */; };
+		2177541D2392995D0081310B /* GPUImageBlendFilterScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753962392995C0081310B /* GPUImageBlendFilterScreen.m */; };
+		2177541E2392995D0081310B /* GPUImageGeneralFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753982392995C0081310B /* GPUImageGeneralFilter.m */; };
+		2177541F2392995D0081310B /* effect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 217753992392995C0081310B /* effect.bundle */; };
+		217754202392995D0081310B /* HPModelEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177539A2392995C0081310B /* HPModelEffect.m */; };
+		217754212392995D0081310B /* music.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2177539D2392995C0081310B /* music.bundle */; };
+		217754232392995D0081310B /* HPTwoLookupFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753A02392995C0081310B /* HPTwoLookupFilter.m */; };
+		217754242392995D0081310B /* libMGLicMgrSDK-0.3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 217753A62392995C0081310B /* libMGLicMgrSDK-0.3.1.a */; };
+		217754252392995D0081310B /* libMGFacepp-0.5.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 217753AA2392995C0081310B /* libMGFacepp-0.5.2.a */; };
+		217754262392995D0081310B /* megviifacepp_0_5_2_model in Resources */ = {isa = PBXBuildFile; fileRef = 217753B22392995C0081310B /* megviifacepp_0_5_2_model */; };
+		217754272392995D0081310B /* MGFaceLicenseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753B32392995C0081310B /* MGFaceLicenseHandle.m */; };
+		217754282392995D0081310B /* HPVideoEffectChooseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753BA2392995D0081310B /* HPVideoEffectChooseViewModel.m */; };
+		217754292392995D0081310B /* HPVideoEffectChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753BB2392995D0081310B /* HPVideoEffectChooseViewController.m */; };
+		2177542A2392995D0081310B /* HPVideoEffectTimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753BC2392995D0081310B /* HPVideoEffectTimeLineView.m */; };
+		2177542B2392995D0081310B /* HPSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753BD2392995D0081310B /* HPSliderView.m */; };
+		2177542C2392995D0081310B /* HPCameraCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753C22392995D0081310B /* HPCameraCaptureViewController.m */; };
+		2177542D2392995D0081310B /* HPCameraEditViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753C32392995D0081310B /* HPCameraEditViewModel.m */; };
+		2177542E2392995D0081310B /* HPCameraCaptureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753C42392995D0081310B /* HPCameraCaptureViewModel.m */; };
+		2177542F2392995D0081310B /* HPVideoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753C52392995D0081310B /* HPVideoEditViewController.m */; };
+		217754362392995D0081310B /* lookUpSkin.png in Resources */ = {isa = PBXBuildFile; fileRef = 217753D72392995D0081310B /* lookUpSkin.png */; };
+		217754372392995D0081310B /* lookUpCustom.png in Resources */ = {isa = PBXBuildFile; fileRef = 217753D82392995D0081310B /* lookUpCustom.png */; };
+		217754382392995D0081310B /* mouth.png in Resources */ = {isa = PBXBuildFile; fileRef = 217753D92392995D0081310B /* mouth.png */; };
+		217754392392995D0081310B /* blusher.png in Resources */ = {isa = PBXBuildFile; fileRef = 217753DA2392995D0081310B /* blusher.png */; };
+		2177543A2392995D0081310B /* lookUpOrigin.png in Resources */ = {isa = PBXBuildFile; fileRef = 217753DB2392995D0081310B /* lookUpOrigin.png */; };
+		2177543B2392995D0081310B /* lookUpGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 217753DC2392995D0081310B /* lookUpGray.png */; };
+		2177543C2392995D0081310B /* lookup2.png in Resources */ = {isa = PBXBuildFile; fileRef = 217753DD2392995D0081310B /* lookup2.png */; };
+		217754472392995D0081310B /* HPVideoOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753F02392995D0081310B /* HPVideoOutput.m */; };
+		217754482392995D0081310B /* HPVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753F12392995D0081310B /* HPVideoDecoder.m */; };
+		217754492392995D0081310B /* HPPlayerSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753F22392995D0081310B /* HPPlayerSynchronizer.m */; };
+		2177544A2392995D0081310B /* AVAudioSession+RouteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753F72392995D0081310B /* AVAudioSession+RouteUtils.m */; };
+		2177544B2392995D0081310B /* HPAudioMix.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753F82392995D0081310B /* HPAudioMix.m */; };
+		2177544C2392995D0081310B /* ELAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753F92392995D0081310B /* ELAudioSession.m */; };
+		2177544D2392995D0081310B /* HPAudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 217753FA2392995D0081310B /* HPAudioOutput.m */; };
+		2177544E2392995D0081310B /* HPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 217754002392995D0081310B /* HPPlayer.m */; };
+		2177565423929B550081310B /* HPPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2177565123929B550081310B /* HPPlayerViewController.xib */; };
+		2177565523929B550081310B /* HPPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177565323929B550081310B /* HPPlayerViewController.m */; };
+		2177565723929B800081310B /* Aweme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2177565623929B800081310B /* Aweme.storyboard */; };
+		217756782392B29C0081310B /* GPUImageDrawLandmarksFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217756592392B2990081310B /* GPUImageDrawLandmarksFilter.m */; };
+		217756792392B29C0081310B /* GPUImageBaseBeautyFaceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177565C2392B2990081310B /* GPUImageBaseBeautyFaceFilter.m */; };
+		2177567B2392B29C0081310B /* GPUImageBeautyFaceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177565F2392B29A0081310B /* GPUImageBeautyFaceFilter.m */; };
+		2177567C2392B29C0081310B /* GPUImageMagnificationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217756622392B29A0081310B /* GPUImageMagnificationFilter.m */; };
+		2177567D2392B29C0081310B /* GPUImageFaceCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 217756632392B29A0081310B /* GPUImageFaceCamera.m */; };
+		2177567F2392B29C0081310B /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 217756682392B29A0081310B /* FaceDetector.mm */; };
+		217756802392B29C0081310B /* GPUImageMyGaussianFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177566A2392B29A0081310B /* GPUImageMyGaussianFilter.m */; };
+		217756812392B29C0081310B /* GPUImageStickerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177566D2392B29B0081310B /* GPUImageStickerFilter.m */; };
+		217756822392B29C0081310B /* GPUImageBoxDifferenceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177566E2392B29B0081310B /* GPUImageBoxDifferenceFilter.m */; };
+		217756832392B29C0081310B /* GPUImageRotateFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217756702392B29B0081310B /* GPUImageRotateFilter.m */; };
+		217756842392B29C0081310B /* GPUImageFaceMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 217756712392B29B0081310B /* GPUImageFaceMovie.m */; };
+		217756852392B29C0081310B /* GPUImageBoxHighPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217756722392B29B0081310B /* GPUImageBoxHighPassFilter.m */; };
+		217756872392B29C0081310B /* GPUImageThinFaceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217756772392B29C0081310B /* GPUImageThinFaceFilter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0744133842F8FF688DF28911 /* libPods-AwemeLike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwemeLike.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21775340239298070081310B /* AwemeLike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwemeLike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21775343239298070081310B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21775344239298070081310B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21775346239298070081310B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21775347239298070081310B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2177534A239298070081310B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2177534C239298090081310B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2177534F239298090081310B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21775351239298090081310B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21775352239298090081310B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2177535B2392995C0081310B /* HPModelEffect_FaculaBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_FaculaBlur.h; sourceTree = "<group>"; };
+		2177535C2392995C0081310B /* HPModelEffect_Open.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Open.h; sourceTree = "<group>"; };
+		2177535D2392995C0081310B /* HPModelEffect_Countdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Countdown.m; sourceTree = "<group>"; };
+		2177535E2392995C0081310B /* HPModelEffect_Startup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Startup.h; sourceTree = "<group>"; };
+		2177535F2392995C0081310B /* HPModelEffect_Shutdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Shutdown.h; sourceTree = "<group>"; };
+		217753602392995C0081310B /* HPModelEffect_Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Blur.h; sourceTree = "<group>"; };
+		217753612392995C0081310B /* HPModelEffect_Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Scale.h; sourceTree = "<group>"; };
+		217753622392995C0081310B /* HPModelEffect_Open.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Open.m; sourceTree = "<group>"; };
+		217753632392995C0081310B /* HPModelEffect_FaculaBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_FaculaBlur.m; sourceTree = "<group>"; };
+		217753642392995C0081310B /* HPModelEffect_Shutdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Shutdown.m; sourceTree = "<group>"; };
+		217753652392995C0081310B /* HPModelEffect_Startup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Startup.m; sourceTree = "<group>"; };
+		217753662392995C0081310B /* HPModelEffect_Countdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Countdown.h; sourceTree = "<group>"; };
+		217753672392995C0081310B /* HPModelEffect_Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Blur.m; sourceTree = "<group>"; };
+		217753682392995C0081310B /* HPModelEffect_Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Scale.m; sourceTree = "<group>"; };
+		217753692392995C0081310B /* HPRangeEffectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPRangeEffectManager.m; sourceTree = "<group>"; };
+		2177536A2392995C0081310B /* HPModelEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect.h; sourceTree = "<group>"; };
+		2177536B2392995C0081310B /* HPEffectLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPEffectLoader.m; sourceTree = "<group>"; };
+		2177536D2392995C0081310B /* HPModelEffect_Mermaid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Mermaid.m; sourceTree = "<group>"; };
+		2177536E2392995C0081310B /* HPModelEffect_Vision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Vision.m; sourceTree = "<group>"; };
+		2177536F2392995C0081310B /* HPModelEffect_Mili.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Mili.m; sourceTree = "<group>"; };
+		217753702392995C0081310B /* HPModelEffect_FlashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_FlashScreen.h; sourceTree = "<group>"; };
+		217753712392995C0081310B /* HPModelEffect_Tremble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Tremble.m; sourceTree = "<group>"; };
+		217753722392995C0081310B /* HPModelEffect_Pane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_Pane.m; sourceTree = "<group>"; };
+		217753732392995C0081310B /* HPModelEffect_Mermaid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Mermaid.h; sourceTree = "<group>"; };
+		217753742392995C0081310B /* HPModelEffect_Vision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Vision.h; sourceTree = "<group>"; };
+		217753752392995C0081310B /* HPModelEffect_Pane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Pane.h; sourceTree = "<group>"; };
+		217753762392995C0081310B /* HPModelEffect_FlashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect_FlashScreen.m; sourceTree = "<group>"; };
+		217753772392995C0081310B /* HPModelEffect_Tremble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Tremble.h; sourceTree = "<group>"; };
+		217753782392995C0081310B /* HPModelEffect_Mili.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffect_Mili.h; sourceTree = "<group>"; };
+		217753792392995C0081310B /* HPRangeEffectFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPRangeEffectFilter.m; sourceTree = "<group>"; };
+		2177537A2392995C0081310B /* HPTwoLookupFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPTwoLookupFilter.h; sourceTree = "<group>"; };
+		2177537B2392995C0081310B /* HPModelEffectFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffectFeature.m; sourceTree = "<group>"; };
+		2177537C2392995C0081310B /* HPFaceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPFaceData.h; sourceTree = "<group>"; };
+		2177537E2392995C0081310B /* GPUImageFaceMarkupFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFaceMarkupFilter.h; sourceTree = "<group>"; };
+		2177537F2392995C0081310B /* GPUImageLUTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageLUTFilter.m; sourceTree = "<group>"; };
+		217753802392995C0081310B /* GPUImageGeneralFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageGeneralFilter.h; sourceTree = "<group>"; };
+		217753812392995C0081310B /* GPUImageFaceMarkupFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageFaceMarkupFilter.m; sourceTree = "<group>"; };
+		217753832392995C0081310B /* GPUImageBlendFilterOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterOverlay.h; sourceTree = "<group>"; };
+		217753842392995C0081310B /* GPUImageBlendFilterSoftLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterSoftLight.h; sourceTree = "<group>"; };
+		217753852392995C0081310B /* GPUImageBlendFilterColorDodge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterColorDodge.h; sourceTree = "<group>"; };
+		217753862392995C0081310B /* GPUImageBlendFilterPinLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterPinLight.m; sourceTree = "<group>"; };
+		217753872392995C0081310B /* GPUImageBlendFilterMultiply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterMultiply.h; sourceTree = "<group>"; };
+		217753882392995C0081310B /* GPUImageBlendFilterNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterNormal.h; sourceTree = "<group>"; };
+		217753892392995C0081310B /* GPUImageBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilter.h; sourceTree = "<group>"; };
+		2177538A2392995C0081310B /* GPUImageBlendFilterHardLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterHardLight.h; sourceTree = "<group>"; };
+		2177538B2392995C0081310B /* GPUImageBlendFilterAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterAdd.m; sourceTree = "<group>"; };
+		2177538C2392995C0081310B /* GPUImageBlendFilterScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterScreen.h; sourceTree = "<group>"; };
+		2177538D2392995C0081310B /* GPUImageBlendFilterPinLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterPinLight.h; sourceTree = "<group>"; };
+		2177538E2392995C0081310B /* GPUImageBlendFilterColorDodge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterColorDodge.m; sourceTree = "<group>"; };
+		2177538F2392995C0081310B /* GPUImageBlendFilterSoftLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterSoftLight.m; sourceTree = "<group>"; };
+		217753902392995C0081310B /* GPUImageBlendFilterOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterOverlay.m; sourceTree = "<group>"; };
+		217753912392995C0081310B /* GPUImageBlendFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilter.m; sourceTree = "<group>"; };
+		217753922392995C0081310B /* GPUImageBlendFilterNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterNormal.m; sourceTree = "<group>"; };
+		217753932392995C0081310B /* GPUImageBlendFilterMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterMultiply.m; sourceTree = "<group>"; };
+		217753942392995C0081310B /* GPUImageBlendFilterAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBlendFilterAdd.h; sourceTree = "<group>"; };
+		217753952392995C0081310B /* GPUImageBlendFilterHardLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterHardLight.m; sourceTree = "<group>"; };
+		217753962392995C0081310B /* GPUImageBlendFilterScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBlendFilterScreen.m; sourceTree = "<group>"; };
+		217753972392995C0081310B /* GPUImageLUTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageLUTFilter.h; sourceTree = "<group>"; };
+		217753982392995C0081310B /* GPUImageGeneralFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageGeneralFilter.m; sourceTree = "<group>"; };
+		217753992392995C0081310B /* effect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = effect.bundle; sourceTree = "<group>"; };
+		2177539A2392995C0081310B /* HPModelEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPModelEffect.m; sourceTree = "<group>"; };
+		2177539B2392995C0081310B /* HPEffectLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPEffectLoader.h; sourceTree = "<group>"; };
+		2177539C2392995C0081310B /* HPRangeEffectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPRangeEffectManager.h; sourceTree = "<group>"; };
+		2177539D2392995C0081310B /* music.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = music.bundle; sourceTree = "<group>"; };
+		2177539F2392995C0081310B /* HPModelEffectFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPModelEffectFeature.h; sourceTree = "<group>"; };
+		217753A02392995C0081310B /* HPTwoLookupFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPTwoLookupFilter.m; sourceTree = "<group>"; };
+		217753A12392995C0081310B /* HPRangeEffectFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPRangeEffectFilter.h; sourceTree = "<group>"; };
+		217753A32392995C0081310B /* MGNetAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGNetAccount.h; sourceTree = "<group>"; };
+		217753A42392995C0081310B /* MGFaceLicenseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceLicenseHandle.h; sourceTree = "<group>"; };
+		217753A62392995C0081310B /* libMGLicMgrSDK-0.3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMGLicMgrSDK-0.3.1.a"; sourceTree = "<group>"; };
+		217753A72392995C0081310B /* MGLicenseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLicenseManager.h; sourceTree = "<group>"; };
+		217753A82392995C0081310B /* MGLicenseCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLicenseCommon.h; sourceTree = "<group>"; };
+		217753AA2392995C0081310B /* libMGFacepp-0.5.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMGFacepp-0.5.2.a"; sourceTree = "<group>"; };
+		217753AB2392995C0081310B /* MGFaceppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceppConfig.h; sourceTree = "<group>"; };
+		217753AC2392995C0081310B /* MGAlgorithmInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGAlgorithmInfo.h; sourceTree = "<group>"; };
+		217753AD2392995C0081310B /* MGFacepp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFacepp.h; sourceTree = "<group>"; };
+		217753AE2392995C0081310B /* MGDetectRectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGDetectRectInfo.h; sourceTree = "<group>"; };
+		217753AF2392995C0081310B /* MGFaceppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceppCommon.h; sourceTree = "<group>"; };
+		217753B02392995C0081310B /* MGImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGImageData.h; sourceTree = "<group>"; };
+		217753B12392995C0081310B /* MGFaceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGFaceInfo.h; sourceTree = "<group>"; };
+		217753B22392995C0081310B /* megviifacepp_0_5_2_model */ = {isa = PBXFileReference; lastKnownFileType = file; path = megviifacepp_0_5_2_model; sourceTree = "<group>"; };
+		217753B32392995C0081310B /* MGFaceLicenseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGFaceLicenseHandle.m; sourceTree = "<group>"; };
+		217753B52392995D0081310B /* HPCameraCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCameraCaptureViewController.h; sourceTree = "<group>"; };
+		217753B72392995D0081310B /* HPVideoEffectChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPVideoEffectChooseViewController.h; sourceTree = "<group>"; };
+		217753B82392995D0081310B /* HPSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPSliderView.h; sourceTree = "<group>"; };
+		217753B92392995D0081310B /* HPVideoEffectTimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPVideoEffectTimeLineView.h; sourceTree = "<group>"; };
+		217753BA2392995D0081310B /* HPVideoEffectChooseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPVideoEffectChooseViewModel.m; sourceTree = "<group>"; };
+		217753BB2392995D0081310B /* HPVideoEffectChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPVideoEffectChooseViewController.m; sourceTree = "<group>"; };
+		217753BC2392995D0081310B /* HPVideoEffectTimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPVideoEffectTimeLineView.m; sourceTree = "<group>"; };
+		217753BD2392995D0081310B /* HPSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPSliderView.m; sourceTree = "<group>"; };
+		217753BE2392995D0081310B /* HPVideoEffectChooseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPVideoEffectChooseViewModel.h; sourceTree = "<group>"; };
+		217753BF2392995D0081310B /* HPVideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPVideoEditViewController.h; sourceTree = "<group>"; };
+		217753C02392995D0081310B /* HPCameraCaptureViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCameraCaptureViewModel.h; sourceTree = "<group>"; };
+		217753C12392995D0081310B /* HPCameraEditViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCameraEditViewModel.h; sourceTree = "<group>"; };
+		217753C22392995D0081310B /* HPCameraCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCameraCaptureViewController.m; sourceTree = "<group>"; };
+		217753C32392995D0081310B /* HPCameraEditViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCameraEditViewModel.m; sourceTree = "<group>"; };
+		217753C42392995D0081310B /* HPCameraCaptureViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCameraCaptureViewModel.m; sourceTree = "<group>"; };
+		217753C52392995D0081310B /* HPVideoEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPVideoEditViewController.m; sourceTree = "<group>"; };
+		217753D72392995D0081310B /* lookUpSkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookUpSkin.png; sourceTree = "<group>"; };
+		217753D82392995D0081310B /* lookUpCustom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookUpCustom.png; sourceTree = "<group>"; };
+		217753D92392995D0081310B /* mouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth.png; sourceTree = "<group>"; };
+		217753DA2392995D0081310B /* blusher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blusher.png; sourceTree = "<group>"; };
+		217753DB2392995D0081310B /* lookUpOrigin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookUpOrigin.png; sourceTree = "<group>"; };
+		217753DC2392995D0081310B /* lookUpGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookUpGray.png; sourceTree = "<group>"; };
+		217753DD2392995D0081310B /* lookup2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup2.png; sourceTree = "<group>"; };
+		217753F02392995D0081310B /* HPVideoOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPVideoOutput.m; sourceTree = "<group>"; };
+		217753F12392995D0081310B /* HPVideoDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPVideoDecoder.m; sourceTree = "<group>"; };
+		217753F22392995D0081310B /* HPPlayerSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPlayerSynchronizer.m; sourceTree = "<group>"; };
+		217753F32392995D0081310B /* HPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPlayer.h; sourceTree = "<group>"; };
+		217753F42392995D0081310B /* HPVideoOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPVideoOutput.h; sourceTree = "<group>"; };
+		217753F62392995D0081310B /* HPAudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPAudioOutput.h; sourceTree = "<group>"; };
+		217753F72392995D0081310B /* AVAudioSession+RouteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioSession+RouteUtils.m"; sourceTree = "<group>"; };
+		217753F82392995D0081310B /* HPAudioMix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPAudioMix.m; sourceTree = "<group>"; };
+		217753F92392995D0081310B /* ELAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELAudioSession.m; sourceTree = "<group>"; };
+		217753FA2392995D0081310B /* HPAudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPAudioOutput.m; sourceTree = "<group>"; };
+		217753FB2392995D0081310B /* HPAudioMix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPAudioMix.h; sourceTree = "<group>"; };
+		217753FC2392995D0081310B /* AVAudioSession+RouteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+RouteUtils.h"; sourceTree = "<group>"; };
+		217753FD2392995D0081310B /* ELAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELAudioSession.h; sourceTree = "<group>"; };
+		217753FE2392995D0081310B /* HPVideoDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPVideoDecoder.h; sourceTree = "<group>"; };
+		217753FF2392995D0081310B /* HPPlayerSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPlayerSynchronizer.h; sourceTree = "<group>"; };
+		217754002392995D0081310B /* HPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPlayer.m; sourceTree = "<group>"; };
+		2177565123929B550081310B /* HPPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPPlayerViewController.xib; sourceTree = "<group>"; };
+		2177565223929B550081310B /* HPPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPlayerViewController.h; sourceTree = "<group>"; };
+		2177565323929B550081310B /* HPPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPlayerViewController.m; sourceTree = "<group>"; };
+		2177565623929B800081310B /* Aweme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Aweme.storyboard; sourceTree = "<group>"; };
+		217756582392B2990081310B /* GPUImageFaceCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFaceCamera.h; sourceTree = "<group>"; };
+		217756592392B2990081310B /* GPUImageDrawLandmarksFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageDrawLandmarksFilter.m; sourceTree = "<group>"; };
+		2177565B2392B2990081310B /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
+		2177565C2392B2990081310B /* GPUImageBaseBeautyFaceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBaseBeautyFaceFilter.m; sourceTree = "<group>"; };
+		2177565D2392B2990081310B /* GPUImageFaceMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFaceMovie.h; sourceTree = "<group>"; };
+		2177565F2392B29A0081310B /* GPUImageBeautyFaceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautyFaceFilter.m; sourceTree = "<group>"; };
+		217756602392B29A0081310B /* GPUImageStickerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageStickerFilter.h; sourceTree = "<group>"; };
+		217756612392B29A0081310B /* GPUImageThinFaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageThinFaceFilter.h; sourceTree = "<group>"; };
+		217756622392B29A0081310B /* GPUImageMagnificationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageMagnificationFilter.m; sourceTree = "<group>"; };
+		217756632392B29A0081310B /* GPUImageFaceCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageFaceCamera.m; sourceTree = "<group>"; };
+		217756662392B29A0081310B /* GPUImageBeautyFaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautyFaceFilter.h; sourceTree = "<group>"; };
+		217756672392B29A0081310B /* GPUImageBoxHighPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBoxHighPassFilter.h; sourceTree = "<group>"; };
+		217756682392B29A0081310B /* FaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetector.mm; sourceTree = "<group>"; };
+		217756692392B29A0081310B /* GPUImageDrawLandmarksFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageDrawLandmarksFilter.h; sourceTree = "<group>"; };
+		2177566A2392B29A0081310B /* GPUImageMyGaussianFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageMyGaussianFilter.m; sourceTree = "<group>"; };
+		2177566B2392B29A0081310B /* GPUImageMagnificationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMagnificationFilter.h; sourceTree = "<group>"; };
+		2177566C2392B29B0081310B /* GPUImageBoxDifferenceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBoxDifferenceFilter.h; sourceTree = "<group>"; };
+		2177566D2392B29B0081310B /* GPUImageStickerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageStickerFilter.m; sourceTree = "<group>"; };
+		2177566E2392B29B0081310B /* GPUImageBoxDifferenceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBoxDifferenceFilter.m; sourceTree = "<group>"; };
+		2177566F2392B29B0081310B /* GPUImageBaseBeautyFaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBaseBeautyFaceFilter.h; sourceTree = "<group>"; };
+		217756702392B29B0081310B /* GPUImageRotateFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageRotateFilter.m; sourceTree = "<group>"; };
+		217756712392B29B0081310B /* GPUImageFaceMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageFaceMovie.m; sourceTree = "<group>"; };
+		217756722392B29B0081310B /* GPUImageBoxHighPassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBoxHighPassFilter.m; sourceTree = "<group>"; };
+		217756742392B29B0081310B /* GPUImageMyGaussianFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageMyGaussianFilter.h; sourceTree = "<group>"; };
+		217756762392B29B0081310B /* GPUImageRotateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRotateFilter.h; sourceTree = "<group>"; };
+		217756772392B29C0081310B /* GPUImageThinFaceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageThinFaceFilter.m; sourceTree = "<group>"; };
+		5F25D7C687FB5125859A6C26 /* Pods-AwemeLike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwemeLike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwemeLike/Pods-AwemeLike.debug.xcconfig"; sourceTree = "<group>"; };
+		9D323F5003E7E4D0F91C6CAD /* Pods-AwemeLike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwemeLike.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwemeLike/Pods-AwemeLike.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2177533D239298070081310B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217754252392995D0081310B /* libMGFacepp-0.5.2.a in Frameworks */,
+				217754242392995D0081310B /* libMGLicMgrSDK-0.3.1.a in Frameworks */,
+				0F2D7C694ABC0DEED2B63715 /* libPods-AwemeLike.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21775337239298070081310B = {
+			isa = PBXGroup;
+			children = (
+				21775342239298070081310B /* AwemeLike */,
+				21775341239298070081310B /* Products */,
+				E63ED830E5124E0AB6C67F45 /* Pods */,
+				E6F7B503B445B3BD421B0FFF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21775341239298070081310B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21775340239298070081310B /* AwemeLike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21775342239298070081310B /* AwemeLike */ = {
+			isa = PBXGroup;
+			children = (
+				217753A22392995C0081310B /* Face++ */,
+				217753C62392995D0081310B /* FaceFilter */,
+				217753EF2392995D0081310B /* Player */,
+				217753592392995C0081310B /* Effect */,
+				217753B42392995D0081310B /* EffectCamera */,
+				21775343239298070081310B /* AppDelegate.h */,
+				21775344239298070081310B /* AppDelegate.m */,
+				21775346239298070081310B /* ViewController.h */,
+				21775347239298070081310B /* ViewController.m */,
+				2177565223929B550081310B /* HPPlayerViewController.h */,
+				2177565323929B550081310B /* HPPlayerViewController.m */,
+				2177565123929B550081310B /* HPPlayerViewController.xib */,
+				21775349239298070081310B /* Main.storyboard */,
+				2177565623929B800081310B /* Aweme.storyboard */,
+				2177534C239298090081310B /* Assets.xcassets */,
+				2177534E239298090081310B /* LaunchScreen.storyboard */,
+				21775351239298090081310B /* Info.plist */,
+				21775352239298090081310B /* main.m */,
+			);
+			path = AwemeLike;
+			sourceTree = "<group>";
+		};
+		217753592392995C0081310B /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				217753992392995C0081310B /* effect.bundle */,
+				2177539D2392995C0081310B /* music.bundle */,
+				2177537D2392995C0081310B /* FeatureFilter */,
+				2177536C2392995C0081310B /* 滤镜 */,
+				2177535A2392995C0081310B /* 转场 */,
+				2177539B2392995C0081310B /* HPEffectLoader.h */,
+				2177536B2392995C0081310B /* HPEffectLoader.m */,
+				2177539F2392995C0081310B /* HPModelEffectFeature.h */,
+				2177537B2392995C0081310B /* HPModelEffectFeature.m */,
+				2177536A2392995C0081310B /* HPModelEffect.h */,
+				2177539A2392995C0081310B /* HPModelEffect.m */,
+				217753A12392995C0081310B /* HPRangeEffectFilter.h */,
+				217753792392995C0081310B /* HPRangeEffectFilter.m */,
+				2177539C2392995C0081310B /* HPRangeEffectManager.h */,
+				217753692392995C0081310B /* HPRangeEffectManager.m */,
+				2177537A2392995C0081310B /* HPTwoLookupFilter.h */,
+				217753A02392995C0081310B /* HPTwoLookupFilter.m */,
+				2177537C2392995C0081310B /* HPFaceData.h */,
+			);
+			path = Effect;
+			sourceTree = "<group>";
+		};
+		2177535A2392995C0081310B /* 转场 */ = {
+			isa = PBXGroup;
+			children = (
+				217753602392995C0081310B /* HPModelEffect_Blur.h */,
+				217753672392995C0081310B /* HPModelEffect_Blur.m */,
+				2177535B2392995C0081310B /* HPModelEffect_FaculaBlur.h */,
+				217753632392995C0081310B /* HPModelEffect_FaculaBlur.m */,
+				2177535F2392995C0081310B /* HPModelEffect_Shutdown.h */,
+				217753642392995C0081310B /* HPModelEffect_Shutdown.m */,
+				2177535D2392995C0081310B /* HPModelEffect_Countdown.m */,
+				217753662392995C0081310B /* HPModelEffect_Countdown.h */,
+				217753612392995C0081310B /* HPModelEffect_Scale.h */,
+				217753682392995C0081310B /* HPModelEffect_Scale.m */,
+				2177535E2392995C0081310B /* HPModelEffect_Startup.h */,
+				217753652392995C0081310B /* HPModelEffect_Startup.m */,
+				2177535C2392995C0081310B /* HPModelEffect_Open.h */,
+				217753622392995C0081310B /* HPModelEffect_Open.m */,
+			);
+			path = "转场";
+			sourceTree = "<group>";
+		};
+		2177536C2392995C0081310B /* 滤镜 */ = {
+			isa = PBXGroup;
+			children = (
+				217753732392995C0081310B /* HPModelEffect_Mermaid.h */,
+				2177536D2392995C0081310B /* HPModelEffect_Mermaid.m */,
+				217753742392995C0081310B /* HPModelEffect_Vision.h */,
+				2177536E2392995C0081310B /* HPModelEffect_Vision.m */,
+				217753782392995C0081310B /* HPModelEffect_Mili.h */,
+				2177536F2392995C0081310B /* HPModelEffect_Mili.m */,
+				217753702392995C0081310B /* HPModelEffect_FlashScreen.h */,
+				217753762392995C0081310B /* HPModelEffect_FlashScreen.m */,
+				217753752392995C0081310B /* HPModelEffect_Pane.h */,
+				217753722392995C0081310B /* HPModelEffect_Pane.m */,
+				217753772392995C0081310B /* HPModelEffect_Tremble.h */,
+				217753712392995C0081310B /* HPModelEffect_Tremble.m */,
+			);
+			path = "滤镜";
+			sourceTree = "<group>";
+		};
+		2177537D2392995C0081310B /* FeatureFilter */ = {
+			isa = PBXGroup;
+			children = (
+				217753822392995C0081310B /* Blend */,
+				2177537E2392995C0081310B /* GPUImageFaceMarkupFilter.h */,
+				217753812392995C0081310B /* GPUImageFaceMarkupFilter.m */,
+				217753802392995C0081310B /* GPUImageGeneralFilter.h */,
+				217753982392995C0081310B /* GPUImageGeneralFilter.m */,
+				217753972392995C0081310B /* GPUImageLUTFilter.h */,
+				2177537F2392995C0081310B /* GPUImageLUTFilter.m */,
+			);
+			path = FeatureFilter;
+			sourceTree = "<group>";
+		};
+		217753822392995C0081310B /* Blend */ = {
+			isa = PBXGroup;
+			children = (
+				217753872392995C0081310B /* GPUImageBlendFilterMultiply.h */,
+				217753932392995C0081310B /* GPUImageBlendFilterMultiply.m */,
+				2177538C2392995C0081310B /* GPUImageBlendFilterScreen.h */,
+				217753962392995C0081310B /* GPUImageBlendFilterScreen.m */,
+				217753832392995C0081310B /* GPUImageBlendFilterOverlay.h */,
+				217753902392995C0081310B /* GPUImageBlendFilterOverlay.m */,
+				217753842392995C0081310B /* GPUImageBlendFilterSoftLight.h */,
+				2177538F2392995C0081310B /* GPUImageBlendFilterSoftLight.m */,
+				2177538A2392995C0081310B /* GPUImageBlendFilterHardLight.h */,
+				217753952392995C0081310B /* GPUImageBlendFilterHardLight.m */,
+				217753852392995C0081310B /* GPUImageBlendFilterColorDodge.h */,
+				2177538E2392995C0081310B /* GPUImageBlendFilterColorDodge.m */,
+				2177538D2392995C0081310B /* GPUImageBlendFilterPinLight.h */,
+				217753862392995C0081310B /* GPUImageBlendFilterPinLight.m */,
+				217753942392995C0081310B /* GPUImageBlendFilterAdd.h */,
+				2177538B2392995C0081310B /* GPUImageBlendFilterAdd.m */,
+				217753882392995C0081310B /* GPUImageBlendFilterNormal.h */,
+				217753922392995C0081310B /* GPUImageBlendFilterNormal.m */,
+				217753892392995C0081310B /* GPUImageBlendFilter.h */,
+				217753912392995C0081310B /* GPUImageBlendFilter.m */,
+			);
+			path = Blend;
+			sourceTree = "<group>";
+		};
+		217753A22392995C0081310B /* Face++ */ = {
+			isa = PBXGroup;
+			children = (
+				217753A32392995C0081310B /* MGNetAccount.h */,
+				217753A42392995C0081310B /* MGFaceLicenseHandle.h */,
+				217753A52392995C0081310B /* MegviiLicMgr-iOS-SDK */,
+				217753A92392995C0081310B /* MGFaceppSDK */,
+				217753B32392995C0081310B /* MGFaceLicenseHandle.m */,
+			);
+			path = "Face++";
+			sourceTree = "<group>";
+		};
+		217753A52392995C0081310B /* MegviiLicMgr-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				217753A62392995C0081310B /* libMGLicMgrSDK-0.3.1.a */,
+				217753A72392995C0081310B /* MGLicenseManager.h */,
+				217753A82392995C0081310B /* MGLicenseCommon.h */,
+			);
+			path = "MegviiLicMgr-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		217753A92392995C0081310B /* MGFaceppSDK */ = {
+			isa = PBXGroup;
+			children = (
+				217753AA2392995C0081310B /* libMGFacepp-0.5.2.a */,
+				217753AB2392995C0081310B /* MGFaceppConfig.h */,
+				217753AC2392995C0081310B /* MGAlgorithmInfo.h */,
+				217753AD2392995C0081310B /* MGFacepp.h */,
+				217753AE2392995C0081310B /* MGDetectRectInfo.h */,
+				217753AF2392995C0081310B /* MGFaceppCommon.h */,
+				217753B02392995C0081310B /* MGImageData.h */,
+				217753B12392995C0081310B /* MGFaceInfo.h */,
+				217753B22392995C0081310B /* megviifacepp_0_5_2_model */,
+			);
+			path = MGFaceppSDK;
+			sourceTree = "<group>";
+		};
+		217753B42392995D0081310B /* EffectCamera */ = {
+			isa = PBXGroup;
+			children = (
+				217753B62392995D0081310B /* ChooseEffect */,
+				217753B52392995D0081310B /* HPCameraCaptureViewController.h */,
+				217753C22392995D0081310B /* HPCameraCaptureViewController.m */,
+				217753C02392995D0081310B /* HPCameraCaptureViewModel.h */,
+				217753C42392995D0081310B /* HPCameraCaptureViewModel.m */,
+				217753BF2392995D0081310B /* HPVideoEditViewController.h */,
+				217753C52392995D0081310B /* HPVideoEditViewController.m */,
+				217753C12392995D0081310B /* HPCameraEditViewModel.h */,
+				217753C32392995D0081310B /* HPCameraEditViewModel.m */,
+			);
+			path = EffectCamera;
+			sourceTree = "<group>";
+		};
+		217753B62392995D0081310B /* ChooseEffect */ = {
+			isa = PBXGroup;
+			children = (
+				217753B82392995D0081310B /* HPSliderView.h */,
+				217753BD2392995D0081310B /* HPSliderView.m */,
+				217753B92392995D0081310B /* HPVideoEffectTimeLineView.h */,
+				217753BC2392995D0081310B /* HPVideoEffectTimeLineView.m */,
+				217753B72392995D0081310B /* HPVideoEffectChooseViewController.h */,
+				217753BB2392995D0081310B /* HPVideoEffectChooseViewController.m */,
+				217753BA2392995D0081310B /* HPVideoEffectChooseViewModel.m */,
+				217753BE2392995D0081310B /* HPVideoEffectChooseViewModel.h */,
+			);
+			path = ChooseEffect;
+			sourceTree = "<group>";
+		};
+		217753C62392995D0081310B /* FaceFilter */ = {
+			isa = PBXGroup;
+			children = (
+				217753D62392995D0081310B /* Beauty */,
+				2177565B2392B2990081310B /* FaceDetector.h */,
+				217756682392B29A0081310B /* FaceDetector.mm */,
+				217756582392B2990081310B /* GPUImageFaceCamera.h */,
+				217756632392B29A0081310B /* GPUImageFaceCamera.m */,
+				2177565D2392B2990081310B /* GPUImageFaceMovie.h */,
+				217756712392B29B0081310B /* GPUImageFaceMovie.m */,
+				217756762392B29B0081310B /* GPUImageRotateFilter.h */,
+				217756702392B29B0081310B /* GPUImageRotateFilter.m */,
+				217756692392B29A0081310B /* GPUImageDrawLandmarksFilter.h */,
+				217756592392B2990081310B /* GPUImageDrawLandmarksFilter.m */,
+				217756662392B29A0081310B /* GPUImageBeautyFaceFilter.h */,
+				2177565F2392B29A0081310B /* GPUImageBeautyFaceFilter.m */,
+				2177566F2392B29B0081310B /* GPUImageBaseBeautyFaceFilter.h */,
+				2177565C2392B2990081310B /* GPUImageBaseBeautyFaceFilter.m */,
+				2177566C2392B29B0081310B /* GPUImageBoxDifferenceFilter.h */,
+				2177566E2392B29B0081310B /* GPUImageBoxDifferenceFilter.m */,
+				217756672392B29A0081310B /* GPUImageBoxHighPassFilter.h */,
+				217756722392B29B0081310B /* GPUImageBoxHighPassFilter.m */,
+				2177566B2392B29A0081310B /* GPUImageMagnificationFilter.h */,
+				217756622392B29A0081310B /* GPUImageMagnificationFilter.m */,
+				217756742392B29B0081310B /* GPUImageMyGaussianFilter.h */,
+				2177566A2392B29A0081310B /* GPUImageMyGaussianFilter.m */,
+				217756602392B29A0081310B /* GPUImageStickerFilter.h */,
+				2177566D2392B29B0081310B /* GPUImageStickerFilter.m */,
+				217756612392B29A0081310B /* GPUImageThinFaceFilter.h */,
+				217756772392B29C0081310B /* GPUImageThinFaceFilter.m */,
+			);
+			path = FaceFilter;
+			sourceTree = "<group>";
+		};
+		217753D62392995D0081310B /* Beauty */ = {
+			isa = PBXGroup;
+			children = (
+				217753D72392995D0081310B /* lookUpSkin.png */,
+				217753D82392995D0081310B /* lookUpCustom.png */,
+				217753D92392995D0081310B /* mouth.png */,
+				217753DA2392995D0081310B /* blusher.png */,
+				217753DB2392995D0081310B /* lookUpOrigin.png */,
+				217753DC2392995D0081310B /* lookUpGray.png */,
+				217753DD2392995D0081310B /* lookup2.png */,
+			);
+			path = Beauty;
+			sourceTree = "<group>";
+		};
+		217753EF2392995D0081310B /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				217753F52392995D0081310B /* Audio */,
+				217753F32392995D0081310B /* HPPlayer.h */,
+				217754002392995D0081310B /* HPPlayer.m */,
+				217753FF2392995D0081310B /* HPPlayerSynchronizer.h */,
+				217753F22392995D0081310B /* HPPlayerSynchronizer.m */,
+				217753F42392995D0081310B /* HPVideoOutput.h */,
+				217753F02392995D0081310B /* HPVideoOutput.m */,
+				217753FE2392995D0081310B /* HPVideoDecoder.h */,
+				217753F12392995D0081310B /* HPVideoDecoder.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		217753F52392995D0081310B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				217753F62392995D0081310B /* HPAudioOutput.h */,
+				217753FA2392995D0081310B /* HPAudioOutput.m */,
+				217753FB2392995D0081310B /* HPAudioMix.h */,
+				217753F82392995D0081310B /* HPAudioMix.m */,
+				217753FC2392995D0081310B /* AVAudioSession+RouteUtils.h */,
+				217753F72392995D0081310B /* AVAudioSession+RouteUtils.m */,
+				217753FD2392995D0081310B /* ELAudioSession.h */,
+				217753F92392995D0081310B /* ELAudioSession.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		E63ED830E5124E0AB6C67F45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F25D7C687FB5125859A6C26 /* Pods-AwemeLike.debug.xcconfig */,
+				9D323F5003E7E4D0F91C6CAD /* Pods-AwemeLike.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6F7B503B445B3BD421B0FFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0744133842F8FF688DF28911 /* libPods-AwemeLike.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2177533F239298070081310B /* AwemeLike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21775356239298090081310B /* Build configuration list for PBXNativeTarget "AwemeLike" */;
+			buildPhases = (
+				F72B051A262CFF07C15409AB /* [CP] Check Pods Manifest.lock */,
+				2177533C239298070081310B /* Sources */,
+				2177533D239298070081310B /* Frameworks */,
+				2177533E239298070081310B /* Resources */,
+				F5398D6142CE4D9409107BDC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwemeLike;
+			productName = AwemeLike;
+			productReference = 21775340239298070081310B /* AwemeLike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21775338239298070081310B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = wang;
+				TargetAttributes = {
+					2177533F239298070081310B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 2177533B239298070081310B /* Build configuration list for PBXProject "AwemeLike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21775337239298070081310B;
+			productRefGroup = 21775341239298070081310B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2177533F239298070081310B /* AwemeLike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2177533E239298070081310B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217754362392995D0081310B /* lookUpSkin.png in Resources */,
+				217754212392995D0081310B /* music.bundle in Resources */,
+				2177565423929B550081310B /* HPPlayerViewController.xib in Resources */,
+				2177565723929B800081310B /* Aweme.storyboard in Resources */,
+				2177543B2392995D0081310B /* lookUpGray.png in Resources */,
+				21775350239298090081310B /* LaunchScreen.storyboard in Resources */,
+				2177543C2392995D0081310B /* lookup2.png in Resources */,
+				2177534D239298090081310B /* Assets.xcassets in Resources */,
+				217754392392995D0081310B /* blusher.png in Resources */,
+				217754382392995D0081310B /* mouth.png in Resources */,
+				217754262392995D0081310B /* megviifacepp_0_5_2_model in Resources */,
+				2177541F2392995D0081310B /* effect.bundle in Resources */,
+				2177543A2392995D0081310B /* lookUpOrigin.png in Resources */,
+				217754372392995D0081310B /* lookUpCustom.png in Resources */,
+				2177534B239298070081310B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F5398D6142CE4D9409107BDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AwemeLike/Pods-AwemeLike-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwemeLike/Pods-AwemeLike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F72B051A262CFF07C15409AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AwemeLike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2177533C239298070081310B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2177544B2392995D0081310B /* HPAudioMix.m in Sources */,
+				217754122392995D0081310B /* GPUImageLUTFilter.m in Sources */,
+				2177542C2392995D0081310B /* HPCameraCaptureViewController.m in Sources */,
+				2177540A2392995D0081310B /* HPModelEffect_Mermaid.m in Sources */,
+				2177567C2392B29C0081310B /* GPUImageMagnificationFilter.m in Sources */,
+				2177540F2392995D0081310B /* HPModelEffect_FlashScreen.m in Sources */,
+				217754472392995D0081310B /* HPVideoOutput.m in Sources */,
+				2177540E2392995D0081310B /* HPModelEffect_Pane.m in Sources */,
+				217754112392995D0081310B /* HPModelEffectFeature.m in Sources */,
+				217754042392995D0081310B /* HPModelEffect_Shutdown.m in Sources */,
+				217754152392995D0081310B /* GPUImageBlendFilterAdd.m in Sources */,
+				217756852392B29C0081310B /* GPUImageBoxHighPassFilter.m in Sources */,
+				2177540D2392995D0081310B /* HPModelEffect_Tremble.m in Sources */,
+				2177565523929B550081310B /* HPPlayerViewController.m in Sources */,
+				217754162392995D0081310B /* GPUImageBlendFilterColorDodge.m in Sources */,
+				2177567B2392B29C0081310B /* GPUImageBeautyFaceFilter.m in Sources */,
+				217754132392995D0081310B /* GPUImageFaceMarkupFilter.m in Sources */,
+				217754192392995D0081310B /* GPUImageBlendFilter.m in Sources */,
+				217754182392995D0081310B /* GPUImageBlendFilterOverlay.m in Sources */,
+				217754102392995D0081310B /* HPRangeEffectFilter.m in Sources */,
+				21775348239298070081310B /* ViewController.m in Sources */,
+				2177542E2392995D0081310B /* HPCameraCaptureViewModel.m in Sources */,
+				217754142392995D0081310B /* GPUImageBlendFilterPinLight.m in Sources */,
+				2177544C2392995D0081310B /* ELAudioSession.m in Sources */,
+				217754052392995D0081310B /* HPModelEffect_Startup.m in Sources */,
+				2177544E2392995D0081310B /* HPPlayer.m in Sources */,
+				2177542D2392995D0081310B /* HPCameraEditViewModel.m in Sources */,
+				217754202392995D0081310B /* HPModelEffect.m in Sources */,
+				2177541D2392995D0081310B /* GPUImageBlendFilterScreen.m in Sources */,
+				217754272392995D0081310B /* MGFaceLicenseHandle.m in Sources */,
+				217754492392995D0081310B /* HPPlayerSynchronizer.m in Sources */,
+				217754032392995D0081310B /* HPModelEffect_FaculaBlur.m in Sources */,
+				217754062392995D0081310B /* HPModelEffect_Blur.m in Sources */,
+				217754072392995D0081310B /* HPModelEffect_Scale.m in Sources */,
+				2177541A2392995D0081310B /* GPUImageBlendFilterNormal.m in Sources */,
+				2177541E2392995D0081310B /* GPUImageGeneralFilter.m in Sources */,
+				217756812392B29C0081310B /* GPUImageStickerFilter.m in Sources */,
+				2177567F2392B29C0081310B /* FaceDetector.mm in Sources */,
+				2177541C2392995D0081310B /* GPUImageBlendFilterHardLight.m in Sources */,
+				2177567D2392B29C0081310B /* GPUImageFaceCamera.m in Sources */,
+				2177544D2392995D0081310B /* HPAudioOutput.m in Sources */,
+				217756822392B29C0081310B /* GPUImageBoxDifferenceFilter.m in Sources */,
+				217754022392995D0081310B /* HPModelEffect_Open.m in Sources */,
+				217754282392995D0081310B /* HPVideoEffectChooseViewModel.m in Sources */,
+				2177542F2392995D0081310B /* HPVideoEditViewController.m in Sources */,
+				2177544A2392995D0081310B /* AVAudioSession+RouteUtils.m in Sources */,
+				217754082392995D0081310B /* HPRangeEffectManager.m in Sources */,
+				217754232392995D0081310B /* HPTwoLookupFilter.m in Sources */,
+				217754172392995D0081310B /* GPUImageBlendFilterSoftLight.m in Sources */,
+				21775353239298090081310B /* main.m in Sources */,
+				217756802392B29C0081310B /* GPUImageMyGaussianFilter.m in Sources */,
+				2177542B2392995D0081310B /* HPSliderView.m in Sources */,
+				2177540B2392995D0081310B /* HPModelEffect_Vision.m in Sources */,
+				217756782392B29C0081310B /* GPUImageDrawLandmarksFilter.m in Sources */,
+				2177542A2392995D0081310B /* HPVideoEffectTimeLineView.m in Sources */,
+				217756832392B29C0081310B /* GPUImageRotateFilter.m in Sources */,
+				217754012392995D0081310B /* HPModelEffect_Countdown.m in Sources */,
+				2177541B2392995D0081310B /* GPUImageBlendFilterMultiply.m in Sources */,
+				217754292392995D0081310B /* HPVideoEffectChooseViewController.m in Sources */,
+				21775345239298070081310B /* AppDelegate.m in Sources */,
+				217756792392B29C0081310B /* GPUImageBaseBeautyFaceFilter.m in Sources */,
+				2177540C2392995D0081310B /* HPModelEffect_Mili.m in Sources */,
+				217754482392995D0081310B /* HPVideoDecoder.m in Sources */,
+				217756842392B29C0081310B /* GPUImageFaceMovie.m in Sources */,
+				217754092392995D0081310B /* HPEffectLoader.m in Sources */,
+				217756872392B29C0081310B /* GPUImageThinFaceFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21775349239298070081310B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2177534A239298070081310B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2177534E239298090081310B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2177534F239298090081310B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21775354239298090081310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21775355239298090081310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21775357239298090081310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F25D7C687FB5125859A6C26 /* Pods-AwemeLike.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86GN5VQGBX;
+				INFOPLIST_FILE = AwemeLike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AwemeLike/Face++/MegviiLicMgr-iOS-SDK",
+					"$(PROJECT_DIR)/AwemeLike/Face++/MGFaceppSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.AwemeLike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21775358239298090081310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D323F5003E7E4D0F91C6CAD /* Pods-AwemeLike.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86GN5VQGBX;
+				INFOPLIST_FILE = AwemeLike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AwemeLike/Face++/MegviiLicMgr-iOS-SDK",
+					"$(PROJECT_DIR)/AwemeLike/Face++/MGFaceppSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.AwemeLike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2177533B239298070081310B /* Build configuration list for PBXProject "AwemeLike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21775354239298090081310B /* Debug */,
+				21775355239298090081310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21775356239298090081310B /* Build configuration list for PBXNativeTarget "AwemeLike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21775357239298090081310B /* Debug */,
+				21775358239298090081310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21775338239298070081310B /* Project object */;
+}

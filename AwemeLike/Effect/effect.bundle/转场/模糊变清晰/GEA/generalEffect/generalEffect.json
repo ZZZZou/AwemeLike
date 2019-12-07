@@ -1,0 +1,85 @@
+{
+    "effect": [
+        {
+            "name": "gx",
+            "viewport": [
+                0,
+                0,
+                360,
+                640
+            ],
+            "autoChangeViewport":true,
+            "vertexShader": "resource/gaussian_sigma3.vsh",
+            "vUniforms": [
+                {
+                    "name": "texelWidthOffset",
+                    "type": 300
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 3,
+                    "data": [
+                        0
+                    ]
+                },
+                {
+                    "name": "uScale",
+                    "type": 3,
+                    "data": [
+                        1.0
+                    ]
+                }
+            ],
+            "fragmentShader": "resource/gaussian_sigma3.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 100
+                }
+            ]
+        },
+        {
+            "name": "gy",
+            "viewport": [
+                0,
+                0,
+                360,
+                640
+            ],
+            "autoChangeViewport":true,
+            "inputEffect": [
+                "gx"
+            ],
+            "vertexShader": "resource/gaussian_sigma3.vsh",
+            "vUniforms": [
+                {
+                    "name": "texelWidthOffset",
+                    "type": 3,
+                    "data": [
+                        0
+                    ]
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 301
+                },
+                {
+                    "name": "uScale",
+                    "type": 3,
+                    "data": [
+                        1.0
+                    ]
+                }
+            ],
+            "fragmentShader": "resource/gaussian_sigma3.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                }
+            ]
+        }
+    ],
+    "version": 1.1
+}

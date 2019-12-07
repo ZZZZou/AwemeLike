@@ -1,0 +1,13 @@
+{
+  "effect": {
+    "Link": [
+      {
+        "type": "GeneralEffect",
+        "zorder": 10000,
+        "path": "GESticker_BlingBling4/"
+      }
+    ]
+  },
+  "name": "GeneralEffect_BlingBling4_5",
+  "version": "4.0.0"
+}

@@ -1,0 +1,12 @@
+{
+    "tag": "GESticker_shumberduoshan031dhwe809348028309480324",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "path" : "generalEffect/",
+        "config": "generalEffect.json"
+    }
+}

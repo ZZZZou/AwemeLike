@@ -1,0 +1,153 @@
+{
+    "effect": [
+        {
+            "name": "mlcg_0",
+            "vertexShader": "resource0/vshader.vsh",
+            "vUniforms": [
+                
+            ],
+            "fragmentShader": "resource0/fshader.fsh",
+            "fUniforms": [
+                {
+                    "name": "grabInputImageTexture",
+                    "type": 3000,
+                    "renderCacheKey": "mlcgTexture"
+                },
+                {
+                    "name": "radius",
+                    "type": 3,
+                    "data": [3.0]
+                },
+                {
+                    "name": "texelWidth",
+                    "type": 300
+                }
+            ],
+            "BRCDrawParam": {
+                "BRCDrawMode": 4,
+                "BRCDrawCount": 4,
+                "BRCDrawVertexStep": 3,
+                "BRCDrawUVStep": 2,
+                "BRCDrawVertexData": [
+                    -1.0, -1.0, 0.0,
+                    1.0, -1.0, 0.0,
+                    -1.0, 1.0, 0.0,
+                    1.0, 1.0, 0.0
+                ],
+                "BRCDrawUVData": [
+                    0.0, 0.0,
+                    1.0, 0.0,
+                    0.0, 1.0,
+                    1.0, 1.0
+                ],
+                "BRCDrawIndexData": [
+                    0, 1, 2,
+                    1, 3, 2
+                ]
+            }
+        },
+        {
+            "name": "mlcg_1",
+            "inputEffect": ["mlcg_0"],
+            "vertexShader": "resource1/vshader.vsh",
+            "vUniforms": [
+                
+            ],
+            "fragmentShader": "resource1/fshader.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 100,
+                },
+                {
+                    "name": "grabInputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "radius",
+                    "type": 3,
+                    "data": [3.0]
+                },
+                {
+                    "name": "texelHeight",
+                    "type": 301
+                },
+                {
+                    "name": "xPos",
+                    "type": 3,
+                    "data": [
+                        -0.55,
+                        -0.51,
+                        -0.47,
+                        -0.43,
+                        -0.39,
+                        -0.35,
+                        -0.31,
+                        -0.27,
+                        -0.23,
+                        -0.19,
+                        -0.15,
+                        -0.11,
+                        -0.07,
+                        -0.03,
+                        0.01,
+                        0.05,
+                        0.09,
+                        0.13,
+                        0.17,
+                        0.21,
+                        0.25,
+                        0.29,
+                        0.33,
+                        0.37,
+                        0.41,
+                        0.45,
+                        0.49,
+                        0.53,
+                        0.57,
+                        0.61,
+                        0.65,
+                        0.69,
+                        0.73,
+                        0.77,
+                        0.81,
+                        0.85,
+                        0.89,
+                        0.93,
+                        0.97,
+                        1.01
+                    ]
+                },
+                {
+                    "name": "width",
+                    "type": 3,
+                    "data": [0.55]
+                }
+            ],
+            "BRCDrawParam": {
+                "BRCDrawMode": 4,
+                "BRCDrawCount": 4,
+                "BRCDrawVertexStep": 3,
+                "BRCDrawUVStep": 2,
+                "BRCDrawVertexData": [
+                    -1.0, -1.0, 0.0,
+                    1.0, -1.0, 0.0,
+                    -1.0, 1.0, 0.0,
+                    1.0, 1.0, 0.0
+                ],
+                "BRCDrawUVData": [
+                    0.0, 0.0,
+                    1.0, 0.0,
+                    0.0, 1.0,
+                    1.0, 1.0
+                ],
+                "BRCDrawIndexData": [
+                    0, 1, 2,
+                    1, 3, 2
+                ]
+            }
+        }
+    ],
+    "version": 1.1
+}

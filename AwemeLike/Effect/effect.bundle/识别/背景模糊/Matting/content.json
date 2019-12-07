@@ -1,0 +1,12 @@
+{
+    "requirement": {
+        "faceDetect": false, 
+        "matting": true,
+        "hairColor":false
+    },
+    "content": {
+        "border": {"type":0,"color":[],"fps":0.6}
+    },
+    "tag": "Matting_agh",
+    "version": "1.3"
+}

@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "2D_GE_Line_Vertical/"
+            }
+        ]
+    },
+    "name": "2D_GE_Line_Vertical",
+    "version": "4.0.0"
+}

@@ -1,0 +1,13 @@
+{
+    "content": {
+        "config": "generalEffect.json",
+        "path": "generalEffect/",
+        "version": "1.2"
+    },
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "tag": "GeneralEffect96643BEDFA1B44198B6BFD5F02F24A58",
+    "version": "1.0"
+}

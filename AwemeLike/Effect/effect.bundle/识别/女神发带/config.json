@@ -1,0 +1,35 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable": false,
+                "path": "3DStickerV3_5102/",
+                "type": "3DStickerV3",
+                "zorder": 5102
+            },
+            {
+                "defaultEnable": false,
+                "path": "FaceMakeupV2_2999/",
+                "type": "FaceMakeupV2",
+                "zorder": 2999
+            },
+            {
+                "defaultEnable": false,
+                "path": "Filter_2998/",
+                "type": "Filter",
+                "zorder": 2998
+            }
+        ],
+        "exclusiveScene": [
+            {
+                "sceneKey": "FaceMakeup*",
+                "tagName": [
+                    "FaceMakeupV2_2999/"
+                ],
+                "priority": 9999
+            }
+        ]
+    },
+    "name": "3.5.1MAC90D42AFasva60D4E325F77541",
+    "version": "4.2.0"
+}

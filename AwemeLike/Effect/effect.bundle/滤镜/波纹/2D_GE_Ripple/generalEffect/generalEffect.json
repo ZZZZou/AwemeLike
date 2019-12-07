@@ -1,0 +1,103 @@
+{
+    "effect": [
+        {
+            "name": "2D_GE_Ripple1gf24f23fbwe2",
+            "vertexShader": "resource1/1.vsh",
+            "vUniforms": [
+            ],
+            "fragmentShader": "resource1/1.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 100
+                },
+                {
+                    "name": "wave_img",
+                    "type": 1,
+                    "data": [
+                      "resource1/output_img/cqh0.jpg", "resource1/output_img/cqh0.jpg", 
+                      "resource1/output_img/cqh1.jpg", "resource1/output_img/cqh1.jpg", 
+                      "resource1/output_img/cqh2.jpg", "resource1/output_img/cqh2.jpg", 
+                      "resource1/output_img/cqh3.jpg", "resource1/output_img/cqh3.jpg", 
+                      "resource1/output_img/cqh4.jpg", "resource1/output_img/cqh4.jpg", 
+                      "resource1/output_img/cqh5.jpg", "resource1/output_img/cqh5.jpg",  
+                      "resource1/output_img/cqh6.jpg", "resource1/output_img/cqh6.jpg", 
+                      "resource1/output_img/cqh7.jpg", "resource1/output_img/cqh7.jpg", 
+                      "resource1/output_img/cqh8.jpg", "resource1/output_img/cqh8.jpg", 
+                      "resource1/output_img/cqh9.jpg", "resource1/output_img/cqh9.jpg", 
+                      "resource1/output_img/cqh10.jpg", "resource1/output_img/cqh10.jpg", 
+                      "resource1/output_img/cqh11.jpg", "resource1/output_img/cqh11.jpg", 
+                      "resource1/output_img/cqh12.jpg", "resource1/output_img/cqh12.jpg",
+                      "resource1/output_img/cqh13.jpg", "resource1/output_img/cqh13.jpg", 
+                      "resource1/output_img/cqh14.jpg", "resource1/output_img/cqh14.jpg", 
+                      "resource1/output_img/cqh15.jpg", "resource1/output_img/cqh15.jpg", 
+                      "resource1/output_img/cqh16.jpg", "resource1/output_img/cqh16.jpg", 
+                      "resource1/output_img/cqh17.jpg", "resource1/output_img/cqh17.jpg", 
+                      "resource1/output_img/cqh18.jpg", "resource1/output_img/cqh18.jpg", 
+                      "resource1/output_img/cqh19.jpg", "resource1/output_img/cqh19.jpg", 
+                      "resource1/output_img/cqh20.jpg", "resource1/output_img/cqh20.jpg", 
+                     "resource1/output_img/cqh21.jpg", "resource1/output_img/cqh21.jpg", 
+                     "resource1/output_img/cqh22.jpg", "resource1/output_img/cqh22.jpg", 
+                     "resource1/output_img/cqh23.jpg", "resource1/output_img/cqh23.jpg", 
+                     "resource1/output_img/cqh24.jpg", "resource1/output_img/cqh24.jpg", 
+                     "resource1/output_img/cqh25.jpg", "resource1/output_img/cqh25.jpg", 
+                     "resource1/output_img/cqh26.jpg", "resource1/output_img/cqh26.jpg", 
+                     "resource1/output_img/cqh27.jpg", "resource1/output_img/cqh27.jpg", 
+                     "resource1/output_img/cqh28.jpg", "resource1/output_img/cqh28.jpg", 
+                     "resource1/output_img/cqh29.jpg", "resource1/output_img/cqh29.jpg", 
+                     "resource1/output_img/cqh30.jpg", "resource1/output_img/cqh30.jpg", 
+                     "resource1/output_img/cqh31.jpg", "resource1/output_img/cqh31.jpg"
+                    ]
+                },
+                {
+                    "name": "offset",
+                    "type": 1,
+                    "data": [
+                        "resource1/offset/offset0.jpg", "resource1/offset/offset0.jpg", 
+                        "resource1/offset/offset1.jpg", "resource1/offset/offset1.jpg", 
+                        "resource1/offset/offset2.jpg", "resource1/offset/offset2.jpg", 
+                        "resource1/offset/offset3.jpg", "resource1/offset/offset3.jpg", 
+                        "resource1/offset/offset4.jpg", "resource1/offset/offset4.jpg", 
+                        "resource1/offset/offset5.jpg", "resource1/offset/offset5.jpg",  
+                        "resource1/offset/offset6.jpg", "resource1/offset/offset6.jpg", 
+                        "resource1/offset/offset7.jpg", "resource1/offset/offset7.jpg", 
+                        "resource1/offset/offset8.jpg", "resource1/offset/offset8.jpg", 
+                        "resource1/offset/offset9.jpg", "resource1/offset/offset9.jpg", 
+                        "resource1/offset/offset10.jpg", "resource1/offset/offset10.jpg", 
+                        "resource1/offset/offset11.jpg", "resource1/offset/offset11.jpg", 
+                        "resource1/offset/offset12.jpg", "resource1/offset/offset12.jpg",
+                        "resource1/offset/offset13.jpg", "resource1/offset/offset13.jpg", 
+                        "resource1/offset/offset14.jpg", "resource1/offset/offset14.jpg", 
+                        "resource1/offset/offset15.jpg", "resource1/offset/offset15.jpg", 
+                        "resource1/offset/offset16.jpg", "resource1/offset/offset16.jpg", 
+                        "resource1/offset/offset17.jpg", "resource1/offset/offset17.jpg", 
+                        "resource1/offset/offset18.jpg", "resource1/offset/offset18.jpg", 
+                        "resource1/offset/offset19.jpg", "resource1/offset/offset19.jpg", 
+                        "resource1/offset/offset20.jpg", "resource1/offset/offset20.jpg", 
+                        "resource1/offset/offset21.jpg", "resource1/offset/offset21.jpg", 
+                        "resource1/offset/offset22.jpg", "resource1/offset/offset22.jpg", 
+                        "resource1/offset/offset23.jpg", "resource1/offset/offset23.jpg", 
+                        "resource1/offset/offset24.jpg", "resource1/offset/offset24.jpg", 
+                        "resource1/offset/offset25.jpg", "resource1/offset/offset25.jpg", 
+                        "resource1/offset/offset26.jpg", "resource1/offset/offset26.jpg", 
+                        "resource1/offset/offset27.jpg", "resource1/offset/offset27.jpg", 
+                        "resource1/offset/offset28.jpg", "resource1/offset/offset28.jpg", 
+                        "resource1/offset/offset29.jpg", "resource1/offset/offset29.jpg", 
+                        "resource1/offset/offset30.jpg", "resource1/offset/offset30.jpg", 
+                        "resource1/offset/offset31.jpg", "resource1/offset/offset31.jpg"
+                    ]
+                },
+                {
+                    "name": "texelWidthOffset",
+                    "type": 300
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 301
+                }
+            ]
+            }
+    ],
+    "version": 1.1
+}
+

@@ -1,0 +1,29 @@
+{
+    "effect": [
+               {
+                "name": "Flash",
+                "vertexShader": "resource1/Flash.vsh",
+                "vUniforms": [],
+                "fragmentShader": "resource1/Flash.fsh",
+                "fUniforms": [
+                             {
+                             "name": "inputImageTexture",
+                             "type": 100
+                             },
+                             {
+                                "name": "alphaTimeLine",
+                                "type": 3,
+                                "data":[
+                                     0.33,
+                                     0.66,
+                                     1.0,
+                                     0.66,
+                                     0.33,
+                                     0.0
+                                     ]
+                             }
+                             ]
+               }
+               ],
+    "version": 1.0
+}

@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "GESticker_Leak/"
+            }
+        ]
+    },
+    "name": "GESticker_Leak",
+    "version": "1.0"
+}

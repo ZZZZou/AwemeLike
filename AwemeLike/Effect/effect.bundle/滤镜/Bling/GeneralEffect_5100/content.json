@@ -1,0 +1,13 @@
+{
+    "content": {
+        "config": "generalEffect.json",
+        "path": "generalEffect/",
+        "version": "1.2"
+    },
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "tag": "blingbling_aspectRatio",
+    "version": "1.0"
+}

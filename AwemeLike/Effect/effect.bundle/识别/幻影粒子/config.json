@@ -1,0 +1,41 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable":true,
+                "path":"GrabOrigin/",
+                "type":"GeneralEffect",
+                "zorder": 5000
+            }, 
+            {
+                "defaultEnable": false,
+                "type": "GeneralEffect",
+                "zorder": 5001,
+                "path": "GESticker_Matting/"
+            },
+            {
+                "defaultEnable":true,
+                "path":"GrabMatting/",
+                "type":"GeneralEffect",
+                "zorder": 5002
+            },
+            {
+                "defaultEnable":true,
+                "path": "2DStickerV3_5100/",
+                "type": "2DStickerV3",
+                "zorder": 5100
+            },
+            {
+                "defaultEnable":false,
+                "path":"GESticker_Composite/",
+                "type":"GeneralEffect",
+                "zorder": 5103
+            }
+        ],
+        "requirement": {
+            "faceDetect": true
+        }
+    },
+    "name": "fix_shuffle6yhe34o9tehi346349u4hr2gwh9ogtrghr5o290t8",
+    "version": "3.5.0"
+}

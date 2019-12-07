@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "GESticker_SkinNeedling/"
+            }
+        ]
+    },
+    "name": "GESticker_SkinNeedling",
+    "version": "1.0"
+}

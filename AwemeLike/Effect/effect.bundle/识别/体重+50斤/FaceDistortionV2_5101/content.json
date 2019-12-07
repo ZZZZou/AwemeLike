@@ -1,0 +1,13 @@
+{
+    "content": {
+        "path": "distortion.json",
+        "type": "FaceDistortionCommon"
+    },
+    "requirement": {
+        "faceDetect": true,
+        "hairColor": false,
+        "matting": false
+    },
+    "tag": "FaceDistortionV2_7cc84504ff7d4a7481e8c6433bc30934",
+    "version": "1.1"
+}

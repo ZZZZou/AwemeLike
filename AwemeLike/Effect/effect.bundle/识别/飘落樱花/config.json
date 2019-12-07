@@ -1,0 +1,24 @@
+{
+    "effect": {
+        "Link": [
+            
+            {
+                "path": "Filter/",
+                "type": "Filter",
+                "zorder": 2898
+            },
+            {
+                "path": "FaceMakeupV2/",
+                "type": "FaceMakeupV2",
+                "zorder": 2899
+            },
+            {
+                "path": "2DSticker/",
+                "type": "2DSticker",
+                "zorder": 5003
+            },
+        ]
+    },
+    "name": "ES_da5483ec325340f9977bc653e0aa591e",
+    "version": "2.8.0"
+}

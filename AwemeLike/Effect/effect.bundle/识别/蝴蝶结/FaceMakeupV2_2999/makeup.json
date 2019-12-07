@@ -1,0 +1,139 @@
+{
+  "faceID": [
+    0
+  ],
+  "faceSDKType": 2,
+  "filters": [
+    {
+      "2d_sequence_resources": {
+        "imageCount": 1,
+        "imageInterval": 0.5,
+        "name": "mask2999_",
+        "path": "mask2999/"
+      },
+      "blendMode": 0,
+      "filterType": "mask",
+      "intensity": 1.0,
+      "rect": {
+        "height": 212.11428571428573,
+        "width": 747.8857142857142,
+        "x": 265.14285714285717,
+        "y": 431.54285714285714
+      },
+      "zPosition": 2999
+    },
+    {
+      "2d_sequence_resources": {
+        "imageCount": 1,
+        "imageInterval": 0.05,
+        "name": "mouthPart_res2998_",
+        "path": "mouthPart_res2998/"
+      },
+      "blendMode": 15,
+      "filterType": "mouth_part",
+      "intensity": 0.7211889276649747,
+      "rect": {
+        "height": 167.5,
+        "width": 262.5,
+        "x": 502.5,
+        "y": 710.0
+      },
+      "zPosition": 2998
+    },
+    {
+      "2d_sequence_resources": {
+        "imageCount": 1,
+        "imageInterval": 0.5,
+        "name": "eyepart2997_",
+        "path": "eyepart2997/"
+      },
+      "blendMode": 15,
+      "filterType": "eye_part",
+      "intensity": 0.7315593274111675,
+      "rect": {
+        "height": 162.5,
+        "width": 537.5,
+        "x": 370.0,
+        "y": 427.5
+      },
+      "zPosition": 2997
+    },
+    {
+      "2d_sequence_resources": {
+        "imageCount": 1,
+        "imageInterval": 0.05,
+        "name": "pupil_seq2996_",
+        "path": "pupil_seq2996/"
+      },
+      "blendMode": 0,
+      "blend_resources": {
+        "imageCount": 1,
+        "imageInterval": 0.05,
+        "name": "pupil_blend2996_",
+        "path": "pupil_blend2996/"
+      },
+      "filterType": "pupil",
+      "intensity": 1.0,
+      "mask_resources": {
+        "imageCount": 1,
+        "imageInterval": 0.05,
+        "name": "pupil_mask2996_",
+        "path": "pupil_mask2996/"
+      },
+      "pupilV2Param": {
+        "enableReflect": true,
+        "reflectBlendMode": 21,
+        "reflectIntensity": 0.19042457460732984
+      },
+      "rect": {
+        "height": 71,
+        "width": 366,
+        "x": 457,
+        "y": 485
+      },
+      "zPosition": 2996
+    },
+    {
+      "2d_sequence_resources": {
+        "imageCount": 1,
+        "imageInterval": 0.5,
+        "name": "mask2995_",
+        "path": "mask2995/"
+      },
+      "blendMode": 15,
+      "filterType": "mask",
+      "intensity": 0.7305678934010152,
+      "rect": {
+        "height": 402.5,
+        "width": 605.0,
+        "x": 332.5,
+        "y": 395.0
+      },
+      "zPosition": 2995
+    },
+    {
+      "2d_sequence_resources": {
+        "imageCount": 1,
+        "imageInterval": 0.5,
+        "name": "mask2994_",
+        "path": "mask2994/"
+      },
+      "blendMode": 17,
+      "filterType": "mask",
+      "intensity": 0.7606757198952878,
+      "rect": {
+        "height": 1280.0,
+        "width": 1280.0,
+        "x": 0.0,
+        "y": 0.0
+      },
+      "zPosition": 2994
+    }
+  ],
+  "standardFaceKeyPoints": "FaceMakeupV2/texcoord.txt",
+  "standardFaceSize": {
+    "height": 1280,
+    "width": 1280
+  },
+  "version": "2.9.0"
+}

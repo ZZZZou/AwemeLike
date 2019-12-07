@@ -1,0 +1,49 @@
+[
+    {
+        "action": {
+            "actionGroup": [
+                {
+                    "params": {
+                        "action": "play",
+                        "clipName": "Take 001",
+                        "entity": "3",
+                        "isLoop": false
+                    },
+                    "type": "boneAnimation"
+                }
+            ],
+            "groupType": "ALL"
+        },
+        "event": [
+            {
+                "eventContent": {
+                    "actionId": 2,
+                    "index": 0
+                },
+                "eventType": "FACE_ACTION"
+            }
+        ]
+    },
+    {
+        "action": {
+            "actionGroup": [
+                {
+                    "params": {
+                        "entity": "2",
+                        "index": 0
+                    },
+                    "type": "transformAnimation"
+                }
+            ],
+            "groupType": "ALL"
+        },
+        "event": [
+            {
+                "eventContent": {
+                    "index": 0
+                },
+                "eventType": "FACE_FOLLOW"
+            }
+        ]
+    }
+]

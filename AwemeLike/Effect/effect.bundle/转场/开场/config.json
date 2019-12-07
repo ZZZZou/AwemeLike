@@ -1,0 +1,14 @@
+{
+  "effect": {
+    "Link": [
+      {
+        "defaultEnable": true,
+        "type": "GeneralEffect",
+        "zorder": 5000,
+        "path": "GE_black/"
+      }
+    ]
+  },
+  "name": "4.1.0MAC716DD2A5F0A949879B07C9A2C20BC212",
+  "version": "4.0.0"
+}

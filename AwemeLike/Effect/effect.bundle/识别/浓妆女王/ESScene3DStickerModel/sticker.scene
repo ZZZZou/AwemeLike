@@ -1,0 +1,219 @@
+{
+    "animations": [
+    ],
+    "entities": [
+        {
+            "id": 0,
+            "name": "rootEntity",
+            "orientation": [
+                1,
+                0,
+                0,
+                0
+            ],
+            "parent": "-1",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "components": [
+                {
+                    "cameraParam": {
+                        "FOV": 53.5,
+                        "aspect_ratio": [
+                            0.5600000023841858,
+                            1
+                        ],
+                        "far": 1000,
+                        "near": 1,
+                        "view_port": [
+                            0,
+                            1,
+                            0,
+                            1
+                        ]
+                    },
+                    "name": "CameraComponent9c53706ced44456fa8209cc308b174aa",
+                    "type": "cameraComponent"
+                }
+            ],
+            "id": 3,
+            "name": "CameraEntity0143c440b5904933a9d3b90540627845",
+            "orientation": [
+                1,
+                0,
+                0,
+                0
+            ],
+            "parent": "0",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "components": [
+                {
+                    "attenuation_range": 1,
+                    "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "cookie_size": 1,
+                    "inner_angle": 25,
+                    "intensity": 1,
+                    "outer_angle": 35,
+                    "shadow_area": 100,
+                    "shadow_auto_frustum": true,
+                    "shadow_bias": 0.0010000000474974513,
+                    "shadow_enabled": true,
+                    "shadow_frustum_zfar": 100,
+                    "shadow_frustum_znear": 1,
+                    "shadow_resolution": [
+                        2048,
+                        2048
+                    ],
+                    "shadow_softness": 1,
+                    "shadow_strength": 0.5,
+                    "type": "lightComponent@dir",
+                    "use_soft_shadow": true
+                }
+            ],
+            "id": 4,
+            "name": "light165bdd8a7e0f40599d382243c7de067d",
+            "orientation": [
+                0.9762960076332092,
+                -0.2164396196603775,
+                0,
+                0
+            ],
+            "parent": "0",
+            "position": [
+                0,
+                0,
+                10
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "__isHeadModelEntity": true,
+            "components": [
+                {
+                    "material": 0,
+                    "name": "8109715df9ea49769b6af8a6bcfe3b77",
+                    "type": "materialComponent"
+                },
+                {
+                    "enableCastShadow": true,
+                    "isDefaultPlayAnim": true,
+                    "model": 0,
+                    "name": "e0f8f730a9ac4bf7bd453511ee1ad638",
+                    "type": "meshComponent"
+                }
+            ],
+            "id": 2,
+            "name": "p4a4834b605f843ca95b59597642901d2",
+            "orientation": [
+                1,
+                0,
+                0,
+                0
+            ],
+            "parent": "0",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "__isHeadModelEntity": false,
+            "components": [
+                {
+                    "material": 1,
+                    "name": "bcfa06f9b022410f94f95d638c87421f",
+                    "type": "materialComponent"
+                },
+                {
+                    "enableCastShadow": true,
+                    "isDefaultPlayAnim": true,
+                    "model": 1,
+                    "name": "8bf6ac15848547c8bdda1b2e40a5f553",
+                    "type": "meshComponent"
+                }
+            ],
+            "id": 5,
+            "name": "p5afa40650578463298f4d5bed5d0c381",
+            "orientation": [
+                1,
+                0,
+                0,
+                0
+            ],
+            "parent": "2",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "id": 0,
+            "source": "ESScene3DStickerModel/HeadModel/8109715df9ea49769b6af8a6bcfe3b77.acmtl"
+        },
+        {
+            "id": 1,
+            "source": "ESScene3DStickerModel/Model/7782bd8b71d64fe1b009db41b50b45c5.acmtl"
+        }
+    ],
+    "models": [
+        {
+            "id": 0,
+            "source": "ESScene3DStickerModel/HeadModel/yhwclhur1542347639.acmod"
+        },
+        {
+            "id": 1,
+            "source": "ESScene3DStickerModel/Model/hogqkrpi1559243376.acmod"
+        }
+    ],
+    "particles": [
+    ],
+    "textures": [
+        {
+            "id": 0,
+            "source": "ESScene3DStickerModel/textures/e5928e8de6c3404c88f829283af7956a.png"
+        }
+    ]
+}

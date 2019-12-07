@@ -1,0 +1,19 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable":true,
+                "type": "GeneralEffect",
+                "zorder": 5108,
+                "path": "GE_count/"
+            },
+            {
+                "path": "2DStickerV3/",
+                "type": "2DStickerV3",
+                "zorder": 5109
+            }
+        ]
+    },
+    "name": "3.5.2MACEBB4CCE8B9809382NJHWE09sagasBEA6968E50",
+    "version": "4.0.0"
+}

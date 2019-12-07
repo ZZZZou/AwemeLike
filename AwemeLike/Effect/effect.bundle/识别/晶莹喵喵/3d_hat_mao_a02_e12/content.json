@@ -1,0 +1,31 @@
+{
+    "content": {
+        "events": {
+            "faceNums": 1,
+            "params": [
+                {
+                    "type": "face",
+                    "useCoordUnit_M": true
+                }
+            ],
+            "source": "./sticker.event",
+            "version": 2
+        },
+        "replaceableTexture": [],
+        "scenes": [
+            {
+                "id": 0,
+                "isRevPostProc": true,
+                "name": "scene0",
+                "source": "./sticker.scene"
+            }
+        ],
+        "useOccluderM": true
+    },
+    "requirement": {
+        "faceDetect": true,
+        "matting": false
+    },
+    "tag": "mao_a2",
+    "version": "1.2"
+}

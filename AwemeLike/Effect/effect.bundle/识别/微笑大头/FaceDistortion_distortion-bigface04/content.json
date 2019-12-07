@@ -1,0 +1,13 @@
+{
+  "content" : {
+    "type" : "FaceDistortionCommon",
+    "path" : "distortion.json"
+  },
+  "requirement" : {
+    "matting" : false,
+    "faceDetect" : true,
+    "hairColor" : false
+  },
+  "tag" : "FaceDistortion_Tool",
+  "version" : "1.1"
+}

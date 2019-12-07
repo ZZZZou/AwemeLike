@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "GESticker_SoulScale/"
+            }
+        ]
+    },
+    "name": "GESticker_SoulScale",
+    "version": "1.1"
+}

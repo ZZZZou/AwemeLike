@@ -1,0 +1,13 @@
+{
+    "tag": "GESticker2wehjfk1we342512jhg3",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "headSeg": false
+    },
+    "content": {
+        "path": "generalEffect/",
+        "config": "generalEffect.json",
+        "version": "1.2"
+    }
+}

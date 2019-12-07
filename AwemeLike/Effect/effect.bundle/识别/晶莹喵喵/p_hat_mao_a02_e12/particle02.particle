@@ -1,0 +1,98 @@
+{
+    "version": "1.0",
+    "name": "jet3.veparticle",
+    "quota" : 500,
+    "emitters": [
+        { 
+            "type": "BOX",
+            "name": "boxEmitter",
+            "keepLocal": false,
+            "isEnabled": true,
+            "color": [1.0, 1.0, 1.0, 1.0],
+            "position": [1.1, 2.6, 1.370],
+            "angle": {
+                "type": "FIXED",
+                "value": 0.16
+            },
+            "velocity": {
+                "type": "RANDOM",
+                "max": 0,
+                "min": 0
+            },
+            "emissionRate": {
+                "type": "FIXED",
+                "value": 100
+            },
+            "totalTimeToLive": {
+                "type": "RANDOM",
+                "max": 2,
+                "min": 1
+            },
+            "width": {
+                "type": "RANDOM",
+                "max": 1.5,
+                "min": 1.5
+            },
+            "height": {
+                "type": "RANDOM",
+                "max": 1.5,
+                "min": 1.5
+            },
+            "boxWidth": 0.1,
+            "boxHeight": 0.1,
+            "boxDepth": 0.1
+        }
+    ],
+    "affectors": [
+        {
+            "type": "COLOR",
+            "name": "colorAffector",
+            "colors": [
+       [0.0, 1,1, 1, 0.5],
+       [1.0, 1, 1, 1, 0.3]
+            ]
+        },
+        {
+             "type": "GRAVITY",
+             "name": "gravityAffector",
+             "position" : [0.0, 5.9, 0.0],
+             "gravity" : 2.4
+        },
+        {
+            "type": "TEXTURE_ANIMATION",
+            "name": "textureAnimationAffector",
+            "animationType": "loop",
+            "animationTimeStep": 0.02,
+            "textureCoordsStart": 0,
+            "textureCoordsEnd": 25
+        },
+        {
+            "type": "SCALE",
+            "name": "scaleAffector",
+            "scaleX": {
+                "type": "FIXED",
+                "value": -1
+            },
+            "scaleY": {
+                "type": "RANDOM",
+                "max": -1,
+                "min": -1
+            }
+        },
+		{
+		    "type": "TEXTURE_ROTATION",
+			"name": "textureRotation",
+			"useOwnRotationSpeed": true,
+			"rotationSpeed": {
+                "type": "RANDOM",
+                "max": 0.0,
+                "min": 0.0
+            },
+			"rotation": {
+                "type": "RANDOM",
+                "max": -3.0,
+                "min": -3.0
+            }
+		}
+    ]
+}

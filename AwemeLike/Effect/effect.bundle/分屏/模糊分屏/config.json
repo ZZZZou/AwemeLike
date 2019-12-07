@@ -1,0 +1,18 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 5001,
+                "path": "GrabFrame/"
+            },
+            {
+                "type": "GeneralEffect",
+                "zorder": 5004,
+                "path": "GESticker_blur/"
+            }
+        ]
+    },
+    "name": "2D_GE_3bar_blur_gjoeg45t40h9hy9t3356uj5nj89go4nlHIU",
+    "version": "3.5.0"
+}

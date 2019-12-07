@@ -1,0 +1,28 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "path": "FaceMakeupV2_2999/",
+                "type": "FaceMakeupV2",
+                "zorder": 5000
+            },
+            {
+                "needblend": false,
+                "path": "ESScene3DStickerModel/",
+                "type": "3DStickerV3",
+                "zorder": 5001
+            }
+        ],
+        "exclusiveScene": [
+            {
+                "sceneKey": "FaceMakeup*",
+                "tagName": [
+                    "FaceMakeupV2_2999/"
+                ],
+                "priority": 9999
+            }
+        ]
+    },
+    "name": "ES_6f659eedffas1bb597cb71e036bf7a",
+    "version": "4.2.0"
+}

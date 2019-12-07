@@ -1,0 +1,19 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 1,
+                "path": "GESticker_Background_Blur/"
+            },
+             {
+             "type": "Matting",
+             "needblend": false,
+             "zorder": 2,
+             "path": "Matting/"
+             }
+        ]
+    },
+    "name": "Matting_Background_Blufasfr2",
+    "version": "4.0.0"
+}

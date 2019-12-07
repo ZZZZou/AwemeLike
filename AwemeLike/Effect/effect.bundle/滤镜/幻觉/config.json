@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "GESticker_RedBlueVertigo/"
+            }
+        ]
+    },
+    "name": "2D_GE_RedBlueVertigo",
+    "version": "1.1"
+}

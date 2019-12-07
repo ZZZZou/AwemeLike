@@ -1,0 +1,14 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable":true,
+                "path": "2D_GE_three/",
+                "type": "GeneralEffect",
+                "zorder": 5005
+            }
+        ]
+    },
+    "name": "ES_5d9blweyeg1adalknflkwejtlkjqsfes54dsg5df7flkwer65",
+    "version": "2.9.1"
+}

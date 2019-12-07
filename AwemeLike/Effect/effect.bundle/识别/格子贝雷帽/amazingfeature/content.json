@@ -1,0 +1,11 @@
+{
+    "content": {
+        
+    },
+    "requirement": {
+        "faceDetect": true,
+        "matting": false
+    },
+    "tag": "scene3d_a3ab8ccc367d4eff8a427cf54e2c262e",
+    "version": "1.2"
+}

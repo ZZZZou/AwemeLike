@@ -1,0 +1,64 @@
+{
+  "distortions" : [
+    {
+      "angle" : 0,
+      "radiusY" : 3.893531084060669,
+      "offsetY" : 0.1707849949598312,
+      "min" : 0,
+      "offsetX" : 0,
+      "scale" : 13.37390995025635,
+      "type" : 1,
+      "max" : 1,
+      "pos" : 98,
+      "radiusX" : 8.303054809570312
+    },
+    {
+      "angle" : 0,
+      "radiusY" : 4.365915775299072,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "scale" : 9.166061401367188,
+      "type" : 1,
+      "max" : 1,
+      "pos" : 105,
+      "radiusX" : 4.31322717666626
+    },
+    {
+      "angle" : 0,
+      "radiusY" : 4.365915775299072,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "scale" : 9.166061401367188,
+      "type" : 1,
+      "max" : 1,
+      "pos" : 104,
+      "radiusX" : 4.31322717666626
+    },
+    {
+      "angle" : 0,
+      "radiusY" : 7.005814075469971,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "scale" : 3.212209939956665,
+      "type" : 1,
+      "max" : 1,
+      "pos" : 43,
+      "radiusX" : 6.062862873077393
+    },
+    {
+      "angle" : -90,
+      "radiusY" : 2.073038101196289,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "scale" : 1.755087018013,
+      "type" : 2,
+      "max" : 1,
+      "pos" : 46,
+      "radiusX" : 10.28161334991455
+    }
+  ]
+}

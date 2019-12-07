@@ -1,0 +1,14 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable": false,
+                "path": "GeneralEffect_5100/",
+                "type": "GeneralEffect",
+                "zorder": 5100
+            }
+        ]
+    },
+    "name": "blingbling_aspectRatio",
+    "version": "4.0.0"
+}

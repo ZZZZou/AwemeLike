@@ -1,0 +1,24 @@
+[
+    {
+        "action": {
+            "actionGroup": [
+                {
+                    "params": {
+                        "entity": "2",
+                        "featureTag": "scene3d_de04487d18884a2ba5d69d1746386338"
+                    },
+                    "type": "transformAnimation"
+                }
+            ],
+            "groupType": "ALL"
+        },
+        "event": [
+            {
+                "eventContent": {
+                    "index": 0
+                },
+                "eventType": "FACE_FOLLOW"
+            }
+        ]
+    }
+]

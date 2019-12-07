@@ -1,0 +1,14 @@
+{
+    "tag": "GESticker_yehua_mattinght34o9h930yi4348ehyjukbgo9p",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "needblend": false,
+    "content": {
+        "path": "generalEffect/",
+        "config": "generalEffect.json",
+        "version": "1.2"
+    }
+}

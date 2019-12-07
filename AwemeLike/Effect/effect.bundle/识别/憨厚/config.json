@@ -1,0 +1,14 @@
+{
+    "effect": {
+        "Link": [
+                 {
+                 "type": "FaceDistortion",
+                 "zorder": 1,
+                 "path": "FaceDistortion/"
+                 }
+                 ]
+    },
+    "name": "FaceDistortion_Honest",
+    "version": "1.1"
+}
+

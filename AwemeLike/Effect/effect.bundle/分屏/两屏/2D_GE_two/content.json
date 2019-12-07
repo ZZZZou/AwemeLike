@@ -1,0 +1,11 @@
+{
+    "tag": "GESticker_fp_twodnodelay",
+    "version": "1.0",
+    "requirement": {
+        "matting": false
+    },
+    "content": {
+        "path" : "generalEffect/",
+        "config": "generalEffect.json"
+    }
+}

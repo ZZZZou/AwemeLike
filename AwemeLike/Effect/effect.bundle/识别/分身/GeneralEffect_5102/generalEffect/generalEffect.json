@@ -1,0 +1,22 @@
+{
+    "effect": [
+               {
+               "name": "Fenshen2",
+               "vertexShader": "resource1/vshader.vsh",
+               "fUniforms": [
+                             {
+                             "name": "inputImageTexture",
+                             "type": 102
+                             },
+                             {
+                                "name": "inputImageTextureMask4",
+                                "type": 1,
+                                "data": ["resource1/mask4.png"]
+                             }
+                             ],
+               "fragmentShader": "resource1/fshader.fsh",
+               "vUniforms": [ ]
+               }
+               ],
+    "version": 1.1
+}

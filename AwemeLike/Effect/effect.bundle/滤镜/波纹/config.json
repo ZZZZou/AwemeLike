@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "2D_GE_Ripple/"
+            }
+        ]
+    },
+    "name": "2D_GE_Ripplbtasfaber",
+    "version": "3.1.0"
+}

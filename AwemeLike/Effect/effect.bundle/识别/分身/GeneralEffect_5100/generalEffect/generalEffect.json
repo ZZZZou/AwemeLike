@@ -1,0 +1,37 @@
+{
+    "effect": [
+               {
+               "name": "Fenshen",
+               "vertexShader": "resource1/vshader.vsh",
+               "fUniforms": [
+                             {
+                             "name": "inputImageTexture",
+                             "type": 100
+                             },
+                             {
+                                "name": "inputImageTextureMask1",
+                                "type": 1,
+                                "data": ["resource1/mask1.png"]
+                             },
+                             {
+                                "name": "inputImageTextureMask2",
+                                "type": 1,
+                                "data": ["resource1/mask2.png"]
+                             },
+                             {
+                                "name": "inputImageTextureMask3",
+                                "type": 1,
+                                "data": ["resource1/mask3.png"]
+                             },
+                             {
+                                "name": "inputImageTextureMask4",
+                                "type": 1,
+                                "data": ["resource1/mask4.png"]
+                             }
+                             ],
+               "fragmentShader": "resource1/fshader.fsh",
+               "vUniforms": [ ]
+               }
+               ],
+    "version": 1.1
+}

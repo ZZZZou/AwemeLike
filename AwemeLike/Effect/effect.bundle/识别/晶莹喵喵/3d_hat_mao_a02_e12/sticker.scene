@@ -1,0 +1,335 @@
+{
+    "animTextures": [],
+    "animations": [
+        {
+            "id": 3,
+            "source": "3d_hat_mao_a02_e12/mao_a2/model.acanim"
+        }
+    ],
+    "entities": [
+        {
+            "id": 0,
+            "name": "rootEntity",
+            "orientation": [
+                1,
+                0,
+                0,
+                0
+            ],
+            "parent": "-1",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "components": [
+                {
+                    "cameraParam": {
+                        "FOV": 53.13,
+                        "aspect_ratio": [
+                            0.5625,
+                            1
+                        ],
+                        "cameraType": "PERSPECTIVE",
+                        "far": 1000,
+                        "near": 1,
+                        "view_port": [
+                            0,
+                            1,
+                            0,
+                            1
+                        ]
+                    },
+                    "name": "camera0",
+                    "type": "cameraComponent"
+                }
+            ],
+            "id": 1,
+            "name": "camera0",
+            "orientation": [
+                1,
+                0,
+                0,
+                0
+            ],
+            "parent": "0",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "components": [
+                {
+                    "enableCastShadow": false,
+                    "model": 2,
+                    "name": "mesh",
+                    "type": "meshComponent"
+                },
+                {
+                    "material": 2,
+                    "name": "no-effect",
+                    "type": "materialComponent"
+                }
+            ],
+            "id": 2,
+            "name": "occluder",
+            "orientation": [
+                1,
+                0,
+                0,
+                0
+            ],
+            "parent": "0",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "isVisible": false
+        },
+        {
+            "components": [
+                {
+                    "animation": 3,
+                    "defaultPlayAnimName": "Take 001",
+                    "enableCastShadow": false,
+                    "isDefaultPlayAnim": true,
+                    "model": 3,
+                    "name": "mesh",
+                    "type": "meshComponent"
+                },
+                {
+                    "material": 3,
+                    "name": "no-effect",
+                    "type": "materialComponent"
+                }
+            ],
+            "id": 3,
+            "name": "3d_hat_mao_a01_e12.fbx",
+            "parent": "2"
+        },
+        {
+            "components": [
+                {
+                    "attenuation_range": 0.5,
+                    "attenuation_range_inverse": 2.3,
+                    "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "intensity": 0.2,
+                    "shadow_bias": 1.7,
+                    "shadow_enabled": true,
+                    "shadow_resolution": [
+                        0.7,
+                        1.8
+                    ],
+                    "shadow_softness": 1.9,
+                    "shadow_strength": 1.8,
+                    "type": "lightComponent@point",
+                    "use_soft_shadow": false
+                }
+            ],
+            "id": 4,
+            "name": "pointLight",
+            "orientation": [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+            ],
+            "parent": "0",
+            "position": [
+                60,
+                630,
+                1000
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "components": [
+                {
+                    "attenuation_range": 0.5,
+                    "attenuation_range_inverse": 2.3,
+                    "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "intensity": 0,
+                    "shadow_bias": 1.7,
+                    "shadow_cascade_count": 100,
+                    "shadow_cascade_level_scale": [
+                        3.1,
+                        3.2,
+                        3.3,
+                        3.4
+                    ],
+                    "shadow_enabled": true,
+                    "shadow_resolution": [
+                        0.7,
+                        1.8
+                    ],
+                    "shadow_softness": 1.9,
+                    "shadow_strength": 1.8,
+                    "type": "lightComponent@dir",
+                    "use_soft_shadow": false
+                }
+            ],
+            "id": 5,
+            "name": "dirLight",
+            "orientation": [
+                0.9238795325112866,
+                -0.3826834323650898,
+                0.0,
+                -0.0
+            ],
+            "parent": "0",
+            "position": [
+                -20,
+                -20,
+                -20
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "components": [
+                {
+                    "attenuation_range": 0.5,
+                    "attenuation_range_inverse": 2.3,
+                    "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "inner_angle": 5,
+                    "intensity": 0,
+                    "outer_angle": 10,
+                    "shadow_bias": 1.7,
+                    "shadow_enabled": true,
+                    "shadow_resolution": [
+                        0.7,
+                        1.8
+                    ],
+                    "shadow_softness": 1.9,
+                    "shadow_strength": 1.8,
+                    "type": "lightComponent@spot",
+                    "use_soft_shadow": false
+                }
+            ],
+            "id": 6,
+            "name": "spotLight",
+            "orientation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "parent": "0",
+            "position": [
+                -20,
+                -20,
+                -20
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "components": [
+                {
+                    "name": "postHandler0",
+                    "postEffects": [
+                        {
+                            "blurCount": 0.3,
+                            "blurRadius": 0.4,
+                            "brightTheshold": 0,
+                            "color": [
+                                0.3,
+                                0.3,
+                                0.3
+                            ],
+                            "name": "bloom"
+                        }
+                    ],
+                    "type": "postEffectHandler"
+                }
+            ],
+            "id": 7,
+            "name": "entity",
+            "orientation": [
+                1,
+                0,
+                0,
+                0
+            ],
+            "parent": "0",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        }
+    ],
+    "groups": [],
+    "materials": [
+        {
+            "id": 2,
+            "source": "3d_hat_mao_a02_e12/occluder/material.acmtl"
+        },
+        {
+            "id": 3,
+            "source": "3d_hat_mao_a02_e12/mao_a2/material.acmtl"
+        }
+    ],
+    "models": [
+        {
+            "id": 2,
+            "source": "3d_hat_mao_a02_e12/occluder/occluder.acmod"
+        },
+        {
+            "id": 3,
+            "source": "3d_hat_mao_a02_e12/mao_a2/model.acmod"
+        }
+    ],
+    "particles": [],
+    "textures": []
+}

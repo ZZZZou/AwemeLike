@@ -1,0 +1,18 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "GESticker_tvold/"
+            },
+             {
+                 "path": "2DStickerV3/",
+                 "type": "2DStickerV3",
+                 "zorder": 10005
+             }
+        ]
+    },
+    "name": "2D_GE_MultiView3_ZHW",
+    "version": "2.9.1"
+}

@@ -1,0 +1,11 @@
+{
+    "content": {
+        "path": "sticker.json"
+    },
+    "requirement": {
+        "faceDetect": true,
+        "matting": false
+    },
+    "tag": "2DSticker_3_2475df281f734191a4e82a9996c98229",
+    "version": "1.0"
+}

@@ -1,0 +1,179 @@
+{
+    "parts": {
+        "entityname56805399E59F44BD8145BF4B3C7B4369": {
+            "clipname1": {
+                "alphaFactor": 1.0,
+                "blendmode": 0,
+                "fps": 16,
+                "height": 889,
+                "textureIdx": {
+                    "idx": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        9,
+                        9,
+                        9,
+                        9,
+                        9,
+                        9,
+                    ],
+                    "type": "image"
+                },
+                "transformParams": {
+                    "position": {
+                        "point0": {
+                            "anchor": [
+                                0.0,
+                                0.5
+                            ],
+                            "point": [
+                                {
+                                    "idx": "topright",
+                                    "relationRef": 0,
+                                    "relationType": "foreground",
+                                    "weight": 0.0
+                                },
+                                {
+                                    "idx": "bottomleft",
+                                    "relationRef": 0,
+                                    "relationType": "foreground",
+                                    "weight": 0.5000625
+                                }
+                            ]
+                        },
+                        "point1": {
+                            "anchor": [
+                                1.0,
+                                0.5
+                            ],
+                            "point": [
+                                {
+                                    "idx": "topright",
+                                    "relationRef": 0,
+                                    "relationType": "foreground",
+                                    "weight": 1.0
+                                },
+                                {
+                                    "idx": "bottomleft",
+                                    "relationRef": 0,
+                                    "relationType": "foreground",
+                                    "weight": 0.5000625
+                                }
+                            ]
+                        }
+                    },
+                    "relation": {
+                        "foreground": 1
+                    },
+                    "relationIndex": [
+                        0
+                    ],
+                    "relationRefOrder": 0,
+                    "rotationtype": 1,
+                    "scale": {
+                        "scaleY": {
+                            "factor": 1.000125
+                        }
+                    }
+                },
+                "transformType": "FOLLOW",
+                "width": 500,
+                "zorder": 5000
+            },
+            "clipname2": {
+                "alphaFactor": 1.0,
+                "blendmode": 0,
+                "fps": 0,
+                "height": 889,
+                "textureIdx": {
+                    "idx": [
+                        10
+                    ],
+                    "type": "image"
+                },
+                "transformParams": {
+                    "position": {
+                        "point0": {
+                            "anchor": [
+                                0.0,
+                                0.5
+                            ],
+                            "point": [
+                                {
+                                    "idx": "topright",
+                                    "relationRef": 0,
+                                    "relationType": "foreground",
+                                    "weight": 0.0
+                                },
+                                {
+                                    "idx": "bottomleft",
+                                    "relationRef": 0,
+                                    "relationType": "foreground",
+                                    "weight": 0.5000625
+                                }
+                            ]
+                        },
+                        "point1": {
+                            "anchor": [
+                                1.0,
+                                0.5
+                            ],
+                            "point": [
+                                {
+                                    "idx": "topright",
+                                    "relationRef": 0,
+                                    "relationType": "foreground",
+                                    "weight": 1.0
+                                },
+                                {
+                                    "idx": "bottomleft",
+                                    "relationRef": 0,
+                                    "relationType": "foreground",
+                                    "weight": 0.5000625
+                                }
+                            ]
+                        }
+                    },
+                    "relation": {
+                        "foreground": 1
+                    },
+                    "relationIndex": [
+                        0
+                    ],
+                    "relationRefOrder": 0,
+                    "rotationtype": 1,
+                    "scale": {
+                        "scaleY": {
+                            "factor": 1.000125
+                        }
+                    }
+                },
+                "transformType": "FOLLOW",
+                "width": 500,
+                "zorder": 4999
+            }
+        }
+    },
+    "texturefiles": [
+        "clipname1/clipname1_000.png",
+        "clipname1/clipname1_001.png",
+        "clipname1/clipname1_002.png",
+        "clipname1/clipname1_003.png",
+        "clipname1/clipname1_004.png",
+        "clipname1/clipname1_005.png",
+        "clipname1/clipname1_006.png",
+        "clipname1/clipname1_007.png",
+        "clipname1/clipname1_008.png",
+        "clipname1/clipname1_009.png",
+        "clipname2/clipname2_000.png"
+    ],
+    "version": "2.9.1"
+}

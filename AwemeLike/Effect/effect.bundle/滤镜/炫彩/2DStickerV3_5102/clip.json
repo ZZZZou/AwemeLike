@@ -1,0 +1,650 @@
+{
+  "parts": {
+    "entitynameCAD30638EC524D0E8F0F1D98A8540E75": {
+      "clipname1_heightAlign": {
+        "alphaFactor": 0.3476358413696289,
+        "blendmode": 1015,
+        "fps": 16,
+        "height": 818,
+        "textureIdx": {
+          "idx": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "type": "image"
+        },
+        "transformParams": {
+          "position": {
+            "point0": {
+              "anchor": [
+                  0.5,
+                  0
+              ],
+              "point": [
+                  {
+                      "idx": "topleft",
+                      "relationRef": 0,
+                      "relationType": "foreground",
+                      "weight": 0.5
+                  },
+                  {
+                      "idx": "topright",
+                      "relationRef": 0,
+                      "relationType": "foreground",
+                      "weight": 0.5
+                  }
+              ]
+            },
+            "point1": {
+              "anchor": [
+                  0.5,
+                  1
+              ],
+              "point": [
+                  {
+                      "idx": "bottomleft",
+                      "relationRef": 0,
+                      "relationType": "foreground",
+                      "weight": 0.5
+                  },
+                  {
+                      "idx": "bottomright",
+                      "relationRef": 0,
+                      "relationType": "foreground",
+                      "weight": 0.5
+                  }
+              ]
+            }
+          },
+          "relation": {
+            "foreground": 1
+          },
+          "relationIndex": [
+            0
+          ],
+          "relationRefOrder": 0,
+          "rotationtype": 1,
+          "scale": {
+            "scaleY": {
+              "factor": 1.0
+            }
+          }
+        },
+        "transformType": "FOLLOW",
+        "width": 460,
+        "zorder": 5000
+      },
+      "clipname1_widthAlign": {
+        "alphaFactor": 0.3476358413696289,
+        "blendmode": 1015,
+        "fps": 16,
+        "height": 818,
+        "textureIdx": {
+          "idx": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "type": "image"
+        },
+        "transformParams": {
+          "position": {
+            "point0": {
+                    "anchor": [0.0, 0.5],
+                    "point": [{
+                            "idx": "topleft",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }, {
+                            "idx": "bottomleft",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }]
+            },
+            "point1": {
+                    "anchor": [1.0, 0.5],
+                    "point": [{
+                            "idx": "topright",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }, {
+                            "idx": "bottomright",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }]
+            }
+          },
+          "relation": {
+            "foreground": 1
+          },
+          "relationIndex": [
+            0
+          ],
+          "relationRefOrder": 0,
+          "rotationtype": 1,
+          "scale": {
+            "scaleY": {
+              "factor": 1.0
+            }
+          }
+        },
+        "transformType": "FOLLOW",
+        "width": 460,
+        "zorder": 5000
+      },
+      "clipname2_heightAlign": {
+        "alphaFactor": 0.554258041381836,
+        "blendmode": 1017,
+        "fps": 16,
+        "height": 818,
+        "textureIdx": {
+          "idx": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "type": "image"
+        },
+        "transformParams": {
+          "position": {
+            "point0": {
+              "anchor": [
+                  0.5,
+                  0
+              ],
+              "point": [
+                  {
+                      "idx": "topleft",
+                      "relationRef": 0,
+                      "relationType": "foreground",
+                      "weight": 0.5
+                  },
+                  {
+                      "idx": "topright",
+                      "relationRef": 0,
+                      "relationType": "foreground",
+                      "weight": 0.5
+                  }
+              ]
+            },
+            "point1": {
+              "anchor": [
+                  0.5,
+                  1
+              ],
+              "point": [
+                  {
+                      "idx": "bottomleft",
+                      "relationRef": 0,
+                      "relationType": "foreground",
+                      "weight": 0.5
+                  },
+                  {
+                      "idx": "bottomright",
+                      "relationRef": 0,
+                      "relationType": "foreground",
+                      "weight": 0.5
+                  }
+              ]
+            }
+          },
+          "relation": {
+            "foreground": 1
+          },
+          "relationIndex": [
+            0
+          ],
+          "relationRefOrder": 0,
+          "rotationtype": 1,
+          "scale": {
+            "scaleY": {
+              "factor": 1.0
+            }
+          }
+        },
+        "transformType": "FOLLOW",
+        "width": 460,
+        "zorder": 4999
+      },
+      "clipname2_widthAlign": {
+        "alphaFactor": 0.554258041381836,
+        "blendmode": 1017,
+        "fps": 16,
+        "height": 818,
+        "textureIdx": {
+          "idx": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "type": "image"
+        },
+        "transformParams": {
+          "position": {
+            "point0": {
+                    "anchor": [0.0, 0.5],
+                    "point": [{
+                            "idx": "topleft",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }, {
+                            "idx": "bottomleft",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }]
+            },
+            "point1": {
+                    "anchor": [1.0, 0.5],
+                    "point": [{
+                            "idx": "topright",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }, {
+                            "idx": "bottomright",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }]
+            }
+          },
+          "relation": {
+            "foreground": 1
+          },
+          "relationIndex": [
+            0
+          ],
+          "relationRefOrder": 0,
+          "rotationtype": 1,
+          "scale": {
+            "scaleY": {
+              "factor": 1.0
+            }
+          }
+        },
+        "transformType": "FOLLOW",
+        "width": 460,
+        "zorder": 4999
+      },
+      "clipname3_heightAlign": {
+        "alphaFactor": 0.1465150547027588,
+        "blendmode": 0,
+        "fps": 16,
+        "height": 818,
+        "textureIdx": {
+          "idx": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "type": "image"
+        },
+        "transformParams": {
+          "position": {
+            "point0": {
+                "anchor": [
+                    0.5,
+                    0
+                ],
+                "point": [
+                    {
+                        "idx": "topleft",
+                        "relationRef": 0,
+                        "relationType": "foreground",
+                        "weight": 0.5
+                    },
+                    {
+                        "idx": "topright",
+                        "relationRef": 0,
+                        "relationType": "foreground",
+                        "weight": 0.5
+                    }
+                ]
+            },
+            "point1": {
+                "anchor": [
+                    0.5,
+                    1
+                ],
+                "point": [
+                    {
+                        "idx": "bottomleft",
+                        "relationRef": 0,
+                        "relationType": "foreground",
+                        "weight": 0.5
+                    },
+                    {
+                        "idx": "bottomright",
+                        "relationRef": 0,
+                        "relationType": "foreground",
+                        "weight": 0.5
+                    }
+                ]
+            }
+          },
+          "relation": {
+            "foreground": 1
+          },
+          "relationIndex": [
+            0
+          ],
+          "relationRefOrder": 0,
+          "rotationtype": 1,
+          "scale": {
+            "scaleY": {
+              "factor": 1.0
+            }
+          }
+        },
+        "transformType": "FOLLOW",
+        "width": 460,
+        "zorder": 4998
+      },
+      "clipname3_widthAlign": {
+        "alphaFactor": 0.1465150547027588,
+        "blendmode": 0,
+        "fps": 16,
+        "height": 818,
+        "textureIdx": {
+          "idx": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "type": "image"
+        },
+        "transformParams": {
+          "position": {
+            "point0": {
+                    "anchor": [0.0, 0.5],
+                    "point": [{
+                            "idx": "topleft",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }, {
+                            "idx": "bottomleft",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }]
+            },
+            "point1": {
+                    "anchor": [1.0, 0.5],
+                    "point": [{
+                            "idx": "topright",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }, {
+                            "idx": "bottomright",
+                            "relationRef": 0,
+                            "relationType": "foreground",
+                            "weight": 0.5
+                    }]
+            }
+          },
+          "relation": {
+            "foreground": 1
+          },
+          "relationIndex": [
+            0
+          ],
+          "relationRefOrder": 0,
+          "rotationtype": 1,
+          "scale": {
+            "scaleY": {
+              "factor": 1.0
+            }
+          }
+        },
+        "transformType": "FOLLOW",
+        "width": 460,
+        "zorder": 4998
+      }
+    }
+  },
+  "texturefiles": [
+    "clipname1/clipname1_000.png",
+    "clipname1/clipname1_001.png",
+    "clipname1/clipname1_002.png",
+    "clipname1/clipname1_003.png",
+    "clipname1/clipname1_004.png",
+    "clipname1/clipname1_005.png",
+    "clipname1/clipname1_006.png",
+    "clipname1/clipname1_007.png",
+    "clipname1/clipname1_008.png",
+    "clipname1/clipname1_009.png",
+    "clipname1/clipname1_010.png",
+    "clipname1/clipname1_011.png",
+    "clipname1/clipname1_012.png",
+    "clipname1/clipname1_013.png",
+    "clipname1/clipname1_014.png",
+    "clipname1/clipname1_015.png",
+    "clipname1/clipname1_016.png",
+    "clipname1/clipname1_017.png",
+    "clipname1/clipname1_018.png",
+    "clipname1/clipname1_019.png",
+    "clipname1/clipname1_020.png",
+    "clipname1/clipname1_021.png",
+    "clipname1/clipname1_022.png",
+    "clipname1/clipname1_023.png",
+    "clipname1/clipname1_024.png",
+    "clipname1/clipname1_025.png",
+    "clipname1/clipname1_026.png",
+    "clipname1/clipname1_027.png",
+    "clipname1/clipname1_028.png",
+    "clipname1/clipname1_029.png",
+    "clipname1/clipname1_030.png",
+    "clipname1/clipname1_031.png",
+    "clipname1/clipname1_032.png",
+    "clipname1/clipname1_033.png",
+    "clipname1/clipname1_034.png",
+    "clipname1/clipname1_035.png"
+  ]
+}

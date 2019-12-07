@@ -1,0 +1,14 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable": true,
+                "type": "GeneralEffect",
+                "zorder": 5001,
+                "path": "GE_show/"
+            }
+        ]
+    },
+    "name": "fix_dkdnflkdsjdkjfoaisgjnrej344tijfslfjeosi90509",
+    "version": "4.0.0"
+}

@@ -1,0 +1,14 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable": true,
+                "type": "GeneralEffect",
+                "zorder": 5100,
+                "path": "blur/"
+            }
+        ]
+    },
+    "name": "97c00ff9f06627123423423a6a91c",
+    "version": "4.0.0"
+}

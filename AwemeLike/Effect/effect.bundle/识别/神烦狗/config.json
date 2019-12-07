@@ -1,0 +1,16 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "faceIndex": [
+                    0
+                ],
+                "path": "E12_3d_dog_sfg_a01_am_3DSticker_dog_sfg_a01/",
+                "type": "3DStickerV3",
+                "zorder": 10000
+            }
+        ]
+    },
+    "name": "E12_3d_dog_sfg_a01_am",
+    "version": "3.4.0"
+}

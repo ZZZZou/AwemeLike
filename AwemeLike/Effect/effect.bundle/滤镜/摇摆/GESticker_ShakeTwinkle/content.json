@@ -1,0 +1,13 @@
+{
+    "tag": "ShakeTwinkle_ZHW2018108",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "path": "generalEffect/",
+        "config": "generalEffect.json",
+        "version": "1.2"
+    }
+}

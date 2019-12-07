@@ -1,0 +1,14 @@
+{
+  "effect": {
+    "Link": [
+      {
+        "defaultEnable": true,
+        "path": "2DStickerV3_5102/",
+        "type": "2DStickerV3",
+        "zorder": 5102
+      }
+    ]
+  },
+  "name": "4.0.0MAC3E0E7C856F92419DBAC02507C4585944",
+  "version": "4.0.0"
+}

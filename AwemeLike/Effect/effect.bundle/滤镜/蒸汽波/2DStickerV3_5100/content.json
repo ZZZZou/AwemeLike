@@ -1,0 +1,10 @@
+{
+  "content" : {
+    "path" : "clip.json"
+  },
+  "requirement" : {
+    "matting" : false
+  },
+  "tag" : "2DSticker_15314644605973",
+  "version" : "1.0"
+}

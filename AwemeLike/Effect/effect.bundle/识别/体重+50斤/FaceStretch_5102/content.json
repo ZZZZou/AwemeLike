@@ -1,0 +1,14 @@
+{
+    "content": {
+        "lockPortrait": false,
+        "path": "stretch.json",
+        "type": "FaceStretchCommon"
+    },
+    "requirement": {
+        "faceDetect": true,
+        "hairColor": false,
+        "matting": false
+    },
+    "tag": "FaceStretch_6891d516e1014f21adce0cf5cf3109e9",
+    "version": "1.1"
+}

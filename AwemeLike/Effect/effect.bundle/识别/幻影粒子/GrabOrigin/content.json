@@ -1,0 +1,11 @@
+{
+    "tag": "GrabFrame_ghuwo349o3bgo923gw24igr5t2g329g7g",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "type": "GrabFrame"
+    }
+}

@@ -1,0 +1,64 @@
+{
+	"parts": {
+		"entityname9816F38B63E94A86A660A502F2922EC1": {
+			"clipname1_CA6F020B5C7A4A968A0C8A424BCBFF90": {
+				"alphaFactor": 1.0,
+				"blendmode": 0,
+				"fps": 0,
+				"height": 960,
+				"textureIdx": {
+					"idx": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11, 11, 11, 12, 12, 12, 13, 13, 13, 14, 14, 14, 15, 15, 15, 16, 16, 16, 17, 17, 17, 18, 18, 18, 19, 19, 19, 20, 20, 20, 21, 21, 21, 22, 22, 22, 23, 23, 23, 24, 24, 24, 25, 25, 25, 26, 26, 26, 27, 27, 27, 28, 28, 28, 29, 29, 29, 30, 30, 30, 31, 31, 31],
+					"type": "image"
+				},
+				"transformParams": {
+					"position": {
+						"point0": {
+							"anchor": [0.0, 0.5],
+							"point": [{
+								"idx": "topright",
+								"relationRef": 0,
+								"relationType": "foreground",
+								"weight": 0.0
+							}, {
+								"idx": "bottomleft",
+								"relationRef": 0,
+								"relationType": "foreground",
+								"weight": 0.5000000104308129
+							}]
+						},
+						"point1": {
+							"anchor": [1.0, 0.5],
+							"point": [{
+								"idx": "topright",
+								"relationRef": 0,
+								"relationType": "foreground",
+								"weight": 1.0
+							}, {
+								"idx": "bottomleft",
+								"relationRef": 0,
+								"relationType": "foreground",
+								"weight": 0.5000000104308129
+							}]
+						}
+					},
+					"relation": {
+						"foreground": 1
+					},
+					"relationIndex": [0],
+					"relationRefOrder": 0,
+					"rotationtype": 1,
+					"scale": {
+						"scaleY": {
+							"factor": 1.0
+						}
+					}
+				},
+				"transformType": "FOLLOW",
+				"width": 540,
+				"zorder": 5000
+			}
+		}
+	},
+	"texturefiles": ["czjfcigi_1551174923/czjfcigi_1551174923_000.png", "czjfcigi_1551174923/czjfcigi_1551174923_001.png", "czjfcigi_1551174923/czjfcigi_1551174923_002.png", "czjfcigi_1551174923/czjfcigi_1551174923_003.png", "czjfcigi_1551174923/czjfcigi_1551174923_004.png", "czjfcigi_1551174923/czjfcigi_1551174923_005.png", "czjfcigi_1551174923/czjfcigi_1551174923_006.png", "czjfcigi_1551174923/czjfcigi_1551174923_007.png", "czjfcigi_1551174923/czjfcigi_1551174923_008.png", "czjfcigi_1551174923/czjfcigi_1551174923_009.png", "czjfcigi_1551174923/czjfcigi_1551174923_010.png", "czjfcigi_1551174923/czjfcigi_1551174923_011.png", "czjfcigi_1551174923/czjfcigi_1551174923_012.png", "czjfcigi_1551174923/czjfcigi_1551174923_013.png", "czjfcigi_1551174923/czjfcigi_1551174923_014.png", "czjfcigi_1551174923/czjfcigi_1551174923_015.png", "czjfcigi_1551174923/czjfcigi_1551174923_016.png", "czjfcigi_1551174923/czjfcigi_1551174923_017.png", "czjfcigi_1551174923/czjfcigi_1551174923_018.png", "czjfcigi_1551174923/czjfcigi_1551174923_019.png", "czjfcigi_1551174923/czjfcigi_1551174923_020.png", "czjfcigi_1551174923/czjfcigi_1551174923_021.png", "czjfcigi_1551174923/czjfcigi_1551174923_022.png", "czjfcigi_1551174923/czjfcigi_1551174923_023.png", "czjfcigi_1551174923/czjfcigi_1551174923_024.png", "czjfcigi_1551174923/czjfcigi_1551174923_025.png", "czjfcigi_1551174923/czjfcigi_1551174923_026.png", "czjfcigi_1551174923/czjfcigi_1551174923_027.png", "czjfcigi_1551174923/czjfcigi_1551174923_028.png", "czjfcigi_1551174923/czjfcigi_1551174923_029.png", "czjfcigi_1551174923/czjfcigi_1551174923_030.png", "czjfcigi_1551174923/czjfcigi_1551174923_031.png"],
+	"version": "2.9.1"
+}

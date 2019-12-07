@@ -1,0 +1,14 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable": true,
+                "type": "GeneralEffect",
+                "zorder": 5000,
+                "path": "GESticker_1/"
+            }
+        ]
+    },
+    "name": "2D_GE_3bar_blur_gjoh98hIILu90ju2h89mou6go4nlHIU",
+    "version": "2.9.1"
+}

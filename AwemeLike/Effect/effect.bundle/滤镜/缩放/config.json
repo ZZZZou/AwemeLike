@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "GESticker_ZoomInOut/"
+            }
+        ]
+    },
+    "name": "GESticker_ZoomInOut",
+    "version": "1.0"
+}

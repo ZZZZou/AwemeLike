@@ -1,0 +1,58 @@
+{
+    "effect": [
+               {
+               "name": "GaussianBlurH",
+               "viewport": [0, 0, 320, 480],
+               "vertexShader": "resource1/GaussianBlurH.vsh",
+               "vUniforms": [
+               ],
+               "fragmentShader": "resource1/GaussianBlurH.fsh",
+               "fUniforms": [
+                             {
+                             "name": "inputImageTexture",
+                             "type": 100
+                             }
+                             ]
+               },
+               {
+               "name": "GaussianBlurV",
+               "viewport": [0, 0, 320, 480],
+               "inputEffect" : ["GaussianBlurH"],
+               "vertexShader": "resource1/GaussianBlurV.vsh",
+               "vUniforms": [
+               ],
+               "fragmentShader": "resource1/GaussianBlurV.fsh",
+               "fUniforms": [
+                             {
+                             "name": "inputImageTexture",
+                             "type": 1000,
+                             "inputEffectIndex": 0
+                             }
+                             ]
+               },
+               {
+               "name": "Blend",
+               "viewport": [0, 0, 320, 480],
+               "inputEffect" : ["GaussianBlurV"],
+               "vertexShader": "resource1/Blend.vsh",
+               "vUniforms": [
+               ],
+               "fragmentShader": "resource1/Blend.fsh",
+               "fUniforms": [
+                             {
+                             "name": "inputImageTexture",
+                             "type": 100
+                             },
+                             {
+                              "name" : "blurImageTexture",
+                              "type" : 1000,
+                              "inputEffectIndex": 0
+                             }
+                             ]
+               }
+               ],
+    "version" : 1.1
+    
+}
+
+

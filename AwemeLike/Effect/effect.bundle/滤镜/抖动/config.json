@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "GESticker_Fake3D/"
+            }
+        ]
+    },
+    "name": "GESticker_Fake3D",
+    "version": "1.1"
+}

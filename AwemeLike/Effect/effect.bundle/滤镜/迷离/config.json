@@ -1,0 +1,18 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 5000,
+                "path": "GrabFrame/"
+            },
+            {
+                "type": "GeneralEffect",
+                "zorder": 5001,
+                "path": "PutFrame/"
+            }
+        ]
+    },
+    "name": "fix_mili",
+    "version": "3.4.0"
+}

@@ -1,0 +1,12 @@
+{
+    "tag": "GESticker_colorshiftwavealpha",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "path" : "generalEffect/",
+        "config": "generalEffect.json"
+    }
+}

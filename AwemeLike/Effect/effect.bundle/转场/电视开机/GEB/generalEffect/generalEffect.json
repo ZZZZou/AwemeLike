@@ -1,0 +1,39 @@
+{
+    "effect": [
+        {
+			"name": "dou",
+			"autoChangeViewport":true,
+            "vertexShader": "/resource/adjustColor.vsh",
+            "vUniforms": [],
+            "fragmentShader": "/resource/adjustColor.fsh",
+            "fUniforms": [
+                {
+					"name": "inputImageTexture",
+					"type": 100
+				},
+				{
+					"name": "u_iwidthoffset",
+					"type": 300
+				},
+				{
+					"name": "u_iheightoffset",
+					"type": 301
+				},
+				{
+                    "name": "u_texeloffset",
+                    "type": 3,
+                    "data": [0.0]
+                },
+                {
+					"name": "u_moveoffset",
+					"type": 4,
+					"data": [
+						0.0,
+						0.0
+					]
+				}
+            ]
+        }
+    ],
+    "version": 1.1
+}

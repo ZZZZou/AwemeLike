@@ -1,0 +1,15 @@
+{
+    "requirement": {
+        "faceDetect": true,
+        "matting": false,
+        "hairColor":false
+    },
+    "content": {
+        "type": "FaceDistortionHonest",
+        "path": ""
+    },
+    "tag": "FaceDistortion_Honest",
+    "version": "1.1"
+}
+
+

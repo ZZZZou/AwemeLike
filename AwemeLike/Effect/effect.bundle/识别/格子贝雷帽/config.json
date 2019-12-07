@@ -1,0 +1,29 @@
+{
+    "effect": {
+        "Link": [{
+            "defaultLoad":false,
+            "path": "3DStickerV3_5104/",
+            "type": "3DStickerV3",
+            "zorder": 5104
+        },
+        {
+            "defaultLoad":false,
+            "path":"amazingfeature/",
+            "type":"AmazingFeature",
+            "zorder":5104
+        },
+        {
+            "path": "FaceMakeupV2_2999/",
+            "type": "FaceMakeupV2",
+            "zorder": 2999
+        },
+        {
+            "defaultEnable": false,
+            "path": "Filter_2998/",
+            "type": "Filter",
+            "zorder": 2998
+        }
+    ]},
+    "name": "3.5.1MACB46C7CAasvfaFFB0E4ED50F36690E7_amazing",
+    "version": "4.2.0"
+}

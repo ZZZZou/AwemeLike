@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "path": "2D_GE_nine/",
+                "type": "GeneralEffect",
+                "zorder": 5005
+            }            
+        ]
+    },
+    "name": "ES_5d9b3aeqsdmwkenktqyeg1adsfes54dsg5df7flkwer65",
+    "version": "2.9.1"
+}

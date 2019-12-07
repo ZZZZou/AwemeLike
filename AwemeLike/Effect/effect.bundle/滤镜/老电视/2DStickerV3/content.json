@@ -1,0 +1,14 @@
+{
+  "content": {
+    "path": "sticker.json"
+  },
+  "requirement": {
+    "faceDetect": false,
+    "matting": false,
+    "handDetect": true,
+    "2handDetect": true,
+    "2handDetectKeyPoint": true
+  },
+  "tag": "2DStickerV3_34792f1e9acb4eef801d914087f0764a",
+  "version": "1.0"
+}

@@ -1,0 +1,16 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "faceIndex": [
+                    0
+                ],
+                "path": "3d_hat_xiongmao_a01_e12_3DSticker_xiongmao/",
+                "type": "3DStickerV3",
+                "zorder": 10000
+            }
+        ]
+    },
+    "name": "3d_hat_xiongmao_a01_e121552999450",
+    "version": "3.9.0"
+}

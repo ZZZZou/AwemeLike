@@ -1,0 +1,24 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "faceIndex": [
+                    0
+                ],
+                "path": "3d_hat_mao_a02_e12/",
+                "type": "3DStickerV3",
+                "zorder": 10000
+            },
+            {
+                "faceIndex": [
+                    0
+                ],
+                "path": "p_hat_mao_a02_e12/",
+                "type": "3DStickerV3",
+                "zorder": 10001
+            }
+        ]
+    },
+    "name": "205631_02084899-A553-4407-AF28-D3952F3CF1C0",
+    "version": "3.4.0"
+}

@@ -1,0 +1,22 @@
+{
+    "content": {
+        "events": {
+            "source": "./sticker.event",
+            "version": 2
+        },
+        "scenes": [
+            {
+                "id": 0,
+                "isRevPostProc": true,
+                "name": "scene0",
+                "source": "./sticker.scene"
+            }
+        ]
+    },
+    "requirement": {
+        "faceDetect": true,
+        "matting": false
+    },
+    "tag": "scene3d_3b4cc4400135402a88f6b7aa75ead09e",
+    "version": "1.2"
+}

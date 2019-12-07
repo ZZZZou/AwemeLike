@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "path": "2DStickerV3_5105/",
+                "type": "2DStickerV3",
+                "zorder": 5105
+            }
+        ]
+    },
+    "name": "3.4.1MAC9CD492E448124EA995E3AF1BFF13D309",
+    "version": "4.0.0"
+}

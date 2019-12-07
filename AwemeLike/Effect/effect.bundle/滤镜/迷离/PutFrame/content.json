@@ -1,0 +1,12 @@
+{
+    "tag": "fix_mili_PutFrame",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "path" : "generalEffect/",
+        "config": "generalEffect.json"
+    }
+}

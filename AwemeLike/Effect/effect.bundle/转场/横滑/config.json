@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "2D_GE_SideSlip/"
+            }
+        ]
+    },
+    "name": "2D_GE_SidedffdfsdffadsfaninsfSlip1",
+    "version": "2.9.1"
+}

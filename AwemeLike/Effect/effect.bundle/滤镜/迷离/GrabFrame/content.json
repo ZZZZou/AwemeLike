@@ -1,0 +1,11 @@
+{
+    "tag": "fix_mili_GrabFrame",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "type": "GrabFrame"
+    }
+}

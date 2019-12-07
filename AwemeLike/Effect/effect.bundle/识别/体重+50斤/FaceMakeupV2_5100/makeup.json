@@ -1,0 +1,33 @@
+{
+    "faceID": [
+        0
+    ],
+    "faceSDKType": 2,
+    "filters": [
+        {
+            "2d_sequence_resources": {
+                "imageCount": 1,
+                "imageInterval": 0.5,
+                "name": "valyalyg1546432565_",
+                "path": "valyalyg1546432565/"
+            },
+            "blendMode": 15,
+            "filterTitle": "Mask",
+            "filterType": "mask",
+            "intensity": 0.8968266844749451,
+            "rect": {
+                "height": 371,
+                "width": 694,
+                "x": 302,
+                "y": 410
+            },
+            "zPosition": 5000
+        }
+    ],
+    "standardFaceKeyPoints": "mask/texcoord.txt",
+    "standardFaceSize": {
+        "height": 1280,
+        "width": 1280
+    },
+    "version": "1.1"
+}

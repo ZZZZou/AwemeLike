@@ -1,0 +1,67 @@
+{
+    "parts": {
+        "rainbow_4": {
+            "blendMode": 1021,
+            "enable": true,
+            "frameCount": 1,
+            "height": 960,
+            "position": {
+                "positionX": [
+                    {
+                        "index": 106,
+                        "x": -5.684341886080802e-14,
+                        "y": -1.1368683772161603e-13
+                    },
+                    {
+                        "index": 107,
+                        "x": 540,
+                        "y": -1.1368683772161603e-13
+                    }
+                ],
+                "positionY": [
+                ]
+            },
+            "positionRelationType": 1,
+            "positionType": 1,
+            "rotateCenter": [
+                {
+                    "x": 0,
+                    "y": 0
+                }
+            ],
+            "scale": {
+                "scaleX": {
+                    "pointA": [
+                        {
+                            "index": 74,
+                            "x": 184.8085875,
+                            "y": 450.3439515
+                        }
+                    ],
+                    "pointB": [
+                        {
+                            "index": 77,
+                            "x": 353.6970165,
+                            "y": 450.51055875
+                        }
+                    ]
+                },
+                "scaleY": {
+                    "pointA": [
+                    ],
+                    "pointB": [
+                    ]
+                }
+            },
+            "triggerDelay": 0,
+            "triggerDisappear": false,
+            "triggerLoop": 0,
+            "triggerRestart": false,
+            "triggerStop": false,
+            "triggerType": 0,
+            "width": 540,
+            "zPosition": 5000
+        }
+    },
+    "version": "1.1"
+}

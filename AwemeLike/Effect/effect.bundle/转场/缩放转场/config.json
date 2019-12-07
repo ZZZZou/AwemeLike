@@ -1,0 +1,32 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "defaultEnable": true,
+                "type": "GeneralEffect",
+                "zorder": 5020,
+                "path": "GE_blur/"
+            },
+            {
+                "defaultEnable": false,
+                "type": "GeneralEffect",
+                "zorder": 5010,
+                "path": "GE_screen1/"
+            },
+            {
+                "defaultEnable": false,
+                "type": "GeneralEffect",
+                "zorder": 5000,
+                "path": "GE_screen2/"
+            },
+            {
+                "defaultEnable": true,
+                "path": "Grab0/",
+                "type": "GeneralEffect",
+                "zorder": 4600
+            }
+        ]
+    },
+    "name": "fix_datsldfwefsldkfjwletsandkjdfeijrdksnfkjweja39483orijar",
+    "version": "4.0.0"
+}

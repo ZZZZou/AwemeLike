@@ -1,0 +1,124 @@
+{
+  "distortions" : [
+    {
+      "angle" : 270,
+      "pos" : 104,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "radiusX" : 2.054506063461304,
+      "type" : 1,
+      "max" : 1,
+      "radiusY" : 1.117005944252014,
+      "scale" : -9.026163101196289
+    },
+    {
+      "angle" : -90,
+      "pos" : 52,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "radiusX" : 2.452761888504028,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 4.175145149230957,
+      "scale" : 0.5232560038566589
+    },
+    {
+      "angle" : -90,
+      "pos" : 61,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "radiusX" : 2.452761888504028,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 4.175145149230957,
+      "scale" : 0.5232560038566589
+    },
+    {
+      "angle" : 0,
+      "pos" : 105,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "radiusX" : 2.054506063461304,
+      "type" : 1,
+      "max" : 1,
+      "radiusY" : 1.117005944252014,
+      "scale" : -9.026163101196289
+    },
+    {
+      "angle" : 270,
+      "pos" : 98,
+      "offsetY" : -0.2931035,
+      "min" : 0,
+      "offsetX" : 0,
+      "radiusX" : 4.928571,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 4.928571,
+      "scale" : 1.29148
+    },
+    {
+      "angle" : 180,
+      "pos" : 7,
+      "offsetY" : -0.1436782032251358,
+      "min" : 0,
+      "offsetX" : -0.07471264153718948,
+      "radiusX" : 4.160714149475098,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 4.160714149475098,
+      "scale" : 1.5
+    },
+    {
+      "angle" : 0,
+      "pos" : 16,
+      "offsetY" : -0.3390805,
+      "min" : 0,
+      "offsetX" : 0,
+      "radiusX" : 4.84375,
+      "type" : 1,
+      "max" : 1,
+      "radiusY" : 4.84375,
+      "scale" : -5.717489
+    },
+    {
+      "angle" : 270,
+      "pos" : 16,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "radiusX" : 6,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 6,
+      "scale" : 1.769057989120483
+    },
+    {
+      "angle" : 0,
+      "pos" : 55,
+      "offsetY" : 0,
+      "min" : 0,
+      "offsetX" : 0,
+      "radiusX" : 0,
+      "type" : 1,
+      "max" : 1,
+      "radiusY" : 0,
+      "scale" : 0
+    },
+    {
+      "angle" : 0,
+      "pos" : 25,
+      "offsetY" : -0.14,
+      "min" : 0,
+      "offsetX" : 0.07471264,
+      "radiusX" : 4.16,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 4.16,
+      "scale" : 1.5
+    }
+  ]
+}

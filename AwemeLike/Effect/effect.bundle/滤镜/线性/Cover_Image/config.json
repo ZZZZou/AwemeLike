@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "GeneralEffect",
+                "zorder": 10000,
+                "path": "2D_GE_Matrix_Line/"
+            }
+        ]
+    },
+    "name": "2D_GE_Matrix_Line_preview",
+    "version": "1.1"
+}

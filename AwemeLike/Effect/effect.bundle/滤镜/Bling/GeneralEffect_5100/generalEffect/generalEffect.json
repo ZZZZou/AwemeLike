@@ -1,0 +1,1628 @@
+{
+    "effect": [
+        {
+            "name": "16",
+            "viewport": [
+                0,
+                0,
+                320,
+                480
+            ],
+            "vertexShader": "resource1/16.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/16.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 100
+                }
+            ]
+        },
+        {
+            "name": "19",
+            "viewport": [
+                0,
+                0,
+                320,
+                480
+            ],
+            "inputEffect": [
+                "16"
+            ],
+            "vertexShader": "resource1/19.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/19.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "edgeStrength",
+                    "type": 3,
+                    "data": [
+                        1
+                    ]
+                },
+                {
+                    "name": "texelWidthOffset",
+                    "type": 300
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 301
+                }
+            ]
+        },
+        {
+            "name": "22",
+            "viewport": [
+                0,
+                0,
+                320,
+                480
+            ],
+            "inputEffect": [
+                "19"
+            ],
+            "vertexShader": "resource1/22.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/22.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "texelWidthOffset",
+                    "type": 3,
+                    "data": [
+                        0
+                    ]
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 301
+                }
+            ]
+        },
+        {
+            "name": "22two",
+            "viewport": [
+                0,
+                0,
+                320,
+                480
+            ],
+            "inputEffect": [
+                "22"
+            ],
+            "vertexShader": "resource1/22.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/22.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "texelWidthOffset",
+                    "type": 300
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 3,
+                    "data": [
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "13",
+            "viewport": [
+                0,
+                0,
+                320,
+                480
+            ],
+            "inputEffect": [
+                "22two"
+            ],
+            "vertexShader": "resource1/13.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/13.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "sensitivity",
+                    "type": 3,
+                    "data": [
+                        12
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "10",
+            "viewport": [
+                0,
+                0,
+                320,
+                240
+            ],
+            "inputEffect": [
+                "13"
+            ],
+            "vertexShader": "resource1/10.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/10.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "texelWidthOffset",
+                    "type": 3,
+                    "data": [
+                        0
+                    ]
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 3,
+                    "data": [
+                        0.00208333
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "10two",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "10"
+            ],
+            "vertexShader": "resource1/10.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/10.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "texelWidthOffset",
+                    "type": 3,
+                    "data": [
+                        0.003125
+                    ]
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 3,
+                    "data": [
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "25",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "10two"
+            ],
+            "vertexShader": "resource1/25.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/25.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "iterationCount",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                },
+                {
+                    "name": "kawaseIntensity",
+                    "type": 3,
+                    "data": [
+                        1.2500001
+                    ]
+                },
+                {
+                    "name": "texelWidth",
+                    "type": 3,
+                    "data": [
+                        640
+                    ]
+                },
+                {
+                    "name": "texelHeight",
+                    "type": 3,
+                    "data": [
+                        960
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_1",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "25"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00265165,
+                        0.00176777
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_2",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_1"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00265165,
+                        0.00176777
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_3",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_2"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00265165,
+                        0.00176777
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_4",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "25"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00265165,
+                        0.00176777
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_5",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_4"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00265165,
+                        0.00176777
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_6",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_5"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00265165,
+                        0.00176777
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "28",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_3",
+                "31_6"
+            ],
+            "vertexShader": "resource1/28.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/28.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "inputImageTexture2",
+                    "type": 1000,
+                    "inputEffectIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "10three",
+            "viewport": [
+                0,
+                0,
+                320,
+                240
+            ],
+            "inputEffect": [
+                "13"
+            ],
+            "vertexShader": "resource1/10.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/10.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "texelWidthOffset",
+                    "type": 3,
+                    "data": [
+                        0
+                    ]
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 3,
+                    "data": [
+                        0.00208333
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "10four",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "10three"
+            ],
+            "vertexShader": "resource1/10.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/10.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "texelWidthOffset",
+                    "type": 3,
+                    "data": [
+                        0.003125
+                    ]
+                },
+                {
+                    "name": "texelHeightOffset",
+                    "type": 3,
+                    "data": [
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_7",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "10four"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_8",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_7"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_9",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_8"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_10",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_9"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_11",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_10"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_12",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_11"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_13",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_12"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_14",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_13"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_15",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "10four"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_16",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_15"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_17",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_16"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_18",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_17"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_19",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_18"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_20",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_19"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_21",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_20"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "31_22",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_21"
+            ],
+            "vertexShader": "resource1/31.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/31.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "directionalTexelStep",
+                    "type": 4,
+                    "data": [
+                        -0.00662913,
+                        0.00441942
+                    ]
+                },
+                {
+                    "name": "blurIntensity",
+                    "type": 3,
+                    "data": [
+                        1.25000001
+                    ]
+                },
+                {
+                    "name": "color",
+                    "type": 5,
+                    "data": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "isPortrait",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "28two",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "31_22",
+                "31_14"
+            ],
+            "vertexShader": "resource1/28.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/28.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "inputImageTexture2",
+                    "type": 1000,
+                    "inputEffectIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "28three",
+            "viewport": [
+                0,
+                0,
+                160,
+                240
+            ],
+            "inputEffect": [
+                "28",
+                "28two"
+            ],
+            "vertexShader": "resource1/28.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/28.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "inputImageTexture2",
+                    "type": 1000,
+                    "inputEffectIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "28four",
+            "inputEffect": [
+                "28three"
+            ],
+            "vertexShader": "resource1/28.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/28.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 100
+                },
+                {
+                    "name": "inputImageTexture2",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                }
+            ]
+        }
+    ],
+    "version": 1.1
+}

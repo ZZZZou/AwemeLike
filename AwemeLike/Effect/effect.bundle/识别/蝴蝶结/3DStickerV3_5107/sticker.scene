@@ -1,0 +1,217 @@
+{
+  "animations": [],
+  "entities": [
+    {
+      "id": 0,
+      "name": "rootEntity",
+      "orientation": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent": "-1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "components": [
+        {
+          "cameraParam": {
+            "FOV": 53.5,
+            "aspect_ratio": [
+              0.5600000023841858,
+              1
+            ],
+            "far": 1000,
+            "near": 1,
+            "view_port": [
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          "name": "CameraComponent5b83c12c33d04989bc1700413c8ab37f",
+          "type": "cameraComponent"
+        }
+      ],
+      "id": 3,
+      "name": "CameraEntity5ddffb3aeef849b0bba55555e3fb6ccd",
+      "orientation": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent": "0",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "components": [
+        {
+          "attenuation_range": 1,
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "cookie_size": 1,
+          "inner_angle": 25,
+          "intensity": 1,
+          "outer_angle": 35,
+          "shadow_area": 100,
+          "shadow_auto_frustum": true,
+          "shadow_bias": 0.001,
+          "shadow_enabled": true,
+          "shadow_frustum_zfar": 100,
+          "shadow_frustum_znear": 1,
+          "shadow_resolution": [
+            2048,
+            2048
+          ],
+          "shadow_softness": 1,
+          "shadow_strength": 0.5,
+          "type": "lightComponent@dir",
+          "use_soft_shadow": true
+        }
+      ],
+      "id": 5,
+      "name": "light301ff842eff3467b93df83b79518cc47",
+      "orientation": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent": "0",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__isHeadModelEntity": true,
+      "components": [
+        {
+          "material": 0,
+          "name": "836a79eab5e04f919daded456f52d956",
+          "type": "materialComponent"
+        },
+        {
+          "enableCastShadow": true,
+          "isDefaultPlayAnim": true,
+          "model": 0,
+          "name": "dd23c1268b4e419a88c760cd1b579a36",
+          "type": "meshComponent"
+        }
+      ],
+      "id": 2,
+      "name": "p029de31f492d46b2a3abc409fe79efe5",
+      "orientation": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent": "0",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__isHeadModelEntity": false,
+      "components": [
+        {
+          "material": 1,
+          "name": "9eaad3bcd6034692aeb9f429a2aa4036",
+          "type": "materialComponent"
+        },
+        {
+          "enableCastShadow": true,
+          "isDefaultPlayAnim": true,
+          "model": 1,
+          "name": "ccac9da372774944bde4bd63ee6b9f32",
+          "type": "meshComponent"
+        }
+      ],
+      "id": 4,
+      "name": "p486c619e20354077988a3cfe5f36b308",
+      "orientation": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent": "2",
+      "position": [
+        0,
+        -0.5714626908302307,
+        0.5
+      ],
+      "scale": [
+        0.9300000071525574,
+        0.9300000071525574,
+        0.9300000071525574
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": 0,
+      "source": "3DStickerV3_5107/HeadModel/836a79eab5e04f919daded456f52d956.acmtl"
+    },
+    {
+      "id": 1,
+      "source": "3DStickerV3_5107/Model/5ff81b3d37e742f2a714eec2a009e9ed.acmtl"
+    }
+  ],
+  "models": [
+    {
+      "id": 0,
+      "source": "3DStickerV3_5107/HeadModel/dtqoyizn1560826636.acmod"
+    },
+    {
+      "id": 1,
+      "source": "3DStickerV3_5107/Model/ickalmeg1560826645.acmod"
+    }
+  ],
+  "particles": [],
+  "textures": [
+    {
+      "id": 0,
+      "source": "3DStickerV3_5107/textures/bfeffa16839c4b5ba50c840c9d4f9e30.png"
+    }
+  ]
+}

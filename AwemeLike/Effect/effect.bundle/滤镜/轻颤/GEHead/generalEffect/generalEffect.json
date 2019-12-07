@@ -1,0 +1,80 @@
+{
+    "effect": [
+        {
+            "name": "wave",
+            "vertexShader": "resource1/normal.vsh",
+            "viewport":[
+                0,
+                0,
+                360,
+                720
+            ],
+            "autoChangeViewport": true,
+            "vUniforms": [],
+            "fragmentShader": "resource1/normal.fsh",
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 100
+                },
+                {
+                    "name": "iTime",
+                    "type": 3,
+                    "data": [
+                        0.0
+                    ]
+                },
+                {
+                    "name": "m_displayWidth",
+                    "type": 200
+                },
+                {
+                    "name": "m_displayHeight",
+                    "type": 201
+                }
+            ]
+        },
+        {
+            "name": "shift_color",
+            "vertexShader": "resource1/vshader.vsh",
+            "vUniforms": [],
+            "fragmentShader": "resource1/fshader.fsh",
+            "inputEffect": [
+                "wave"
+            ],
+            "viewport":[
+                0,
+                0,
+                360,
+                720
+            ],
+            "autoChangeViewport": true,
+            "fUniforms": [
+                {
+                    "name": "inputImageTexture",
+                    "type": 1000,
+                    "inputEffectIndex": 0
+                },
+                {
+                    "name": "stay_color",
+                    "type": 2,
+                    "data": [
+                        1
+                    ]
+                },
+                {
+                    "name": "move",
+                    "type": 3,
+                    "data": [
+                        5.0
+                    ]
+                },
+                {
+                    "name": "display_width",
+                    "type": 200
+                }
+            ]
+        }
+    ],
+    "version": 1.1
+}

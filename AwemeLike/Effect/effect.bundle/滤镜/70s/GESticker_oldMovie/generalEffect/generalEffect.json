@@ -1,0 +1,30 @@
+{
+    "effect": [
+               {
+               "name": "oldMovie",
+               "vertexShader": "resource1/vshader.vsh",
+               "vUniforms": [
+                             {
+                             "name": "imageWidth",
+                             "type": 200
+                             },
+                             {
+                             "name": "imageHeight",
+                             "type": 201
+                             }
+                             ],
+               "fragmentShader": "resource1/fshader.fsh",
+               "fUniforms": [
+                             {
+                             "name": "uTime",
+                             "type": 302
+                             },
+                             {
+                             "name": "inputImageTexture",
+                             "type": 100
+                             }
+                             ]
+               }
+               ],
+    "version": 1.1
+}

@@ -1,0 +1,10 @@
+{
+    "tag": "GrabFrame_ghy59o2ger23gw24igr5t2g329g7g",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false
+    },
+    "content": {
+        "type": "GrabFrame"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "tag": "2DSticker_xiaobian",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": true,
+        "matting": false
+    },
+    "content": {
+        "lockPortrait": true,
+        "path" : "xiaobian.json"
+    }
+}

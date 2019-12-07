@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HPPlayerViewController">
+            <connections>
+                <outlet property="hint" destination="9sL-zb-CL6" id="XJr-tp-g36"/>
+                <outlet property="progressSlider" destination="MXP-wm-Zfc" id="LgV-Xv-a9l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MXP-wm-Zfc">
+                    <rect key="frame" x="14" y="617" width="347" height="31"/>
+                    <connections>
+                        <action selector="sliderDidChange:" destination="-1" eventType="valueChanged" id="r42-xp-6Qk"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sZ-xd-MWA">
+                    <rect key="frame" x="0.0" y="36" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Efi-Qo-t1r"/>
+                        <constraint firstAttribute="height" constant="40" id="jxL-ei-26O"/>
+                    </constraints>
+                    <state key="normal" image="icShootingClose_24x24_"/>
+                    <connections>
+                        <action selector="dissmis:" destination="-1" eventType="touchUpInside" id="cCs-QE-Lxa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本地还没有视频，录制后可以在这里播放" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sL-zb-CL6">
+                    <rect key="frame" x="30" y="275" width="315" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9sL-zb-CL6" secondAttribute="trailing" constant="30" id="90H-Q3-Ctr"/>
+                <constraint firstItem="9sL-zb-CL6" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="EcE-TH-v15"/>
+                <constraint firstItem="0sZ-xd-MWA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="F1j-wg-k4a"/>
+                <constraint firstItem="9sL-zb-CL6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="fV6-mE-gvc"/>
+                <constraint firstItem="9sL-zb-CL6" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" constant="-40" id="p7E-iY-dcM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="MXP-wm-Zfc" secondAttribute="trailing" constant="16" id="pEG-xX-fAN"/>
+                <constraint firstItem="MXP-wm-Zfc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="pxq-RV-ZeB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="MXP-wm-Zfc" secondAttribute="bottom" constant="20" id="x0J-xF-HAX"/>
+                <constraint firstItem="0sZ-xd-MWA" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="zJh-RN-ulz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="48.799999999999997" y="35.532233883058474"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icShootingClose_24x24_" width="24" height="24"/>
+    </resources>
+</document>

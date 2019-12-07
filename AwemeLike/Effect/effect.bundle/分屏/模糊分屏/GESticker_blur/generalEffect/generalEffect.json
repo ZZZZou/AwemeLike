@@ -1,0 +1,211 @@
+{
+	"effect": [
+		{
+			"name": "downSample",
+			"viewport": [
+				0,
+				0,
+				360,
+				640
+			],
+			"vertexShader": "resource1/downSample.vsh",
+			"vUniforms": [],
+			"fragmentShader": "resource1/normal.fsh",
+			"fUniforms": [
+				{
+					"name": "inputImageTexture",
+					"type": 100
+				}
+			]
+		},
+		{
+			"name": "gx",
+			"viewport": [
+				0,
+				0,
+				360,
+				640
+			],
+			"inputEffect": [
+				"downSample"
+			],
+			"vertexShader": "resource1/gaussian_sigma6.vsh",
+			"vUniforms": [
+				{
+					"name": "texelWidthOffset",
+					"type": 300
+				},
+				{
+					"name": "texelHeightOffset",
+					"type": 3,
+					"data": [
+						0
+					]
+				},
+				{
+					"name": "scale",
+					"type": 3,
+					"data": [
+						1.4
+					]
+				}
+				
+			],
+			"fragmentShader": "resource1/gaussian_sigma6.fsh",
+			"fUniforms": [
+				{
+					"name": "inputImageTexture",
+					"type": 1000,
+					"inputEffectIndex": 0
+				}
+			]
+		},
+		{
+			"name": "gy",
+			"viewport": [
+				0,
+				0,
+				360,
+				640
+			],
+			"inputEffect": [
+				"gx"
+			],
+			"vertexShader": "resource1/gaussian_sigma6.vsh",
+			"vUniforms": [
+				{
+					"name": "texelWidthOffset",
+					"type": 3,
+					"data": [
+						0
+					]
+				},
+				{
+					"name": "texelHeightOffset",
+					"type": 301
+				},
+				{
+					"name": "scale",
+					"type": 3,
+					"data": [
+						1.4
+					]
+				}
+				
+			],
+			"fragmentShader": "resource1/gaussian_sigma6.fsh",
+			"fUniforms": [
+				{
+					"name": "inputImageTexture",
+					"type": 1000,
+					"inputEffectIndex": 0
+				}
+			]
+		},
+		{
+			"name": "gx2",
+			"viewport": [
+				0,
+				0,
+				360,
+				640
+			],
+			"inputEffect": [
+				"gy"
+			],
+			"vertexShader": "resource1/gaussian_sigma6.vsh",
+			"vUniforms": [
+				{
+					"name": "texelWidthOffset",
+					"type": 300
+				},
+				{
+					"name": "texelHeightOffset",
+					"type": 3,
+					"data": [
+						0
+					]
+				},
+				{
+					"name": "scale",
+					"type": 3,
+					"data": [
+						1.4
+					]
+				}
+				
+			],
+			"fragmentShader": "resource1/gaussian_sigma6.fsh",
+			"fUniforms": [
+				{
+					"name": "inputImageTexture",
+					"type": 1000,
+					"inputEffectIndex": 0
+				}
+			]
+		},
+		{
+			"name": "gy2",
+			"viewport": [
+				0,
+				0,
+				360,
+				640
+			],
+			"inputEffect": [
+				"gx2"
+			],
+			"vertexShader": "resource1/gaussian_sigma6.vsh",
+			"vUniforms": [
+				{
+					"name": "texelWidthOffset",
+					"type": 3,
+					"data": [
+						0
+					]
+				},
+				{
+					"name": "texelHeightOffset",
+					"type": 301
+				},
+				{
+					"name": "scale",
+					"type": 3,
+					"data": [
+						1.4
+					]
+				}
+				
+			],
+			"fragmentShader": "resource1/gaussian_sigma6.fsh",
+			"fUniforms": [
+				{
+					"name": "inputImageTexture",
+					"type": 1000,
+					"inputEffectIndex": 0
+				}
+			]
+		},
+		{
+			"name": "blend",
+			"inputEffect": [
+				"gy2"
+			],
+			"vertexShader": "resource1/normal.vsh",
+			"vUniforms": [],
+			"fragmentShader": "resource1/blend.fsh",
+			"fUniforms": [
+				{
+					"name": "inputImageTextureBlurred",
+					"type": 1000,
+					"inputEffectIndex": 0
+				},
+				{
+					"name": "inputImageTexture",
+					"type": 100
+				}
+			]
+		}
+	],
+	"version": 1.1
+}

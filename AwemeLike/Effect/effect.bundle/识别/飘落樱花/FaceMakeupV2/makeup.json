@@ -1,0 +1,73 @@
+{
+    "faceID": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "faceSDKType": 2,
+    "filters": [
+        {
+            "2d_sequence_resources": {
+                "imageCount": 1,
+                "imageInterval": 0.5,
+                "name": "sqdrsscs_1552046352.png_",
+                "path": "sqdrsscs_1552046352.png/"
+            },
+            "blendMode": 15,
+            "filterType": "mask",
+            "intensity": 1,
+            "rect": {
+                "height": 432,
+                "width": 564,
+                "x": 359,
+                "y": 410
+            },
+            "zPosition": 5000
+        },
+        {
+            "2d_sequence_resources": {
+                "imageCount": 1,
+                "imageInterval": 0.5,
+                "name": "hzvhzuic_1552046344.png_",
+                "path": "hzvhzuic_1552046344.png/"
+            },
+            "blendMode": 0,
+            "filterType": "eye_part",
+            "intensity": 1,
+            "rect": {
+                "height": 150,
+                "width": 389,
+                "x": 445,
+                "y": 421
+            },
+            "zPosition": 4999
+        },
+        {
+            "2d_sequence_resources": {
+                "imageCount": 1,
+                "imageInterval": 0.5,
+                "name": "lrfkqyuq_1552046327.png_",
+                "path": "lrfkqyuq_1552046327.png/"
+            },
+            "blendMode": 15,
+            "filterType": "eye_part",
+            "intensity": 1,
+            "rect": {
+                "height": 170,
+                "width": 545,
+                "x": 367,
+                "y": 436
+            },
+            "zPosition": 4998
+        }
+    ],
+    "standardFaceKeyPoints": "mask/texcoord.txt",
+    "standardFaceSize": {
+        "height": 1280,
+        "width": 1280
+    },
+    "version": "1.1"
+}

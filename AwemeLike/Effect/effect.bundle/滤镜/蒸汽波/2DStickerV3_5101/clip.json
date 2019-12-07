@@ -1,0 +1,128 @@
+{
+  "parts": {
+      "entityname_heightAlign": {
+          "clipname": {
+              "alphaFactor": 1,
+              "blendmode": 4,
+              "fps": 0,
+              "height": 1334,
+              "textureIdx": {
+                  "idx": [
+                      0
+                  ],
+                  "type": "image"
+              },
+              "transformParams": {
+                  "position": {
+                  "point0": {
+                          "anchor": [0.5, 0.0],
+                          "point": [{
+                                  "idx": "topleft",
+                                  "relationRef": 0,
+                                  "relationType": "foreground",
+                                  "weight": 0.5
+                          }, {
+                                  "idx": "topright",
+                                  "relationRef": 0,
+                                  "relationType": "foreground",
+                                  "weight": 0.5
+                          }]
+                  },
+                  "point1": {
+                          "anchor": [0.5, 1.0],
+                          "point": [{
+                                  "idx": "bottomleft",
+                                  "relationRef": 0,
+                                  "relationType": "foreground",
+                                  "weight": 0.5
+                          }, {
+                                  "idx": "bottomright",
+                                  "relationRef": 0,
+                                  "relationType": "foreground",
+                                  "weight": 0.5
+                          }]
+                    }
+                  },
+                  "scale": {
+                  
+                  },
+                  "relation": {
+                      "foreground": 1
+                  },
+                  "relationIndex": [
+                      0
+                  ],
+                  "relationRefOrder": 0,
+                  "rotationtype": 1
+              },
+              "transformType": "FOLLOW",
+              "width": 750,
+              "zorder": 5000
+          }
+      },
+      "entityname_widthAlign": {
+        "clipname": {
+            "alphaFactor": 1,
+            "blendmode": 4,
+            "fps": 0,
+            "height": 1334,
+            "textureIdx": {
+                "idx": [
+                    0
+                ],
+                "type": "image"
+            },
+            "transformParams": {
+                "position": {
+                "point0": {
+                        "anchor": [0.0, 0.5],
+                        "point": [{
+                                "idx": "topleft",
+                                "relationRef": 0,
+                                "relationType": "foreground",
+                                "weight": 0.5
+                        }, {
+                                "idx": "bottomleft",
+                                "relationRef": 0,
+                                "relationType": "foreground",
+                                "weight": 0.5
+                        }]
+                },
+                "point1": {
+                        "anchor": [1.0, 0.5],
+                        "point": [{
+                                "idx": "topright",
+                                "relationRef": 0,
+                                "relationType": "foreground",
+                                "weight": 0.5
+                        }, {
+                                "idx": "bottomright",
+                                "relationRef": 0,
+                                "relationType": "foreground",
+                                "weight": 0.5
+                        }]
+                }
+                },
+                "scale": {
+                
+                },
+                "relation": {
+                    "foreground": 1
+                },
+                "relationIndex": [
+                    0
+                ],
+                "relationRefOrder": 0,
+                "rotationtype": 1
+            },
+            "transformType": "FOLLOW",
+            "width": 750,
+            "zorder": 5000
+        }
+    }
+  },
+  "texturefiles": [
+      "jiandan/jiandan_000.png"
+  ],
+  "version": "1.0"
+}

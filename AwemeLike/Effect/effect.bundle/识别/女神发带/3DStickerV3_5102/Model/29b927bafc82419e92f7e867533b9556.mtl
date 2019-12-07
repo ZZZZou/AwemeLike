@@ -1,0 +1,118 @@
+{
+    "materials": [
+        {
+            "name": "mtl_0",
+            "techniques": [
+                {
+                    "name": "tech_0",
+                    "passes": [
+                        {
+                            "blend": true,
+                            "blend_dst_factor": "BF_ZERO",
+                            "blend_equation": "BE_FUNC_ADD",
+                            "blend_src_factor": "BF_ONE",
+                            "cullFace": false,
+                            "depthFunc": "DF_LEQUAL",
+                            "depthTest": true,
+                            "depthWrite": true,
+                            "name": "pass_0",
+                            "renderFaceMode": "RFM_FRONT",
+                            "renderType": "Transparent",
+                            "shaders": [
+                                {
+                                    "defination": [
+                                    ],
+                                    "source": "fb286469a32d49e680fba79d93c9293f_v.glsl",
+                                    "type": "VERTEX_SHADER"
+                                },
+                                {
+                                    "defination": [
+                                    ],
+                                    "source": "fb286469a32d49e680fba79d93c9293f_f.glsl",
+                                    "type": "FRAGMENT_SHADER"
+                                }
+                            ],
+                            "uniforms": {
+                                "g_unif_BoneMatArr": "BT_BONE_MATRIXES",
+                                "g_unif_ModelViewProjMat": "BT_MODEL_VIEW_PROJECTION_MATRIX",
+                                "u_Albedo": [
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "u_AlbedoTex": {
+                                    "filter": "FM_LINEAR_MIPMAP_LINEAR",
+                                    "source": [
+                                        "../textures/dbbfe4854b994f54a896cfc691a69c60.png"
+                                    ],
+                                    "type": "2d_texture",
+                                    "wrap": "WM_REPEAT"
+                                },
+                                "u_Alpha": 1,
+                                "u_UVTiling": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "mtl_0",
+            "techniques": [
+                {
+                    "name": "tech_0",
+                    "passes": [
+                        {
+                            "blend": true,
+                            "blend_dst_factor": "BF_ONE_MINUS_SRC_ALPHA",
+                            "blend_equation": "BE_FUNC_ADD",
+                            "blend_src_factor": "BF_SRC_ALPHA",
+                            "blend_type": "BT_TRANSPARENT_ALPHA",
+                            "cullFace": false,
+                            "depthFunc": "DF_LEQUAL",
+                            "depthTest": true,
+                            "depthWrite": true,
+                            "name": "pass_0",
+                            "renderFaceMode": "RFM_FRONT",
+                            "renderType": "Transparent",
+                            "shaders": [
+                                {
+                                    "defination": [
+                                    ],
+                                    "source": "620659f9982545179ba365e69fe1adff_v1.glsl",
+                                    "type": "VERTEX_SHADER"
+                                },
+                                {
+                                    "defination": [
+                                    ],
+                                    "source": "620659f9982545179ba365e69fe1adff_f1.glsl",
+                                    "type": "FRAGMENT_SHADER"
+                                }
+                            ],
+                            "uniforms": {
+                                "g_unif_BoneMatArr": "BT_BONE_MATRIXES",
+                                "g_unif_ModelViewProjMat": "BT_MODEL_VIEW_PROJECTION_MATRIX",
+                                "u_Albedo": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "u_AlbedoTex": {
+                                    "filter": "FM_LINEAR_MIPMAP_LINEAR",
+                                    "source": [
+                                        "../textures/e7ad15de19bd46bbb40054ced2c997f4.png"
+                                    ],
+                                    "type": "2d_texture",
+                                    "wrap": "WM_REPEAT"
+                                },
+                                "u_Alpha": 0.347864031791687,
+                                "u_UVTiling": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "name": "mat"
+}

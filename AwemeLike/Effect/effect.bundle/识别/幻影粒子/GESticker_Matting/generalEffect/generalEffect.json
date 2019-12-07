@@ -1,0 +1,105 @@
+{
+	"effect": [
+		{
+			"name": "matting",
+			"viewport": [
+				0,
+				0,
+				360,
+				640
+			],
+			"vertexShader": "Resource/normal.vsh",
+			"vUniforms": [],
+			"fragmentShader": "Resource/matting.fsh",
+			"fUniforms": [
+				{
+					"name": "mattingTexture",
+					"type": 2000
+				}
+			]
+		},
+		{
+			"name": "gx",
+			"inputEffect": [
+				"matting"
+			],
+			"viewport": [
+				0,
+				0,
+				360,
+				640
+			],
+			"vertexShader": "Resource/gaussian_sigma6.vsh",
+			"vUniforms": [
+				{
+					"name": "texelWidthOffset",
+					"type": 300
+				},
+				{
+					"name": "texelHeightOffset",
+					"type": 3,
+					"data": [
+						0
+					]
+				},
+				{
+					"name": "scale",
+					"type": 3,
+					"data": [
+						8.0
+					]
+				}
+			],
+			"fragmentShader": "Resource/gaussian_sigma6.fsh",
+			"fUniforms": [
+				{
+					"name": "inputImageTexture",
+					"type": 1000,
+					"inputEffectIndex": 0
+				}
+			]
+		},
+		{
+			"name": "gy",
+			"inputEffect": [
+				"gx"
+			],
+			"viewport": [
+				0,
+				0,
+				360,
+				640
+			],
+			"vertexShader": "Resource/gaussian_sigma6.vsh",
+			"vUniforms": [
+				{
+					"name": "texelWidthOffset",
+					"type": 3,
+					"data": [
+						0
+					]
+				},
+				{
+					"name": "texelHeightOffset",
+					"type": 301
+				},
+				{
+					"name": "scale",
+					"type": 3,
+					"data": [
+						8.0
+					]
+				}
+			],
+			"fragmentShader": "Resource/gaussian_sigma6.fsh",
+			"fUniforms": [
+				{
+					"name": "inputImageTexture",
+					"type": 1000,
+					"inputEffectIndex": 0
+				}
+			]
+		}
+	],
+	"version": 1.1
+}
