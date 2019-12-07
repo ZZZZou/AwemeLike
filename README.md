@@ -46,10 +46,13 @@
 #### 效果展示
 
 **美颜**
+![](https://github.com/ZZZZou/AwemeLike/blob/master/resource/1.gif)
 
 **设置特效**
+![](https://github.com/ZZZZou/AwemeLike/blob/master/resource/2.gif)
 
 **生成的视频文件**
+![](https://github.com/ZZZZou/AwemeLike/blob/master/resource/3.gif)
 
 #### 相关文章
 
