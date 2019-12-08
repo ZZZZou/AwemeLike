@@ -59,7 +59,7 @@
 
 #### 相关文章
 
-[视频播放器的实现](https://www.jianshu.com/p/1b72ef66ccde)
+[视频播放器的实现](https://juejin.im/post/5decfc68e51d45580f7c99e2)
 
-[大眼瘦脸的实现](https://www.jianshu.com/p/1cd3ed0e29ea)
+[大眼瘦脸的实现](https://juejin.im/post/5decf61af265da33bc57d0f8)
 
