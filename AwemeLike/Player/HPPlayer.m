@@ -125,7 +125,7 @@
 
 - (void)play {
     
-    NSLog(@"playing : %@", [NSThread currentThread]);
+//    NSLog(@"playing : %@", [NSThread currentThread]);
     if (isPlaying)
         return;
     if(audioOutput){
@@ -145,7 +145,7 @@
 
 - (void)pause;
 {
-    NSLog(@"pausing : %@", [NSThread currentThread]);
+//    NSLog(@"pausing : %@", [NSThread currentThread]);
     if (!isPlaying)
         return;
     if(audioOutput){
@@ -307,6 +307,12 @@
 
 - (NSInteger)fillAudioData:(SInt16*)sampleBuffer numFrames:(NSInteger)frameNum numChannels:(NSInteger)channels;
 {
+    static NSTimeInterval lastTime = 0;
+    
+    NSTimeInterval currTime = [[NSDate date] timeIntervalSince1970];
+//    NSLog(@"%f", currTime-lastTime);
+    lastTime = currTime;
+    
     if(synchronizer && ![synchronizer isPlayCompleted]) {
         
         [synchronizer audioCallbackFillData:sampleBuffer numFrames:(UInt32)frameNum numChannels:(UInt32)channels];
@@ -317,6 +323,9 @@
     } else {
         memset(sampleBuffer, 0, frameNum * channels * sizeof(SInt16));
     }
+    
+    
+    
     return 1;
 }
 

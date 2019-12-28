@@ -132,27 +132,29 @@ static FaceDetector *share;
         
         NSMutableArray *points = [NSMutableArray array];
         for (NSValue *v in faceInfo.points) {
-            CGPoint point = [self transformPointoPortrait:v.CGPointValue];
+            CGPoint point = [self transformPointToPortrait:v.CGPointValue];
             [points addObject:[NSValue valueWithCGPoint:point]];
         }
         
         BOOL isFront = self.sampleBufferOrientation == FaceDetectorSampleBufferOrientationCameraFrontAndHorizontallyMirror;
+        
+        NSInteger index = self.sampleBufferOrientation == FaceDetectorSampleBufferOrientationCameraBack ? 1 : self.sampleBufferOrientation - FaceDetectorSampleBufferOrientationNoRatation;
         FaceModel *model = [FaceModel new];
         model.bounds = faceInfo.rect;
         model.landmarks = points;
         model.pitchAngle = -faceInfo.pitch;
         model.yawAngle = isFront ? -faceInfo.yaw : faceInfo.yaw;
-        model.rollAngle = isFront  ? -(M_PI/2 - faceInfo.roll) : (M_PI/2 - faceInfo.roll);
+        model.rollAngle = isFront  ? -(M_PI/2 - faceInfo.roll) : (M_PI/2 * index - faceInfo.roll);
         [tmpArr addObject:model];
         
-//        NSLog(@"%f, %f, %f", model.pitchAngle, model.yawAngle, model.rollAngle);
+//        NSLog(@"%f, %f, %f", faceInfo.pitch, faceInfo.yaw, faceInfo.roll);
     }
     [self.markManager endDetectionFrame];
     
     self.faceModels = tmpArr;
 }
 
-- (CGPoint)transformPointoPortrait:(CGPoint)point {
+- (CGPoint)transformPointToPortrait:(CGPoint)point {
     
     CGFloat width = frameWidth;
     CGFloat height = frameHeight;

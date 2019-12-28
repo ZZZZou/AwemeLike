@@ -18,6 +18,9 @@
 @end
 
 @interface HPRangeEffectManager()
+{
+    id memoryWarningObserver;
+}
 
 @property (nonatomic, strong) NSMutableArray<HPModelRangeEffect *> *allEffects;
 @end
@@ -33,6 +36,20 @@ static HPRangeEffectManager *share;
         });
     }
     return share;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        memoryWarningObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidReceiveMemoryWarningNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+            
+            [self.allEffects enumerateObjectsUsingBlock:^(HPModelRangeEffect * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [obj.effect clear];
+            }];
+            
+        }];
+    }
+    return self;
 }
 
 - (NSArray<HPModelRangeEffect *> *)filterEffects {

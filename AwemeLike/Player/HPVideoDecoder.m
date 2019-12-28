@@ -105,7 +105,7 @@
     self->videoBufferDuration = CMTimeMake(self.videoDuration * sampleRate, (int32_t)sampleRate);
     
     self->minVideoStartTime = CMTimeMake(5, 100);
-    self->maxVideoEndTime = CMTimeSubtract(self.duration, CMTimeMake(5, 100));
+    self->maxVideoEndTime = CMTimeSubtract(self.duration, CMTimeMake(10, 100));
     
     self->reader.timeRange = CMTimeRangeMake(CMTimeMake(0, 1), CMTimeMake(1 * sampleRate, (int32_t)sampleRate));
     if (ret == 0 && asset != nil) {
@@ -220,8 +220,6 @@
 }
 
 - (CMSampleBufferRef)decodeSingleVideoSampleBufferAtTime:(CMTime)time {
-    videoBufferDuration = CMTimeMake(0.1*sampleRate, (int32_t)sampleRate);
-    audioBufferDuration = CMTimeMake(0.1*sampleRate, (int32_t)sampleRate);
     
     [self seekToTime:time];
     while (reader.status == AVAssetReaderStatusReading) {
@@ -230,7 +228,9 @@
         if ([self isValidVideoTime:pts]) {
             return videoSample;
         }
-        CFRelease(videoSample);
+        if (videoSample) {
+            CFRelease(videoSample);
+        }
     }
     return nil;
 }
@@ -250,7 +250,7 @@
             CMTime nextTime = CMTimeAdd(lastTime, lastDuration);
             sampleBufferRef = [self resetTimeRangeAndReturnNextSampleBuffer:output nextTime:nextTime];
             if (isAudio) {
-                NSLog(@"time: %f, duration: %f", CMTimeGetSeconds(lastTime), CMTimeGetSeconds(CMSampleBufferGetDuration(sampleBufferRef)));
+//                NSLog(@"time: %f, duration: %f", CMTimeGetSeconds(lastTime), CMTimeGetSeconds(CMSampleBufferGetDuration(sampleBufferRef)));
             }
             
         }
@@ -306,7 +306,7 @@
 - (CMTime)seekToTime:(CMTime)time {
     
     [lock lock];
-    CMTime maxTime = CMTimeSubtract(asset.duration, CMTimeMake(5, 100));
+    CMTime maxTime = maxVideoEndTime;
     if (CMTIME_COMPARE_INLINE(time, >=, maxTime)) {
         time = maxTime;
     }

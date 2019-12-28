@@ -145,22 +145,27 @@
         audioMix.originVolume = self.player.originVolume;
         audioMix.musicVolume = self.player.musicVolume;
         [audioMix start];
-        progressHandle(0);
-        __block CMItemCount numOffset = 0;
-        movieWriter.audioProcessingCallback = ^(SInt16 **samplesRef, CMItemCount numSamplesInBuffer) {
-            [audioMix mixAudioData:*samplesRef numAudioFrame:numSamplesInBuffer];
-            
-            CGFloat progress = (CGFloat)numOffset/sampleRate/duration;
-            progressHandle(progress);
-            
-            numOffset += numSamplesInBuffer;
-        };
     }
+    
+    progressHandle(0);
+    __block CMItemCount numOffset = 0;
+    movieWriter.audioProcessingCallback = ^(SInt16 **samplesRef, CMItemCount numSamplesInBuffer) {
+        if (audioMix) {
+            [audioMix mixAudioData:*samplesRef numAudioFrame:numSamplesInBuffer];
+        }
+        
+        CGFloat progress = (CGFloat)numOffset/sampleRate/duration;
+        progressHandle(progress);
+        
+        numOffset += numSamplesInBuffer;
+    };
     
     __weak typeof(self) wself = self;
     [movieWriter setCompletionBlock:^{
-        [audioMix stop];
-        audioMix = nil;
+        if (audioMix) {
+            [audioMix stop];
+            audioMix = nil;
+        }
         NSLog(@"finished reading");
         __strong typeof(wself) self = wself;
         [self->movieWriter finishRecordingWithCompletionHandler:^{

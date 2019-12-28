@@ -776,7 +776,7 @@
 }
 
 - (void)clear {
-    
+    pic = nil;
 }
 
 - (NSString *)name {

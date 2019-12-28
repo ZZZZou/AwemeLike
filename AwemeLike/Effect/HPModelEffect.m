@@ -29,6 +29,7 @@
     self = [super init];
     if (self) {
         bufferedFramebuffers = @{}.mutableCopy;
+        
     }
     return self;
 }

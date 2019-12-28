@@ -30,7 +30,7 @@
 @end
 
 @interface HPCameraCaptureViewModel()
-@property(nonatomic, copy) NSString *outputVideoFilePath;
+
 @end
 @implementation HPCameraCaptureViewModel
 {
@@ -49,6 +49,12 @@
     UIView *preview;
     
     BOOL recording;
+    
+    NSMutableArray *movieAssets;
+    AVAssetExportSession *exportSession;
+    
+    NSTimer *timer;
+    NSMutableArray<NSNumber*> *recordedTimePoints;
 }
 
 - (instancetype)init{
@@ -59,6 +65,7 @@
 }
 
 - (void)initData {
+    self.maxRecordingTime = 15;
     [self getFilterItemsFromLocal];
     
 }
@@ -95,7 +102,7 @@
     gpuView = [[GPUImageView alloc] initWithFrame:preview.bounds];
     [preview addSubview:gpuView];
     
-    videoCamera = [[GPUImageFaceCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1280x720 cameraPosition: AVCaptureDevicePositionFront];
+    videoCamera = [[GPUImageFaceCamera alloc] initWithSessionPreset:AVCaptureSessionPresetHigh cameraPosition: AVCaptureDevicePositionFront];
     videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
     videoCamera.horizontallyMirrorFrontFacingCamera = true;
     [videoCamera addAudioInputsAndOutputs];
@@ -148,11 +155,7 @@
 }
 
 - (void)resetMovieWriter {
-    NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/movie.mp4"];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:pathToMovie isDirectory:nil]) {
-        [[NSFileManager defaultManager] removeItemAtPath:pathToMovie error:nil];
-    }
+    NSString *pathToMovie = [self generateMovieFilePath];
     NSURL *movieURL = [NSURL fileURLWithPath:pathToMovie];
     movieWriter = [[GPUImageMovieWriter alloc] initWithMovieURL:movieURL size:CGSizeMake(720, 1280)];
     movieWriter.encodingLiveVideo = YES;
@@ -163,7 +166,6 @@
         [lastFilter addTarget:movieWriter];
     }
     videoCamera.audioEncodingTarget = movieWriter;
-    self.outputVideoFilePath = pathToMovie;
 }
 
 #pragma mark -
@@ -180,14 +182,201 @@
     recording = true;
     [self resetMovieWriter];
     [movieWriter startRecording];
+    [self beginTimer];
 }
 
 - (void)stopRecording:(void(^)(void))completion {
     
+    [self endTimer];
     [movieWriter finishRecordingWithCompletionHandler:^{
-        self->recording = false;
-        completion();
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self->recording = false;
+            
+            BOOL finished = self->recordedTimePoints.lastObject.floatValue >= self.maxRecordingTime;
+            if (self.updateRecordedTime) {
+                self.updateRecordedTime(self->recordedTimePoints, finished);
+            }
+            if (completion) {
+                completion();
+            }
+        });
     }];
+}
+
+#pragma mark -
+
+- (BOOL)canRemove {
+    return recordedTimePoints.count > 0;
+}
+
+- (BOOL)canSave {
+    CGFloat minTime = 2;
+    
+    return recordedTimePoints.lastObject.floatValue >= minTime;
+}
+
+- (void)saveMovie:(void(^)(BOOL succeed))completion {
+    __weak typeof(self) wself = self;
+    [self loadAssets:^{
+        __strong typeof(wself) self = wself;
+        [self compositionMovies:self->movieAssets completion:completion];
+    }];
+}
+
+- (void)loadAssets:(void(^)(void))completion {
+    
+    movieAssets = [NSMutableArray array];
+    NSInteger movieFileCount = recordedTimePoints.count;
+    static int loadedNum = 0;
+    loadedNum = 0;
+    int index = 0;
+    while (index < movieFileCount) {
+        NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/movie%d.mp4", index]];
+        
+        NSDictionary *inputOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:true] forKey:AVURLAssetPreferPreciseDurationAndTimingKey];
+        AVURLAsset *inputAsset = [[AVURLAsset alloc] initWithURL:[NSURL fileURLWithPath:pathToMovie] options:inputOptions];
+        
+        [inputAsset loadValuesAsynchronouslyForKeys:[NSArray arrayWithObject:@"tracks"] completionHandler: ^{
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                NSError *error = nil;
+                AVKeyValueStatus tracksStatus = [inputAsset statusOfValueForKey:@"tracks" error:&error];
+                if (tracksStatus != AVKeyValueStatusLoaded) {
+                    NSLog(@"assets load failed");
+                }
+                loadedNum += 1;
+                if (loadedNum == movieFileCount) {
+                    completion();
+                }
+            });
+        }];
+        [self->movieAssets addObject:inputAsset];
+        index += 1;
+    }
+}
+
+- (void)compositionMovies:(NSArray *)movieAssets completion:(void(^)(BOOL succeed))completion {
+    
+    AVMutableComposition *composition = [AVMutableComposition composition];
+    AVMutableCompositionTrack *compositionVideoTrack = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+    
+    AVMutableCompositionTrack *compositionAudioTrack = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
+    
+    CMTime offset = CMTimeMake(1, 10);
+    CMTime cursor = kCMTimeZero;
+    for (AVAsset *asset in movieAssets) {
+        
+        AVAssetTrack *videoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo] firstObject];
+        AVAssetTrack *audioTrack = [[asset tracksWithMediaType:AVMediaTypeAudio] firstObject];
+        CMTime duration = asset.duration;
+        
+        if (CMTIME_COMPARE_INLINE(duration, <=, offset)) {
+            continue;
+        }
+        
+        CMTimeRange timeRange = CMTimeRangeMake(offset, CMTimeSubtract(duration, CMTimeMultiply(offset, 2)));
+        [compositionVideoTrack insertTimeRange:timeRange ofTrack:videoTrack atTime:cursor error:nil];
+        [compositionAudioTrack insertTimeRange:timeRange ofTrack:audioTrack atTime:cursor error:nil];
+        cursor = CMTimeAdd(cursor, timeRange.duration);
+    }
+    
+    exportSession = [AVAssetExportSession exportSessionWithAsset:composition.copy presetName:AVAssetExportPresetHighestQuality];
+    exportSession.outputFileType = AVFileTypeMPEG4;
+    
+    NSString *pathToMovie = [self outputVideoFilePath];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:pathToMovie isDirectory:nil]) {
+        [[NSFileManager defaultManager] removeItemAtPath:pathToMovie error:nil];
+    }
+    exportSession.outputURL = [NSURL fileURLWithPath:pathToMovie];
+    
+    [exportSession exportAsynchronouslyWithCompletionHandler:^{
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            AVAssetExportSessionStatus status = self->exportSession.status;
+            if (status == AVAssetExportSessionStatusCompleted) {
+                completion(true);
+            } else {
+                completion(false);
+            }
+        });
+    }];
+}
+
+
+#pragma mark -
+
+- (NSString *)generateMovieFilePath {
+    
+    NSInteger movieFileCount = recordedTimePoints.count;
+    
+    NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/movie%ld.mp4", movieFileCount]];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:pathToMovie isDirectory:nil]) {
+        [[NSFileManager defaultManager] removeItemAtPath:pathToMovie error:nil];
+    }
+    
+    return pathToMovie;
+}
+
+- (void)removeLastMovieFile {
+    
+    NSInteger movieFileCount = recordedTimePoints.count;
+    
+    if (movieFileCount <= 0 ) {
+        return;
+    }
+    NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/movie%ld.mp4", movieFileCount-1]];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:pathToMovie isDirectory:nil]) {
+        [[NSFileManager defaultManager] removeItemAtPath:pathToMovie error:nil];
+    }
+    [recordedTimePoints removeLastObject];
+}
+
+- (NSString *)outputVideoFilePath {
+    NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/compositionMovie.mp4"]];
+    return pathToMovie;
+}
+
+#pragma mark - Timer
+
+- (void)beginTimer {
+    
+    if (recordedTimePoints == nil) {
+        recordedTimePoints = [NSMutableArray array];
+        [recordedTimePoints addObject:@0];
+    } else {
+        [recordedTimePoints addObject:recordedTimePoints.lastObject];
+    }
+    NSTimeInterval timeInterval = 15.0 / UIScreen.mainScreen.bounds.size.width;
+    [timer invalidate];
+    timer = [NSTimer timerWithTimeInterval:timeInterval target:self selector:@selector(timerUpdate:) userInfo:nil repeats:true];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    [timer setFireDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
+}
+
+- (void)endTimer {
+    [timer invalidate];
+    timer = nil;
+}
+
+- (void)timerUpdate:(NSTimer *)timer {
+    CGFloat timePoint = recordedTimePoints.lastObject.floatValue;
+    timePoint += timer.timeInterval;
+    
+    [recordedTimePoints replaceObjectAtIndex:recordedTimePoints.count-1 withObject:@(timePoint)];
+    
+    BOOL finished = recordedTimePoints.lastObject.floatValue >= self.maxRecordingTime;
+    
+    if (finished) {
+        [self stopRecording:nil];
+    } else {
+        if (self.updateRecordedTime) {
+            self.updateRecordedTime(recordedTimePoints, finished);
+        }
+    }
+    
+}
+
+- (NSArray<NSNumber *> *)recordedTimePoints {
+    return recordedTimePoints;
 }
 
 #pragma mark -
@@ -297,4 +486,6 @@
         [[GPUImageContext sharedFramebufferCache] purgeAllUnassignedFramebuffers];
     });
 }
+
+
 @end

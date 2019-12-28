@@ -10,6 +10,72 @@
 #import "HPVideoEditViewController.h"
 #import "HPCameraCaptureViewController.h"
 
+@interface HPProgressView : UIView
+{
+    NSMutableArray<UIView*> *cachedLineViews;
+    NSMutableArray<UIView*> *usedLineViews;
+
+}
+@end
+
+@implementation HPProgressView
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        cachedLineViews = @[].mutableCopy;
+        usedLineViews = @[].mutableCopy;
+        
+        UIView *view = [[UIView alloc] init];
+        view.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+        view.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1];
+        [self addSubview:view];
+    }
+    return self;
+}
+
+- (void)resetView:(NSArray<NSNumber*> *)points hasLastSplitLine:(BOOL)hasLastSplitLine {
+    [usedLineViews enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj removeFromSuperview];
+    }];
+    [cachedLineViews addObjectsFromArray:usedLineViews];
+    [usedLineViews removeAllObjects];
+    
+    CGFloat width = self.bounds.size.width;
+    CGFloat height = self.bounds.size.height;
+    __block CGFloat lastX = 0;
+    [points enumerateObjectsUsingBlock:^(NSNumber *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIView *lineView = [self getLineView];
+        lineView.backgroundColor = [UIColor orangeColor];
+        [self addSubview:lineView];
+        [self->usedLineViews addObject:lineView];
+        
+        lineView.frame = CGRectMake(lastX, 0, width * obj.floatValue - lastX, height);
+        lastX = lastX + lineView.frame.size.width;
+        
+        if (hasLastSplitLine || idx != points.count-1) {
+            UIView *splitView = [self getLineView];
+            splitView.backgroundColor = [UIColor whiteColor];
+            [self addSubview:splitView];
+            [self->usedLineViews addObject:splitView];
+            
+            splitView.frame = CGRectMake(lastX-2, 0, 2, height);
+        }
+    }];
+}
+
+- (UIView *)getLineView {
+    UIView *view = cachedLineViews.lastObject;
+    if (view) {
+        [cachedLineViews removeLastObject];
+    } else {
+        view = [UIView new];
+    }
+    return view;
+}
+
+@end
+
 @interface HPFilterListViewCell : UICollectionViewCell
 @property(nonatomic, weak) IBOutlet UILabel *name;
 @property(nonatomic, weak) IBOutlet UIImageView *thumb;
@@ -168,8 +234,8 @@
 @property(nonatomic, weak) IBOutlet UIView *bottomView;
 @property(nonatomic, weak) IBOutlet UIView *recordBGView;
 @property(nonatomic, weak) IBOutlet NSLayoutConstraint *recordBGViewConstraintWidth;
-@property(nonatomic, weak) IBOutlet UIView *delView;
-@property(nonatomic, weak) IBOutlet UIView *saveView;
+@property(nonatomic, weak) IBOutlet UIButton *delView;
+@property(nonatomic, weak) IBOutlet UIButton *saveView;
 
 
 //filter view
@@ -184,6 +250,9 @@
 @property(nonatomic, copy) IBOutletCollection(UIView) NSArray *beautyItemViews;
 
 @property(nonatomic, weak) IBOutlet UIView *hudView;
+
+//progress view
+@property(nonatomic, strong) HPProgressView *progressView;
 
 @property(nonatomic, strong) HPCameraCaptureViewModel *vm;
 @end
@@ -219,9 +288,20 @@
     [self resetView];
     [self resetBeauty:nil];
     self.filterView.filterItems = self.vm.filterItems;
+    
+    
+    __weak typeof(self) wself = self;
+    self.vm.updateRecordedTime = ^(NSArray *timePoints, BOOL finished) {
+        __strong typeof(wself) self = wself;
+        [self updateProgressView:timePoints];
+        if (finished) {
+            [self saveClick:nil];
+        }
+    };
 }
 
 - (void)initView {
+    
     self.navigationController.navigationBar.hidden = true;
     self.navigationController.interactivePopGestureRecognizer.enabled = false;
     self.view.bounds = [UIScreen mainScreen].bounds;
@@ -230,6 +310,11 @@
     self.filterView.frame = self.view.bounds;
     self.hudView.frame = self.view.bounds;
     self.view.backgroundColor = [UIColor colorWithWhite:0 alpha:1];
+    
+    
+    self.progressView = [HPProgressView new];
+    self.progressView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 4);
+    [self.view addSubview:self.progressView];
     
     [self.interactionView addSubview: self.beautyView];
     [self.interactionView addSubview: self.filterView];
@@ -257,14 +342,15 @@
 - (void)resetView {
     BOOL torchAvailable = self.vm.torchAvailable;
     
+    self.saveView.hidden = recording || !self.vm.canSave;
+    self.delView.hidden = recording || !self.vm.canRemove;
+    
     if (recording) {
         self.recordBGView.layer.cornerRadius = 4;
         self.recordBGViewConstraintWidth.constant = 30;
-        self.delView.hidden = true;
     } else {
         self.recordBGView.layer.cornerRadius = 30;
         self.recordBGViewConstraintWidth.constant = 60;
-        self.delView.hidden = true;
     }
     if (showBeautyView) {
         self.beautyView.hidden = false;
@@ -287,7 +373,7 @@
     UIView *selectedView = self.beautyItemViews[selectedBeautyItem];
     selectedView.layer.borderWidth = 2;
     selectedView.layer.borderColor = [UIColor colorWithRed:0xfa/256.0 green:0xce/256.0 blue:0x15/256.0 alpha:1].CGColor;
-    _beautyViewSlider.value = [beautyValues[selectedBeautyItem] floatValue];
+    self.beautyViewSlider.value = [beautyValues[selectedBeautyItem] floatValue];
 }
 
 - (void)showFilterAlertView:(NSIndexPath *)indexPath {
@@ -305,7 +391,17 @@
     self.filterAlertView.hidden = true;
 }
 
-#pragma mark - Action
+- (void)updateProgressView:(NSArray *)timePoints {
+   
+    CGFloat maxTime = self.vm.maxRecordingTime;
+    NSMutableArray *points = @[].mutableCopy;
+    [timePoints enumerateObjectsUsingBlock:^(NSNumber *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [points addObject:@(obj.floatValue/maxTime)];
+    }];
+    [self.progressView resetView:points hasLastSplitLine:!self->recording];
+}
+
+#pragma mark - PanGesture
 
 static CGFloat panOffset;
 static CGFloat maxVelocity;
@@ -322,7 +418,7 @@ static BOOL ignoredFirst;
     CGFloat velocity = [pan velocityInView:self.interactionView].x;
     maxVelocity = MAX(maxVelocity, fabs(velocity));
     
-    if (showFilterView || showBeautyView || self.vm.isRecording || !ignoredFirst) {
+    if (showFilterView || showBeautyView || recording || !ignoredFirst) {
         ignoredFirst = true;
         return;
     }
@@ -406,7 +502,9 @@ static BOOL ignoredFirst;
 }
 
 
-- (IBAction)recordClick:(id)sender {
+#pragma mark - Action
+
+- (IBAction)recordClick:(UIButton *)sender {
     
     recording = !recording;
     [self resetView];
@@ -414,21 +512,35 @@ static BOOL ignoredFirst;
         [self.vm startRecording];
         
     } else {
-        self.hudView.hidden = false;
+        sender.enabled = false;
         [self.vm stopRecording:^{
-            [self pushToEditVideo];
+             sender.enabled = true;
         }];
     }
-    
-    
 }
 
 - (IBAction)saveClick:(id)sender {
+    recording = false;
+    [self resetView];
+    self.hudView.hidden = false;
     
+    [self.vm saveMovie:^(BOOL succeed) {
+        if (succeed) {
+            self.hudView.hidden = true;
+            [self pushToEditVideo];
+        } else {
+            [[[UIAlertView alloc] initWithTitle:nil message:@"合成视频文件失败" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil] show];
+        }
+    }];
+    
+    [self resetView];
 }
 
 - (IBAction)delClick:(id)sender {
+    [self.vm removeLastMovieFile];
     
+    [self resetView];
+    [self updateProgressView:self.vm.recordedTimePoints];
 }
 
 - (IBAction)rightTopClick:(UIButton *)sender {
@@ -489,7 +601,7 @@ static BOOL ignoredFirst;
     [self dismissViewControllerAnimated:true completion:nil];
 }
 
-#pragma mark - View State Change
+#pragma mark -
 
 - (void)showFilterView {
     showFilterView = !showFilterView;
@@ -527,16 +639,13 @@ static BOOL ignoredFirst;
 
 - (void)pushToEditVideo {
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.hudView.hidden = true;
-        HPCameraEditViewModel *vm = [HPCameraEditViewModel new];
-        vm.videoPath = self.vm.outputVideoFilePath;
-        
-        UIStoryboard *sd = [UIStoryboard storyboardWithName:@"Aweme" bundle:nil] ;
-        HPVideoEditViewController *edit = (HPVideoEditViewController *)[sd instantiateViewControllerWithIdentifier:NSStringFromClass(HPVideoEditViewController.class)];
-        edit.vm = vm;
-        [self.navigationController pushViewController:edit animated:true];
-    });
+    HPCameraEditViewModel *vm = [HPCameraEditViewModel new];
+    vm.videoPath = self.vm.outputVideoFilePath;
+    
+    UIStoryboard *sd = [UIStoryboard storyboardWithName:@"Aweme" bundle:nil] ;
+    HPVideoEditViewController *edit = (HPVideoEditViewController *)[sd instantiateViewControllerWithIdentifier:NSStringFromClass(HPVideoEditViewController.class)];
+    edit.vm = vm;
+    [self.navigationController pushViewController:edit animated:true];
     
 }
 

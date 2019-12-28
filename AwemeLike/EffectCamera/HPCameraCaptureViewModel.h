@@ -25,13 +25,21 @@
 @property(nonatomic, readonly) NSString *outputVideoFilePath;
 @property(nonatomic, strong) NSIndexPath *filterIndexPath;
 @property(nonatomic, copy) NSArray<NSArray<HPCameraCaptureViewFilterItem*>*> *filterItems;
+@property(nonatomic, assign) NSInteger maxRecordingTime;
+@property(nonatomic, copy) void(^updateRecordedTime)(NSArray *timePoints, BOOL finished);
 
+- (NSArray<NSNumber*>*)recordedTimePoints;
 - (instancetype)init;
 - (void)setupFilter:(UIView *)preview;
 - (void)startCameraCapture;
 - (void)stopCameraCapture;
 - (void)startRecording;
 - (void)stopRecording:(void(^)(void))completion;
+
+- (BOOL)canSave;
+- (BOOL)canRemove;
+- (void)removeLastMovieFile;
+- (void)saveMovie:(void(^)(BOOL succeed))completion;
 
 - (BOOL)isRecording;
 - (BOOL)torchAvailable;
