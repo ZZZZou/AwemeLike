@@ -7,8 +7,8 @@
 - 磨皮、美白
 - 瘦脸大眼、唇彩、腮红等脸部处理
 - 2D动态贴纸
-- 7种分屏方式
-- 12种转场特效
+- 分屏
+- 转场
 - 常用滤镜，比如抖动、摇摆、毛刺等
 
 #### 待完成
@@ -47,13 +47,19 @@
 
 **美颜**
 
+![](https://github.com/ZZZZou/AwemeLike/blob/master/resource/1.gif)
+
 **设置特效**
+
+![](https://github.com/ZZZZou/AwemeLike/blob/master/resource/2.gif)
 
 **生成的视频文件**
 
+![](https://github.com/ZZZZou/AwemeLike/blob/master/resource/3.gif)
+
 #### 相关文章
 
-[视频播放器的实现](https://www.jianshu.com/p/1b72ef66ccde)
+[视频播放器的实现](https://juejin.im/post/5decfc68e51d45580f7c99e2)
 
-[大眼瘦脸的实现](https://www.jianshu.com/p/1cd3ed0e29ea)
+[大眼瘦脸的实现](https://juejin.im/post/5decf61af265da33bc57d0f8)
 
