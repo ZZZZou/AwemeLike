@@ -165,8 +165,9 @@
     return true;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.vm initPlayerIfNeed:self.preview];
     [self.vm play];
 }
 
@@ -189,7 +190,6 @@
     
     
     [self setupMusicAction];
-    [self.vm setPreview:self.preview];
     self.musicView.items = self.vm.musicItems;
     [self.musicView reloadData];
 }
@@ -245,6 +245,7 @@
     effect.transitioningDelegate = effect;
     effect.vm = vm;
     effect.transitionImage = img;
+    effect.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:effect animated:true completion:nil];
     
 }

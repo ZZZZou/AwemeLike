@@ -936,7 +936,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 86GN5VQGBX;
+				DEVELOPMENT_TEAM = 9AA68N23NW;
 				INFOPLIST_FILE = AwemeLike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -948,7 +948,7 @@
 					"$(PROJECT_DIR)/AwemeLike/Face++/MegviiLicMgr-iOS-SDK",
 					"$(PROJECT_DIR)/AwemeLike/Face++/MGFaceppSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wang.AwemeLike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangding.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -960,7 +960,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 86GN5VQGBX;
+				DEVELOPMENT_TEAM = 9AA68N23NW;
 				INFOPLIST_FILE = AwemeLike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -972,7 +972,7 @@
 					"$(PROJECT_DIR)/AwemeLike/Face++/MegviiLicMgr-iOS-SDK",
 					"$(PROJECT_DIR)/AwemeLike/Face++/MGFaceppSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wang.AwemeLike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangding.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

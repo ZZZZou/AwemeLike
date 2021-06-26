@@ -21,7 +21,7 @@
 @property(nonatomic, copy) NSString *videoPath;
 @property(nonatomic, readonly) NSString *musicPath;
 @property(nonatomic, copy) NSArray<HPCameraEditMusicItem*> *musicItems;
-
+- (void)initPlayerIfNeed:(UIView *)preview;
 - (void)setPreview:(UIView *)preview;
 
 - (void)play;

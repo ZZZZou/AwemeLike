@@ -73,18 +73,20 @@
     self.musicItems = tmp;
 }
 
-- (void)initPlayer {
+- (void)initPlayerIfNeed:(UIView *)preview {
+    if (self.player != nil) {
+        return;
+    }
     self.player = [[HPPlayer alloc] initWithFilePath:self.videoPath playerStateDelegate:self];
     self.player.shouldRepeat = true;
     HPRangeEffectFilter *filter = [[HPRangeEffectManager shareInstance] generateFilter];
     self.player.filters = @[filter];
+    
+    [self setPreview:preview];
 }
 
 - (void)setVideoPath:(NSString *)videoPath {
     _videoPath = videoPath;
-    
-    [self initPlayer];
-    [self play];
 }
 
 - (void)setPreview:(UIView *)preview {

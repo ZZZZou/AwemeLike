@@ -24,12 +24,15 @@
 - (IBAction)camera:(id)sender {
     UIStoryboard *sd = [UIStoryboard storyboardWithName:@"Aweme" bundle:nil] ;
     HPCameraCaptureViewController *camera = (HPCameraCaptureViewController *)[sd instantiateViewControllerWithIdentifier:NSStringFromClass(HPCameraCaptureViewController.class)];
-    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:camera] animated:true completion:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:camera];
+    nav.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:nav animated:true completion:nil];
 }
 
 - (IBAction)play:(id)sender {
     HPPlayerViewController *player = [HPPlayerViewController new];
     player.title = @"Player";
+    player.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:player animated:true completion:nil];
 }
 
